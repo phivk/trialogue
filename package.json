@@ -1,10 +1,10 @@
 {
-  "name": "Trialogue",
-  "version": "0.1",
-  "description": "A chat style story format based on Paloma",
-  "author": "Philo van Kemenade <philo.van.kemenade@sng.sk>",
+  "name": "Paloma",
+  "version": "1.1.1",
+  "description": "A Jonah-style story format based on Snowman.",
+  "author": "M. C. DeMarco <mcd@mcdemarco.net>",
   "license": "MIT",
-  "repository": "https://github.com/phivk/trialogue",
+  "repository": "https://bitbucket.org/mcdemarco/paloma",
   "dependencies": {
     "jquery": "^2.2.0",
     "lz-string": "^1.4.4",
