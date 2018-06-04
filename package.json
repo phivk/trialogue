@@ -1,0 +1,25 @@
+{
+  "name": "Paloma",
+  "version": "1.1.1",
+  "description": "A Jonah-style story format based on Snowman.",
+  "author": "M. C. DeMarco <mcd@mcdemarco.net>",
+  "license": "MIT",
+  "repository": "https://bitbucket.org/mcdemarco/paloma",
+  "dependencies": {
+    "jquery": "^2.2.0",
+    "lz-string": "^1.4.4",
+    "marked": "^0.3.5",
+    "underscore": "^1.8.3"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-browserify": "^4.0.1",
+    "grunt-contrib-clean": "^0.7.0",
+    "grunt-contrib-cssmin": "^0.14.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-contrib-yuidoc": "^0.10.0",
+    "grunt-eslint": "^18.0.0",
+    "jit-grunt": "^0.9.1",
+    "uglifyify": "^3.0.1"
+  }
+}

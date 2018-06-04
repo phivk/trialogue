@@ -1,0 +1,67 @@
+/* snowman style, with minor alterations for the faded phistory div */
+
+body {
+	font: 18px "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #222;
+}
+
+#passage, #phistory, #ptitle, #psub {
+	max-width: 38em;
+	margin: 0 auto;
+	line-height: 145%;
+}
+
+#ptitle {
+    text-align:center;
+    font-family:Garamond, Georgia, serif;
+}
+
+#psub {
+    text-align: center;
+    font-family: Garamond, Georgia, serif;
+    font-style: italic;
+    font-size: 14px;
+}
+
+div.phistory {
+    color: #757575;
+    border-bottom: 2px dotted #bbb;
+}
+
+div.phistory:empty {
+    border: none;
+}
+
+a {
+	color: #222;
+	text-decoration: none;
+	border-bottom: 2px solid #bbb;
+}
+
+a:hover {
+	color: #cc8929;
+	border-color: #cc8929;
+}
+
+a:active {
+	color: #ffb040;
+	border-color: #ffb040;
+}
+
+#phistory a {
+    border-bottom: none;
+}
+
+#phistory a,
+#phistory a:hover,
+#phistory a:active {
+    color: #757575;
+}
+
+#phistory a.visited {
+    color: #cc8929;
+}
+
+tw-storydata {
+	display: none;
+}
