@@ -1,0 +1,190 @@
+:: StorySettings
+zoom:1
+ifid:4db6e4f1-6eaa-4844-b9f4-b25a3a3449d2
+
+
+:: StoryTitle
+paloma-test-1
+
+
+:: Story Stylesheet [stylesheet]
+#passage, .phistory {
+  	border-radius: 10px;
+	padding: 10px 10px;
+}
+
+#passage > p, .phistory > p {
+  margin: 0;
+}
+.speaker-filla {
+	background-color: hsl(0, 100%, 80%);
+}
+
+.speaker-fulla {
+	background-color: hsl(240, 100%, 80%);
+}
+
+
+:: Story JavaScript [script]
+window.twine = {};
+
+function injectStyles(rule) {
+  var div = $("<div />", {
+    html: '&shy;<style>' + rule + '</style>'
+  }).appendTo("body");    
+}
+
+function injectHistorySpeakerStyles() {
+  for (var i = 1; i < story.passages.length; i++) {
+    if (_.contains(story.passages[i].tags, "speaker-filla")) {
+      injectStyles('div.phistory[data-ppassage="'+story.passages[i].id+'"] {background-color: hsl(0, 100%, 80%);}');
+    }
+    else if (_.contains(story.passages[i].tags, "speaker-fulla")) {
+      injectStyles('div.phistory[data-ppassage="'+story.passages[i].id+'"] {background-color: hsl(240, 100%, 80%);}');
+    }
+  }
+}
+
+injectHistorySpeakerStyles();
+
+window.twine.addPassageTagClasses = function () {
+  if (passage.tags) {
+    $('#passage').addClass(passage.tags.join(" "));
+  }
+  else {
+    console.log('no tags on passage');
+  }
+}
+
+window.twine.addPrevPassageTagClassesToHistory = function () {
+  if (story.history.length > 0) {
+    var prevPassage = story.passage(story.history[story.history.length - 1])
+    console.log("prevPassage", prevPassage);
+    var mostRecentInHistory = $('div.phistory').last();
+    console.log("mostRecentInHistory", mostRecentInHistory);
+//    mostRecentInHistory.addClass(prevPassage.tags.join(" "))
+  }
+}
+
+window.twine.removePassageTagClasses = function () {
+  $('#passage').removeClass(passage.tags.join(" "));
+}
+
+window.twine.removeClasses = function () {
+  $('#passage').removeClass();
+}
+
+window.twine.replacePasageTagClasses = function () {
+  console.log("replacePasageTagClasses in passage");
+}
+window.twine.replacePasageTagClassesNew = function () {
+  console.log("replacePasageTagClasses on showpassage:after");
+  window.twine.removeClasses();
+  window.twine.addPassageTagClasses();
+}
+
+$(window).on('showpassage:after', function(event){
+  // console.log('showpassage:after');
+  // console.log("passage", passage);
+  // console.log('event', event);
+  // console.log("story.history", story.history);
+  window.twine.replacePasageTagClassesNew();
+});
+
+/*
+$(window).on('showpassage', function(event){
+  console.log('*********************');
+  console.log('showpassage');
+  console.log("passage", passage);
+  console.log('event', event);
+  console.log("story.history", story.history);
+});
+*/
+/*
+$(window).on('hidepassage', function(){
+ console.log('hidepassage');
+ console.log("passage", passage);
+ console.log("story.history", story.history);
+ console.log(window.twine.getCurrentPassage());
+ window.twine.removePassageTagClasses();
+
+});
+*/
+
+
+:: Start [speaker-filla]
+Hi!
+
+<%
+_.delay(
+	function(){
+		story.show("Second");
+	},
+	1000
+);
+%>
+
+
+:: Second [speaker-fulla]
+Welcome!
+
+<%
+_.delay(
+	function(){
+		story.show("Third");
+	},
+	1500
+);
+%>
+
+
+:: Third [speaker-filla]
+What's up?
+
+[[nothing]]
+[[who are you?]]
+
+
+:: nothing [speaker-fulla]
+Ehm ok... 🤨
+Shall we try this again?
+
+[[ok->Start]]
+
+
+:: who are you? [speaker-fulla]
+My name is Ľudovít Fulla
+
+<%
+_.delay(
+	function(){
+		story.show("Intro Filla");
+	},
+	1500
+);
+%>
+
+
+:: Intro Filla [speaker-filla]
+And my name is Filla
+
+<%
+_.delay(
+	function(){
+		story.show("Fulla Elaborates");
+	},
+	1500
+);
+%>
+
+
+:: Fulla Elaborates [speaker-fulla]
+I am a scenographer, graphic artist, painter and illustrator. I was born in Ruzomberok in 1902. I had quite a successful career, 1065 of my artworks even made it to Web umenia!
+
+[[how about you filla?->Filla elaborates]]
+
+
+:: Filla elaborates [speaker-filla]
+Im filla and I am a painter!
+
+

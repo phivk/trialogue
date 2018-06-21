@@ -2,7 +2,7 @@ module.exports = function(grunt) {
 	var pkg = require('../package.json');
 
 	grunt.registerTask('package:icon', function() {
-		grunt.file.copy('src/icon.svg', 'dist/Twine2/' + pkg.name + '/icon.svg');
+		grunt.file.copy('src/icon.svg', pkg.config.distDir + 'Twine2/' + pkg.name + '/icon.svg');
 	});
 
 	grunt.registerTask('package:format', function() {
@@ -18,13 +18,13 @@ module.exports = function(grunt) {
 		};
 
 		grunt.file.write(
-			'dist/Twine2/' + pkg.name + '/format.js',
+			pkg.config.distDir + 'Twine2/' + pkg.name + '/format.js',
 			'window.storyFormat(' + JSON.stringify(formatData) + ');'
 		);
 	});
 
 	grunt.registerTask('package:header', function() {
-		grunt.file.copy('build/header.html', 'dist/Twine1/' + pkg.name + '/header.html');
+		grunt.file.copy('build/header.html', pkg.config.distDir + 'Twine1/' + pkg.name + '/header.html');
 	});
 
 	grunt.registerTask('package', ['build:release', 'package:icon', 'package:format', 'package:header']);

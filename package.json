@@ -5,6 +5,9 @@
   "author": "Philo van Kemenade <philo.van.kemenade@sng.sk>",
   "license": "MIT",
   "repository": "https://github.com/phivk/trialogue",
+  "config": {
+    "distDir": "dist/"
+  },
   "dependencies": {
     "jquery": "^2.2.0",
     "lz-string": "^1.4.4",
