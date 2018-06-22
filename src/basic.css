@@ -32,6 +32,10 @@ div.phistory:empty {
     border: none;
 }
 
+div.phistory.speaker-user {
+    background-color: hsl(120, 100%, 80%);
+}
+
 a {
 	color: #222;
 	text-decoration: none;
@@ -56,10 +60,6 @@ a:active {
 #phistory a:hover,
 #phistory a:active {
     color: #757575;
-}
-
-#phistory a.visited {
-    color: #cc8929;
 }
 
 tw-storydata {

@@ -100,8 +100,11 @@ function render(source) {
 			return '<a href="' + target + '">' + display + '</a>';
 		}
 		else {
-			return '<a href="javascript:void(0)" data-passage="' +
-				_.escape(target) + '">' + display + '</a>';
+			// add link to current passage object
+			passage.links.push({display: display, target: target});
+
+			// but don't render them to HTML of passage
+			return '';
 		}
 	});
 
@@ -227,6 +230,15 @@ var Passage = function(id, name, tags, source) {
 	**/
 
 	this.source = _.unescape(source);
+
+	/**
+	 The passage links inside the passage source.
+	 Initially empty array will be filled during render
+	 @property links
+	 @type Array
+	**/
+
+	this.links = [];
 };
 
 /**

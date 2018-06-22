@@ -266,9 +266,14 @@ _.extend(Story.prototype, {
 
 		$('body').on('click', 'a[data-passage]', function (e) {
 			if ($(e.target).closest('#phistory').length == 0) {
+				
+				this.clearUserResponses();
+
 				this.show(_.unescape(
 					$(e.target).closest('[data-passage]').addClass('visited').attr('data-passage')
 				));
+				
+				this.showUserPassage($(e.target).text());
 			}
 		}.bind(this));
 
@@ -424,6 +429,9 @@ _.extend(Story.prototype, {
 		window.passage = passage;
 
 		$('#passage').html(passage.render()).fadeIn('slow');
+		
+		this.showUserResponses();
+		
 		$('html, body').animate({scrollTop: $("#passage").offset().top}, 1000);
 		this.pcolophon();
 
@@ -436,6 +444,43 @@ _.extend(Story.prototype, {
 		 **/
 
 		$.event.trigger('showpassage:after', { passage: passage });
+	},
+
+	/**
+	 render passage links as UserResponses in UserResponsePanel
+	 **/
+	showUserResponses: function () {
+		_.each(passage.links, function (link) {
+			console.log(link);
+			$('div#user-response-panel').append(
+				'<a ' + 
+					'href="javascript:void(0)"' +
+					'class="userresponse"' +
+					'data-passage="' + _.escape(link.target) + '"' +
+				'>' + 
+					link.display + 
+				'</a>'
+			).fadeIn('slow')
+		});
+		passage.links = [];
+	},
+
+	/**
+	 remove UserResponses from UserResponsePanel
+	 **/
+
+	clearUserResponses: function () {
+		// remove UserResponse links
+		$('div#user-response-panel').empty();
+	},
+
+	/**
+	 render chosen UserResponse as passage in pHistory
+	 **/
+
+	showUserPassage: function (text) {
+		// render clicked link as UserPassage
+		$('#phistory').append('<div class="phistory speaker-user" data-upassage="' + window.passage.id + '">' + text + '</div>');
 	},
 
 	/**
