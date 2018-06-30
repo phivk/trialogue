@@ -9,7 +9,6 @@ paloma-test-1
 
 :: Story Stylesheet [stylesheet]
 #passage, .phistory {
-  	border-radius: 10px;
 	padding: 10px 10px;
 }
 
