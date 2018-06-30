@@ -452,10 +452,10 @@ _.extend(Story.prototype, {
 	showUserResponses: function () {
 		_.each(passage.links, function (link) {
 			console.log(link);
-			$('div#user-response-panel').append(
+			$('#user-response-panel').append(
 				'<a ' + 
 					'href="javascript:void(0)"' +
-					'class="userresponse"' +
+					'class="user-response"' +
 					'data-passage="' + _.escape(link.target) + '"' +
 				'>' + 
 					link.display + 
@@ -471,7 +471,7 @@ _.extend(Story.prototype, {
 
 	clearUserResponses: function () {
 		// remove UserResponse links
-		$('div#user-response-panel').empty();
+		$('#user-response-panel').empty();
 	},
 
 	/**

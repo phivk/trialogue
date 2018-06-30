@@ -8,16 +8,24 @@
 <%= stylesheet %>
 </head>
 <body>
-	<main>
-		<h1 id="ptitle"><%= name %></h1>
-		<div id="psub">
-			<span id="psubtitle"></span>
-			<span id="pauthor"></span>
-		</div>
-		<div id="phistory"></div>
-		<div id="passage"></div>
-		<div id="user-response-panel"></div>
-	</main>
+	<div class="container">
+		<header>
+			<h1 id="ptitle"><%= name %></h1>
+			<div id="psub">
+				<span id="psubtitle"></span>
+				<span id="pauthor"></span>
+			</div>
+		</header>
+		<main>
+			<div id="chat-panel">
+				<div id="phistory"></div>
+				<div id="passage"></div>
+			</div>
+		</main>
+		<footer>
+			<div id="user-response-panel"></div>
+		</footer>
+	</div>
 
 <%= passages %>
 

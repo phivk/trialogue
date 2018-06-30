@@ -1,12 +1,117 @@
-/* snowman style, with minor alterations for the faded phistory div */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
 body {
-	font: 18px "Helvetica Neue", Helvetica, Arial, sans-serif;
-	color: #222;
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 
+/* reset border sizing */
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+/* variables */
+
+:root {
+  --header-height: 50px;
+  --footer-height: 50px;
+  --passage-max-width: 38em;
+  --passage-margin: 10px;
+}
+
+/* snowman style, with minor alterations for the faded phistory div */
+
+div.container {
+
+}
+
+header {
+	position: fixed;
+	height: var(--header-height);
+	width: 100%;
+	background: #FFF;
+}
+
+main {
+	padding-top: var(--header-height);
+	padding-bottom: calc(var(--footer-height) + var(--passage-margin));
+}
+
+footer {
+	position: fixed;
+	bottom: 0;
+	height: var(--footer-height);
+	width: 100%;
+}
+
+footer > #user-response-panel{
+	width: 100%;
+	height: 100%;
+	max-width: var(--passage-max-width);
+	margin: 0 auto;
+	padding: 10px;
+	border: 2px solid green;
+	background: #FFF;
+}
+
+footer > #user-response-panel > .user-response {
+	line-height: 1.5;
+	padding: 5px;
+	margin: 5px;
+	background-color: hsl(120, 100%, 80%);
+}
+
+.phistory {
+	margin-bottom: var(--passage-margin);
+}
+
+
 #passage, #phistory, #ptitle, #psub {
-	max-width: 38em;
+	max-width: var(--passage-max-width);
 	margin: 0 auto;
 	line-height: 145%;
 }
@@ -23,15 +128,6 @@ body {
     font-size: 14px;
 }
 
-div.phistory {
-    color: #757575;
-    border-bottom: 2px dotted #bbb;
-}
-
-div.phistory:empty {
-    border: none;
-}
-
 div.phistory.speaker-user {
     background-color: hsl(120, 100%, 80%);
 }
@@ -39,7 +135,6 @@ div.phistory.speaker-user {
 a {
 	color: #222;
 	text-decoration: none;
-	border-bottom: 2px solid #bbb;
 }
 
 a:hover {
@@ -50,10 +145,6 @@ a:hover {
 a:active {
 	color: #ffb040;
 	border-color: #ffb040;
-}
-
-#phistory a {
-    border-bottom: none;
 }
 
 #phistory a,
