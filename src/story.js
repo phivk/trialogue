@@ -451,7 +451,6 @@ _.extend(Story.prototype, {
 	 **/
 	showUserResponses: function () {
 		_.each(passage.links, function (link) {
-			console.log(link);
 			$('#user-response-panel').append(
 				'<a ' + 
 					'href="javascript:void(0)"' +
