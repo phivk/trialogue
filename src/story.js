@@ -483,7 +483,7 @@ _.extend(Story.prototype, {
 
 	showUserPassage: function (text) {
 		// render clicked link as UserPassage
-		$('#phistory').append('<div class="phistory speaker-user" data-upassage="' + window.passage.id + '">' + text + '</div>');
+		$('#phistory').append('<div class="phistory-wrapper speaker-user"><div class="phistory speaker-user" data-upassage="' + window.passage.id + '">' + text + '</div></div>');
 	},
 
 	/**
@@ -506,7 +506,7 @@ _.extend(Story.prototype, {
 	
 	pcopy: function() {
 		if (parseInt(window.passage.id,10))
-			$('#phistory').append('<div class="phistory ' + window.passage.tags.join(' ') + '" data-ppassage="' + window.passage.id + '">' + $('#passage').html() + '</div>');
+			$('#phistory').append('<div class="phistory-wrapper"><div class="phistory ' + window.passage.tags.join(' ') + '" data-ppassage="' + window.passage.id + '">' + $('#passage').html() + '</div></div>');
 	},
 	
 	/**

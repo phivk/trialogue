@@ -81,6 +81,15 @@ main {
 	padding-bottom: calc(var(--footer-height) + var(--passage-margin));
 }
 
+main #chat-panel {
+	max-width: var(--passage-max-width);
+	margin: 0 auto;
+}
+
+main #chat-panel #passage {
+	display: inline-block;
+}
+
 footer {
 	position: fixed;
 	bottom: 0;
@@ -96,6 +105,7 @@ footer > #user-response-panel{
 	padding: 10px;
 	border: 2px solid green;
 	background: #FFF;
+	text-align: right;
 }
 
 footer > #user-response-panel > .user-response {
@@ -106,12 +116,19 @@ footer > #user-response-panel > .user-response {
 }
 
 .phistory {
+	display: inline-block;
 	margin-bottom: var(--passage-margin);
 }
 
+.phistory-wrapper {
+	display: block;
+}
+
+.phistory-wrapper.speaker-user {
+	text-align: right;
+}
 
 #passage, #phistory, #ptitle, #psub {
-	max-width: var(--passage-max-width);
 	margin: 0 auto;
 	line-height: 145%;
 }
