@@ -428,7 +428,11 @@ _.extend(Story.prototype, {
 		
 		window.passage = passage;
 
-		$('#passage').html(passage.render()).fadeIn('slow');
+		$('#passage')
+			.html(passage.render())
+			.removeClass()
+			.addClass(passage.tags.join(' '))
+			.fadeIn('slow');
 		
 		this.showUserResponses();
 		
@@ -502,7 +506,7 @@ _.extend(Story.prototype, {
 	
 	pcopy: function() {
 		if (parseInt(window.passage.id,10))
-			$('#phistory').append('<div class="phistory" data-ppassage="' + window.passage.id + '">' + $('#passage').html() + '</div>');
+			$('#phistory').append('<div class="phistory ' + window.passage.tags.join(' ') + '" data-ppassage="' + window.passage.id + '">' + $('#passage').html() + '</div>');
 	},
 	
 	/**
