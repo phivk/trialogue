@@ -266,14 +266,24 @@ _.extend(Story.prototype, {
 
 		$('body').on('click', 'a[data-passage]', function (e) {
 			if ($(e.target).closest('#phistory').length == 0) {
-				
-				this.clearUserResponses();
 
-				this.show(_.unescape(
-					$(e.target).closest('[data-passage]').addClass('visited').attr('data-passage')
-				));
-				
+				this.movePassageToHistory();
+				this.clearUserResponses();
 				this.showUserPassage($(e.target).text());
+
+				var passageDelay = this.getPassageDelay($(e.target).closest('[data-passage]').attr('data-passage'));
+
+				_.delay(
+					function(){
+						// show new passage, but don't move the current passage into history as that has been done already
+						story.show(_.unescape(
+							$(e.target).closest('[data-passage]').addClass('visited').attr('data-passage')
+						), false, true);
+					},
+					passageDelay
+				);
+
+				
 			}
 		}.bind(this));
 
@@ -366,7 +376,7 @@ _.extend(Story.prototype, {
 	 @param noHistory {Boolean} if true, then this will not be recorded in the story history
 	**/
 
-	show: function(idOrName, noHistory) {
+	show: function(idOrName, noHistory, noMove) {
 		var passage = this.passage(idOrName);
 
 		if (!passage) {
@@ -420,11 +430,16 @@ _.extend(Story.prototype, {
 		}
 
 		/**
-		 Save the old passage html to the passage history.  Checkpoint all passages.
+		 Save the old passage html to the passage history.
 		 **/
 
-		$('#passage').hide();
-		this.pcopy();
+		if (!noMove) {
+			this.movePassageToHistory();
+		}
+
+		/**
+		 Set new passage html to the passage container element
+		 **/
 		
 		window.passage = passage;
 
@@ -458,6 +473,17 @@ _.extend(Story.prototype, {
 	},
 
 	/**
+	 move current passage to history
+	 **/
+	movePassageToHistory: function () {
+		$('#passage').hide();
+		
+		this.emptyPassageLinks();
+
+		this.pcopy();
+	},
+	
+	/**
 	 render passage links as UserResponses in UserResponsePanel
 	 **/
 	showUserResponses: function () {
@@ -472,7 +498,6 @@ _.extend(Story.prototype, {
 				'</a>'
 			).fadeIn('slow')
 		});
-		passage.links = [];
 	},
 
 	/**
@@ -499,8 +524,14 @@ _.extend(Story.prototype, {
 	 **/
 
 	scrollChatIntoView: function () {
-		if ($("#passage").offset().top + $("#passage").height() > $('.user-response-panel').offset().top) {
-			$('html, body').animate({scrollTop:$('.chat-panel').height()}, 1000);
+		if ($('#phistory > .chat-passage-wrapper').length > 0) {
+			var passageBottom = $("#passage").offset().top + $("#passage").height();
+			var userResponseTop = $('.user-response-panel').offset().top;
+			var historyBottom = $('#phistory > .chat-passage-wrapper:last-child').offset().top + $('#phistory > .chat-passage-wrapper:last-child').height();
+			
+			if (passageBottom > userResponseTop || historyBottom > userResponseTop) {
+				$('html, body').animate({scrollTop:$('.chat-panel').height()}, 1000);
+			}
 		}
 	},
 
@@ -527,6 +558,18 @@ _.extend(Story.prototype, {
 			$('#phistory').append($('#passage').html());
 		}
 	},
+	
+	/**
+	 Empties the current passage object links attribute,
+	 making space for the next passage's data
+
+	 @method emptyPassageLinks
+	**/
+	
+	emptyPassageLinks: function() {
+		passage.links = [];
+	},
+
 
 	/**
 	 Retrieves the speaker from the passage tags
@@ -564,6 +607,50 @@ _.extend(Story.prototype, {
 		}
 
 		return passage.render();
+	},
+
+	/**
+	 Jump from one passage to another, 
+	 delayed based on the length of the target passage
+
+	 @method showDelayed
+	 @param idOrName {String or Number} ID or name of the passage
+	**/
+
+	showDelayed: function (idOrName) {
+		var delayMS = this.getPassageDelay(idOrName);
+
+		_.delay(
+			function(){
+				story.show(idOrName);
+			},
+			delayMS
+		);
+	},
+
+	/**
+	 get number of milliseconds to wait based on target passage text length
+
+	 @method getPassageDelay
+	 @param idOrName {String or Number} ID or name of the passage
+	**/
+
+	getPassageDelay: function (idOrName) {
+		
+		var target = this.passage(idOrName);
+		var targetSourceTextLength = $('<div></div>').html(target.source).text().length;
+		var targetUserResponseLength = _.reduce(
+			target.links, 
+			function(memo, link){ 
+				return memo + link.display.length + 4; // + 4 for '[['+']]'
+			}, 
+			0
+		);
+		var targetTextLength = targetSourceTextLength - targetUserResponseLength;
+		var msPerChar = 20;
+		var delayMS = targetTextLength * msPerChar;
+
+		return delayMS;
 	},
 
 	/**

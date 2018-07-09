@@ -2,6 +2,12 @@
 
 Trialogue is a Twine Story Format based on [Paloma](http://mcdemarco.net/tools/scree/paloma/).
 
+## Changes From Paloma
+
+- chat layout, including rendering links in passages in separate UserResponsePanel
+- speaker tags
+- helper function to show a passage delayed based on it's text length `story.showDelayed(idOrName);`
+
 ## Development Setup
 
 1. Story Author works on story in [Twinery GUI](https://twinery.org/2/#!/stories), with current version of published Story Format selected
