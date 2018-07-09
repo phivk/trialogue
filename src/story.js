@@ -271,19 +271,10 @@ _.extend(Story.prototype, {
 				this.clearUserResponses();
 				this.showUserPassage($(e.target).text());
 
-				var passageDelay = this.getPassageDelay($(e.target).closest('[data-passage]').attr('data-passage'));
-
-				_.delay(
-					function(){
-						// show new passage, but don't move the current passage into history as that has been done already
-						story.show(_.unescape(
-							$(e.target).closest('[data-passage]').addClass('visited').attr('data-passage')
-						), false, true);
-					},
-					passageDelay
-				);
-
-				
+				// show new passage, without moving the current passage into history, as that has been done already
+				var targetName = $(e.target).closest('[data-passage]').attr('data-passage');
+				var passageDelay = this.getPassageDelay(targetName);
+				this.showDelayed(targetName, false, true);
 			}
 		}.bind(this));
 
@@ -617,12 +608,12 @@ _.extend(Story.prototype, {
 	 @param idOrName {String or Number} ID or name of the passage
 	**/
 
-	showDelayed: function (idOrName) {
+	showDelayed: function (idOrName, noHistory, noMove) {
 		var delayMS = this.getPassageDelay(idOrName);
 
 		_.delay(
 			function(){
-				story.show(idOrName);
+				story.show(idOrName, noHistory, noMove);
 			},
 			delayMS
 		);
