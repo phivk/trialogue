@@ -428,15 +428,22 @@ _.extend(Story.prototype, {
 		
 		window.passage = passage;
 
+  		var speaker = this.getPassageSpeaker(passage);
+
 		$('#passage')
-			.html(passage.render())
-			.removeClass()
-			.addClass(passage.tags.join(' '))
+			.html(
+				'<div data-speaker="' + speaker + '" class="chat-passage-wrapper ' + window.passage.tags.join(' ') + '">' + 
+		  			'<div data-speaker="' + speaker + '" class="chat-passage">' + 
+						passage.render() + 
+					'</div>' +
+				'</div>'
+			)
 			.fadeIn('slow');
 		
 		this.showUserResponses();
 		
-		$('html, body').animate({scrollTop: $("#passage").offset().top}, 1000);
+		this.scrollChatIntoView();
+
 		this.pcolophon();
 
 		/**
@@ -483,7 +490,18 @@ _.extend(Story.prototype, {
 
 	showUserPassage: function (text) {
 		// render clicked link as UserPassage
-		$('#phistory').append('<div class="phistory-wrapper speaker-user"><div class="phistory speaker-user" data-upassage="' + window.passage.id + '">' + text + '</div></div>');
+		$('#phistory').append('<div class="chat-passage-wrapper" data-speaker="you"><div class="chat-passage phistory" data-speaker="you" data-upassage="' + window.passage.id + '">' + text + '</div></div>');
+		this.scrollChatIntoView();
+	},
+
+	/**
+	 scroll bottom of chat-panel into view to ensure recently added passages can be read
+	 **/
+
+	scrollChatIntoView: function () {
+		if ($("#passage").offset().top + $("#passage").height() > $('.user-response-panel').offset().top) {
+			$('html, body').animate({scrollTop:$('.chat-panel').height()}, 1000);
+		}
 	},
 
 	/**
@@ -505,8 +523,27 @@ _.extend(Story.prototype, {
 	**/
 	
 	pcopy: function() {
-		if (parseInt(window.passage.id,10))
-			$('#phistory').append('<div class="phistory-wrapper"><div class="phistory ' + window.passage.tags.join(' ') + '" data-ppassage="' + window.passage.id + '">' + $('#passage').html() + '</div></div>');
+		if (parseInt(window.passage.id,10)){
+			$('#phistory').append($('#passage').html());
+		}
+	},
+
+	/**
+	 Retrieves the speaker from the passage tags
+
+	 @method getPassageSpeaker
+	 @param passage {Passage} current window.passage object
+	 @return {String} Speaker name of passage
+	**/
+	
+	getPassageSpeaker: function(passage) {
+		if (!String.prototype.startsWith) {
+			String.prototype.startsWith = function(search, pos) {
+				return this.substr(!pos || pos < 0 ? 0 : +pos, search.length) === search;
+			};
+		}
+		var speakerTag = _.find(passage.tags, function(tag){ return tag.startsWith('speaker-'); });
+		return speakerTag.substring(8);
 	},
 	
 	/**

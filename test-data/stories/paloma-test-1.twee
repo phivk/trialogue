@@ -8,24 +8,8 @@ paloma-test-1
 
 
 :: Story Stylesheet [stylesheet]
-#passage, .phistory {
-	padding: 10px 10px;
-}
-
-#passage > p, .phistory > p {
-  margin: 0;
-}
-.speaker-filla {
-	background-color: hsl(0, 100%, 80%);
-}
-
-.speaker-fulla {
-	background-color: hsl(240, 100%, 80%);
-}
-
 
 :: Story JavaScript [script]
-window.twine = {};
 
 :: Start [speaker-filla]
 Hi!
@@ -54,7 +38,6 @@ _.delay(
 
 
 :: Third [speaker-filla]
-What's up?
 
 ![Alt text](https://www.webumenia.sk/images/diela/MG./11/CZE_MG.A_1077/CZE_MG.A_1077.jpeg "Optional title")
 

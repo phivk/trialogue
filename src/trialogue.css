@@ -1,0 +1,220 @@
+/* Variables */
+
+:root {
+  --navbar-height: 56px;
+  --user-response-panel-height: 110px;
+}
+
+/* Atomic Utilities */
+
+.bg-light-grayish-orange {
+  background-color: #C7BDB5;
+}
+
+.minh-full {
+  min-height: calc(100vh - var(--navbar-height) - var(--user-response-panel-height) - 17px - 5px);
+}
+
+/* General */
+
+html,
+body {
+  overflow-x: hidden; /* Prevent scroll on narrow devices */
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  padding-top: var(--navbar-height);
+  margin-bottom: calc(var(--user-response-panel-height) + 18px + 5px); /* + height of hint + hr */
+}
+
+/* Offcanvas sidebar */
+
+@media (max-width: 767.98px) {
+  .offcanvas-collapse {
+    z-index: 1100;
+    position: fixed;
+    top: var(--navbar-height); /* Height of navbar */
+    bottom: 0;
+    left: 100%;
+    width: 100%;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    overflow-y: auto;
+    visibility: hidden;
+    background-color: #FFF;
+    transition-timing-function: ease-in-out;
+    transition-duration: .3s;
+    transition-property: left, visibility;
+  }
+  .offcanvas-collapse.open {
+    left: 0;
+    visibility: visible;
+  }
+}
+
+/* Nav */
+
+nav.navbar {
+  height: var(--navbar-height);
+  background-color: #FFF;
+  padding: .5rem 15px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+nav .nav-title {
+  font-size: 1.5rem;
+  line-height: 40px;
+  margin: 0 auto;
+}
+
+nav .nav-icon {
+  width: 35px;
+}
+
+/* Chat Panel */
+
+.chat-panel {
+  padding-top: 15px;
+}
+
+.chat-passage-wrapper {
+  position: relative;
+  margin: .5rem 0;
+}
+
+.chat-passage-wrapper[data-speaker='you'] {
+  text-align: right;
+}
+.chat-passage-wrapper[data-speaker='you'] .chat-passage:before {
+  text-align: right;
+}
+
+.chat-passage {
+  display: inline-block;
+  padding: 0.25rem .5rem;
+  margin-left: 35px;
+  background-color: #FFF;
+  max-width: calc(100% - 80px);
+  text-align: left;
+}
+@media (min-width: 576px) {
+  .chat-passage {
+    max-width: calc(100% - 100px);
+  }
+}
+@media (min-width: 768px) {
+  .chat-passage {
+    max-width: calc(100% - 80px);
+  }
+}
+@media (min-width: 992px) {
+  .chat-passage {
+    max-width: calc(100% - 100px);
+  }
+}
+
+.chat-passage:before {
+  content: attr(data-speaker);
+  display: block;
+  font-size: .6rem;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.chat-passage p {
+  margin: 0;
+}
+
+.chat-passage p img {
+  max-width: 100%;
+  max-height: calc(100vh - 3 * var(--user-response-panel-height));
+  padding: .25rem 0;
+}
+
+/* User Response Panel */
+
+.user-response-panel {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+@media (min-width: 768px) {
+  .user-response-panel {
+    max-width: calc(100% / (12/6)); /* 100% / (12/[col width of chat-panel]) */
+    margin: 0 auto;
+  }
+}
+
+.user-response-panel hr {
+  margin: 0;
+  border-top: 5px solid white;
+}
+
+.user-response-hint {
+  font-style: italic;
+  font-size: .75rem;
+  text-align: center;
+}
+@media (max-width: 379.98px) {
+  .user-response-hint {
+    font-size: .6rem;
+  }
+  body {
+    margin-bottom: calc(var(--user-response-panel-height) + 14px + 5px); /* + height of hint + hr */
+  }
+  .minh-full {
+    min-height: calc(100vh - var(--navbar-height) - var(--user-response-panel-height) - 14px - 5px);
+  }
+}
+@media (max-width: 319.98px) {
+  .user-response-hint {
+    font-size: .5rem;
+  }
+  body {
+    margin-bottom: calc(var(--user-response-panel-height) + 12px + 5px); /* + height of hint + hr */
+  }
+  .minh-full {
+    min-height: calc(100vh - var(--navbar-height) - var(--user-response-panel-height) - 12px - 5px);
+  }
+}
+
+.user-reponse-wrapper {
+  height: var(--user-response-panel-height);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.user-response-panel .user-response {
+  display: inline-block;
+  padding: .5rem;
+  margin: .25rem;
+  background-color: #FFF;
+  color: #000;
+}
+.user-response-panel .user-response:hover {
+  text-decoration: none;
+  border: 2px solid black;
+  margin: calc(.25rem - 2px);
+}
+
+/* Passage Avatars */
+
+.chat-passage-wrapper:before {
+  position: absolute;
+  vertical-align: top;
+  margin-right: 5px;
+}
+.chat-passage-wrapper[data-speaker='you']:before {
+  margin-left: 0;
+}
+.chat-passage-wrapper[data-speaker='you']:after {
+  position: absolute;
+  vertical-align: top;
+  margin-left: -30px;
+}
+.chat-passage[data-speaker='you'] {
+  margin-left: 0;
+  margin-right: 35px;
+}

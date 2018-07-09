@@ -1,34 +1,74 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>
-<%= name %>
-</title>
-<meta charset="utf-8">
-<%= stylesheet %>
+    <title>
+    <%= name %>
+    </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
+    
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+    <%= stylesheet %>
 </head>
-<body>
-	<div class="container">
-		<header>
-			<h1 id="ptitle"><%= name %></h1>
-			<div id="psub">
-				<span id="psubtitle"></span>
-				<span id="pauthor"></span>
-			</div>
-		</header>
-		<main>
-			<div id="chat-panel">
-				<div id="phistory"></div>
-				<div id="passage"></div>
-			</div>
-		</main>
-		<footer>
-			<div id="user-response-panel"></div>
-		</footer>
-	</div>
+<body class="bg-white">
 
-<%= passages %>
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <a href="/"><img class="nav-icon nav-icon-back" src="https://slovaknationalgallery.github.io/fillafulla.sng.sk/img/icon-back.svg"></a>
+        <h1 id="ptitle" class="nav-title"><%= name %></h1>
+        <div id="psub">
+            <span id="psubtitle"></span>
+            <span id="pauthor"></span>
+        </div>
+        <button class="navbar-toggler p-0 border-0 d-md-none" type="button" data-toggle="offcanvas">
+            <img class="nav-icon nav-icon-menu" src="https://slovaknationalgallery.github.io/fillafulla.sng.sk/img/icon-hamburger.svg">
+        </button>
+    </nav>
 
-<%= script %>
+    <main role="main" class="container-fluid">
+        <div class="row">
+            <div class="col-md d-none d-md-block bg-white">
+                info panel
+            </div>
+            <div class="chat-panel col-md-6 minh-full bg-light-grayish-orange">
+                <div id="phistory" class="chat-history"></div>
+                <div id="passage"></div>
+                <div class="user-response-panel fixed-bottom bg-light-grayish-orange">
+                    <hr>
+                    <div class="user-response-hint">Vyberte si jednu z moznosti otazok a pokracujte v konverzacii</div>
+                    <div id="user-response-panel" class="user-reponse-wrapper"></div>
+                </div>
+
+            </div>
+            <div class="col-md offcanvas-collapse bg-white">
+                shared image grid
+            </div>
+        </div>
+
+    </main>
+
+    <%= passages %>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        $(function () {
+          'use strict'
+
+          $('[data-toggle="offcanvas"]').on('click', function () {
+            $('.offcanvas-collapse').toggleClass('open')
+          })
+        })
+
+    </script>
+    <%= script %>
 </body>
 </html>
