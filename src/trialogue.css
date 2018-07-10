@@ -31,7 +31,7 @@ body {
 
 /* Offcanvas sidebar */
 
-@media (max-width: 767.98px) {
+@media (max-width: 991.98px) {
   .offcanvas-collapse {
     z-index: 1100;
     position: fixed;
@@ -160,7 +160,7 @@ nav .nav-icon {
   padding-right: 15px;
   padding-left: 15px;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .user-response-panel {
     max-width: calc(100% / (12/6)); /* 100% / (12/[col width of chat-panel]) */
     margin: 0 auto;
