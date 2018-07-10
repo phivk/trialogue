@@ -609,10 +609,20 @@ _.extend(Story.prototype, {
 	**/
 
 	showDelayed: function (idOrName, noHistory, noMove) {
+		var typingDelayRatio = 0.3;
 		var delayMS = this.getPassageDelay(idOrName);
+
+		// show animation
+		_.delay(
+			function(){
+				story.showTyping(idOrName);
+			},
+			delayMS * typingDelayRatio
+		);
 
 		_.delay(
 			function(){
+				story.hideTyping();
 				story.show(idOrName, noHistory, noMove);
 			},
 			delayMS
@@ -627,7 +637,6 @@ _.extend(Story.prototype, {
 	**/
 
 	getPassageDelay: function (idOrName) {
-		
 		var target = this.passage(idOrName);
 		var targetSourceTextLength = $('<div></div>').html(target.source).text().length;
 		var targetUserResponseLength = _.reduce(
@@ -642,6 +651,33 @@ _.extend(Story.prototype, {
 		var delayMS = targetTextLength * msPerChar;
 
 		return delayMS;
+	},
+
+	/**
+	 turn typing animation on
+
+	 @method toggleTyping
+	 @param idOrName {String or Number} ID or name of the passage
+	**/
+
+	showTyping: function (idOrName) {
+		var speaker = this.getPassageSpeaker(this.passage(idOrName));
+		$('#animation-container .chat-passage-wrapper').attr('data-speaker', speaker);
+		$('#animation-container .chat-passage-wrapper .chat-passage').attr('data-speaker', speaker);
+		$('#animation-container').fadeIn('slow');
+
+		this.scrollChatIntoView;
+	},
+
+	/**
+	 turn typing animation off
+
+	 @method toggleTyping
+	 @param idOrName {String or Number} ID or name of the passage
+	**/
+
+	hideTyping: function (idOrName) {
+		$('#animation-container').hide();
 	},
 
 	/**
