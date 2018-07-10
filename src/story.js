@@ -506,7 +506,7 @@ _.extend(Story.prototype, {
 
 	showUserPassage: function (text) {
 		// render clicked link as UserPassage
-		$('#phistory').append('<div class="chat-passage-wrapper" data-speaker="you"><div class="chat-passage phistory" data-speaker="you" data-upassage="' + window.passage.id + '">' + text + '</div></div>');
+		$('#phistory').append('<div class="chat-passage-wrapper" data-speaker="ty"><div class="chat-passage phistory" data-speaker="ty" data-upassage="' + window.passage.id + '">' + text + '</div></div>');
 		this.scrollChatIntoView();
 	},
 

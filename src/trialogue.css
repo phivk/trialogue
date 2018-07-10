@@ -84,10 +84,10 @@ nav .nav-icon {
   margin: .5rem 0;
 }
 
-.chat-passage-wrapper[data-speaker='you'] {
+.chat-passage-wrapper[data-speaker='you'], .chat-passage-wrapper[data-speaker='ty'] {
   text-align: right;
 }
-.chat-passage-wrapper[data-speaker='you'] .chat-passage:before {
+.chat-passage-wrapper[data-speaker='you'] .chat-passage:before, .chat-passage-wrapper[data-speaker='ty'] .chat-passage:before {
   text-align: right;
 }
 
@@ -228,15 +228,15 @@ nav .nav-icon {
   vertical-align: top;
   margin-right: 5px;
 }
-.chat-passage-wrapper[data-speaker='you']:before {
+.chat-passage-wrapper[data-speaker='you']:before, .chat-passage-wrapper[data-speaker='ty']:before {
   margin-left: 0;
 }
-.chat-passage-wrapper[data-speaker='you']:after {
+.chat-passage-wrapper[data-speaker='you']:after, .chat-passage-wrapper[data-speaker='ty']:after {
   position: absolute;
   vertical-align: top;
   margin-left: -30px;
 }
-.chat-passage[data-speaker='you'] {
+.chat-passage[data-speaker='you'], .chat-passage[data-speaker='ty'] {
   margin-left: 0;
   margin-right: 35px;
 }
