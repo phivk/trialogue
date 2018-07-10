@@ -128,8 +128,12 @@ nav .nav-icon {
 
 .chat-passage img {
   max-width: 100%;
-  max-height: calc(100vh - 4 * var(--user-response-panel-height));
+  max-height: calc(100vh - 2 * var(--user-response-panel-height));
   padding: .25rem 0;
+}
+.chat-passage iframe {
+  max-width: 100%;
+  max-height: calc(100vh - 2 * var(--user-response-panel-height));
 }
 
 .chat-passage figure {
