@@ -118,8 +118,7 @@ nav .nav-icon {
 .chat-passage:before {
   content: attr(data-speaker);
   display: block;
-  font-size: .6rem;
-  font-weight: bold;
+  font-size: .75rem;
   text-transform: capitalize;
 }
 
