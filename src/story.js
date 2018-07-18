@@ -515,14 +515,12 @@ _.extend(Story.prototype, {
 	 **/
 
 	scrollChatIntoView: function () {
-		if ($('#phistory > .chat-passage-wrapper').length > 0) {
-			var passageBottom = $("#passage").offset().top + $("#passage").height();
-			var userResponseTop = $('.user-response-panel').offset().top;
-			var historyBottom = $('#phistory > .chat-passage-wrapper:last-child').offset().top + $('#phistory > .chat-passage-wrapper:last-child').height();
-			
-			if (passageBottom > userResponseTop || historyBottom > userResponseTop) {
-				$('html, body').animate({scrollTop:$('.chat-panel').height()}, 1000);
-			}
+		var d = document.documentElement;
+		var offset = d.scrollTop + window.innerHeight;
+		var height = d.offsetHeight;
+
+		if (offset !== height) {
+			$('html, body').animate({scrollTop:$('.chat-panel').height()}, 1000);
 		}
 	},
 
@@ -665,8 +663,7 @@ _.extend(Story.prototype, {
 		$('#animation-container .chat-passage-wrapper').attr('data-speaker', speaker);
 		$('#animation-container .chat-passage-wrapper .chat-passage').attr('data-speaker', speaker);
 		$('#animation-container').fadeIn('slow');
-
-		this.scrollChatIntoView;
+		this.scrollChatIntoView();
 	},
 
 	/**
