@@ -15,6 +15,16 @@
   min-height: calc(100vh - var(--navbar-height) - var(--user-response-panel-height) - 17px - 5px);
 }
 
+.ml--3 {
+  margin-left: -1rem !important;
+}
+
+@media (min-width: 992px) {
+  .w-lg-auto {
+    width: auto !important;
+  }
+}
+
 /* General */
 
 html,

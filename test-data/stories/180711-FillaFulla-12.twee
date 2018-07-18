@@ -1,0 +1,2426 @@
+:: StorySettings
+zoom:1
+ifid:bc005b30-7d1f-486f-98c8-eca7babc216d
+
+
+:: StoryTitle
+Filla Fulla Chat
+
+
+:: Start [speaker-fulla]
+Zdravím ťa, som Ľudovít Fulla!
+
+<%
+story.showDelayed("LF-IMG-000");
+%>
+
+:: LF-IMG-000 [speaker-fulla]
+<figure>
+	<img src="https://raw.githubusercontent.com/SlovakNationalGallery/fillafulla.sng.sk/master/img/twine/SNGAVU--22D6-2--0_1--2018_03_13--L22018_03_16--LP_WEB.jpg" alt="Jaromír Funke: Ľudovít Fulla, 1930" />
+	<figcaption>
+		Jaromír Funke: Ľudovít Fulla, 1930, Slovenská národná galéria
+	</figcaption>
+</figure>
+
+<%
+story.showDelayed("EF-001");
+%>
+
+:: EF-001 [speaker-filla]
+Hezký den, všem! Jmenuji se Emil Filla.
+
+<%
+story.showDelayed("EF-IMG-001");
+%>
+
+:: EF-IMG-001 [speaker-filla]
+<figure>
+	<img src="https://www.webumenia.sk/images/diela/MG./36/CZE_MG.A_860/CZE_MG.A_860.jpeg" alt="Emil Filla - Vlastní podobizna, 1906" />
+	<figcaption>
+		<a href="https://www.webumenia.sk/dielo/CZE:MG.A_860" target="_blank">Emil Filla - Autoportrét, 1906, Moravská galerie, Brno</a>
+	</figcaption>
+</figure>
+
+<%
+story.showDelayed("LF-002");
+%>
+
+:: LF-002 [speaker-fulla]
+Pekný autoportrét.
+
+[[Z ktorého je roku?->EF-002]]
+[[Je niekym inšpirovaný?->EF-002B]]
+
+:: EF-002 [speaker-filla]
+1906, když jsem jako mladík žil v Praze.
+
+<%
+story.showDelayed("LF-003");
+%>
+
+:: EF-002B [speaker-filla]
+Dalo by se říct, že je v ňem něco z Muncha, třeba z jeho <a href="https://www.edvardmunch.org/self-portrait-with-cigarette.jsp" target="_blank">portrétu s cigaretou</a>. Munchovu výstavu jsem v Praze viděl rok předtím, v 1905.
+
+[[Kde sú korene vášho záujmu o umenie?->EF-003]]
+[[Aké boli vaše študentské roky v Prahe?->EF-007]]
+
+:: LF-003 [speaker-fulla]
+Vyzeráš tam už skôr ako pánko, než mladík 😉 Ale v Praze je blaze... Tiež som tam študoval, ale o dvadsať rokov neskôr ako Emil... rád na to spomínam.
+
+[[Zaujalo vás umenie už v detstve?->EF-003]]
+[[Aké boli vaše študentské roky v Prahe?->EF-007]]
+
+
+:: EF-003 [speaker-filla]
+Narodil jsem se v Chropyni 3. nebo 4. dubna 1882, do rodiny železničního úředníka. Matka byla ze slovácké rodiny. 
+
+<%
+story.showDelayed("EF-IMG-002");
+%>
+
+:: EF-IMG-002 [speaker-filla]
+<figure>
+	<img src="https://www.webumenia.sk/images/diela/MG./40/CZE_MG.B_7648/CZE_MG.B_7648.jpeg" alt="Emil Filla - Portrét matky" />
+	<figcaption>
+		<a href="https://www.webumenia.sk/dielo/CZE:MG.B_7648" target="_blank">Emil Filla - Podobizna umělcovy matky paní Fillové, Moravská galerie v Brně</a>
+	</figcaption>
+</figure>
+
+<%
+story.showDelayed("EF-004");
+%>
+
+:: EF-004 [speaker-filla]
+Léta jsem prožíval u dědečka v Napajedlích, a právě tady jsem začal kreslit a malovat.
+
+<%
+story.showDelayed("LF-004");
+%>
+
+:: LF-004 [speaker-fulla]
+Ja som sa narodil v Ružomberku 27. februára 1902. Raz som prechorel a aby mi nebolo dlho, kúpila mi mamička malú paletu s gombičkovými farbami. Ako som si tak slinil prst a utieral na druhú stranu palety, namaľoval som nevdojak svojho prvého panáka.
+
+[[Kam ste chodili do školy?->EF-005]]
+[[Vaše umelecké štúdium sa začalo až v Prahe?->EF-007]]
+
+:: EF-005 [speaker-filla]
+Bohužel moji rodiče neměli pochopení pro moje malířské ambice. Dali mne na obchodní akademii.
+
+<%
+story.showDelayed("LF-005");
+%>
+
+:: LF-005 [speaker-fulla]
+Ja som tiež zmaturoval na Vyššej obchodnej škole v Dolnom Kubíne. Ale profesorka francúzštiny prehovorila rodičov, aby ma dali na Akadémiu výtvarných umení do Prahy.
+
+<%
+story.showDelayed("LF-IMG-001");
+%>
+
+:: LF-IMG-001 [speaker-fulla]
+<figure>
+	<img src="https://raw.githubusercontent.com/SlovakNationalGallery/fillafulla.sng.sk/master/img/twine/SNGAVU--22A3--0_1--2018_03_13--LP_WEB.jpg" alt="Vysvedčenie Ľudovíta Fullu na Umelecko-priemyslovej škole v Prahe" />
+	<figcaption>
+		Vysvedčenie Ľudovíta Fullu z Umelecko-priemyselnej školy v Prahe, Archív výtvarného umenia SNG
+	</figcaption>
+</figure>
+
+[[Stretli ste sa tam niekedy?->EF-006]]
+[[Aké boli študentské roky v Prahe?->EF-007]]
+
+:: EF-006 [speaker-filla]
+Je to možné... ale přeci je mezi mnou a Ludom dvacet let. 
+
+<%
+story.showDelayed("LF-006");
+%>
+
+:: LF-006 [speaker-fulla]
+S istotou môžem povedať len toľko, že ak sme sa nestretli osobne, dielo Emila som poznal... zdieľali sme rovnaký záujem o moderné umenie... Keď sa vo výklade zjavil Fillov obraz, ktorý rezal do realizmu ako píla do suchého pňa, z výrazu našich tvárí hasli úsmevy zarytých spiatočníkov. 
+
+[[Aké boli študentské roky v Prahe?->EF-007]]
+[[Spomínate si na nejaký kľúčový moment z čias štúdií?->EF-010]]
+
+:: EF-007 [speaker-filla]
+V roce 1903 jsem započal studium na Akademii výtvarných umění. 
+
+<%
+story.showDelayed("EF-IMG-003");
+%>
+
+:: EF-IMG-003 [speaker-filla]
+<figure>
+	<img src="https://raw.githubusercontent.com/SlovakNationalGallery/fillafulla.sng.sk/master/img/twine/Galerie_Louny_DD13.jpg" alt="Emil Filla (vľavo) a Karel Kučera, 1904" />
+	<figcaption>
+		Emil Filla (vľavo) a Karel Kučera, 1904 (druhý rok na Akadémii), Galerie Benedikta Rejta, Louny
+	</figcaption>
+</figure>
+
+<%
+story.showDelayed("EF-008");
+%>
+
+:: EF-008 [speaker-filla]
+Tehdejší rigidní výuka nebyla nic pro mne, žíznil jsem po moderním umění a mněl jsem  pocit, že vlastním bádáním získám víc... A tak jsem odešel.
+
+<%
+story.showDelayed("LF-007");
+%>
+
+:: LF-007 [speaker-fulla]
+Ja som prijímačky na Akadémiu v roku 1921 nespravil. Až o rok neskôr ma vzali na Umelecko-priemyselnú školu, čo sa však neskôr ukázalo ako veľká devíza do budúceho života.
+
+<%
+story.showDelayed("EF-009");
+%>
+
+:: EF-009 [speaker-filla]
+Tehdy se k slovu dostávaly všechny moderní umělecké proudy... staré měšťanské umění umíralo a my jsme jednoducho boli při tom a myslím, že to nás ovlivnilo a ukázalo kam naše výtvarné cesty povedou....
+
+[[Bol nejaký moment, keď nastal ten zlom?->EF-010]]
+
+:: EF-010 [speaker-filla]
+V zahradě Kinských roku 1905 vystavoval Edvard Munch, a my jsme s přáteli založili Osmu. Edvard Munch byl inspirací i pro moje raní expresionistické dílo Čtenář Dostojevského, které se časem stalo notorickým.
+
+<%
+story.showDelayed("EF-IMG-004");
+%>
+
+:: EF-IMG-004 [speaker-filla]
+<figure>
+	<img src="http://sbirky.ngprague.cz/images/diela/NG./62/CZE_NG.O_3190/CZE_NG.O_3190.jpeg" alt="Emil Filla - Čtenář Dostojevského, 1907" />
+	<figcaption>
+		<a href="http://sbirky.ngprague.cz/dielo/CZE:NG.O_3190" target="_blank">Emil Filla - Čtenář Dostojevského, 1907, Narodní galerie, Praha</a>
+	</figcaption>
+</figure>
+
+<%
+story.showDelayed("LF-008");
+%>
+
+:: LF-008 [speaker-fulla]
+No a ja som na škole stretol Mikuláša Galandu.
+
+[[Čo je Osma?->EF-011]]
+[[Kto je Mikuláš Galanda?->LF-009]]
+
+:: EF-011 [speaker-filla]
+Osma byla spolek výtvarníků, který organizoval výstavy a propagoval moderní avantgardní směry... 
+
+<%
+story.showDelayed("EF-011A");
+%>
+
+:: EF-011A [speaker-filla]
+Do Volných směrů (umělecký časopis Spolku výtvarných umělců Mánes) jsem napsal: „Dílo Munchovo vybuchlo v našich srdcích jako petarda... všechny naše touhy, lásky a naděje zdály se najednou realizovány, byli jsme v trvalém vytržení... neboť viděli jsme v něm anděla strážného naší budoucí pouti a posvětitele našeho odhodlání býti výtvarník dneška. Mysleli a cítili jsme, že Munch přišel jen kvůli nám.“
+
+<%
+story.showDelayed("EF-011B");
+%>
+
+:: EF-011B [speaker-filla]
+Z Osmy jsem vystoupil, když se strhl spor o budoucnost kubizmu. A následně spolu s dalšími členy založili jsme Spolek Výtvarných umělců... 
+
+[[Ktorý výtvarný smer vás ovplyvnil najviac?->LF-013B]]
+[[Aké bolo prvé stretnutie s Galandom?->LF-010]]
+
+:: LF-009 [speaker-fulla]
+Bol to priekopník moderného umenia. Výtvarník, grafik, ilustrátor... a najlepší priateľ. 
+
+<%
+story.showDelayed("LF-IMG-002");
+%>
+
+:: LF-IMG-002 [speaker-fulla]
+<figure>
+	<img src="https://www.webumenia.sk/images/diela/SNG/96/SVK_SNG.O_532/SVK_SNG.O_532.jpeg" alt="Mikuláš Galanda - Vlastná podobizeň, 1932" />
+	<figcaption>
+		<a href="https://www.webumenia.sk/dielo/SVK:SNG.O_532" target="_blank">Mikuláš Galanda - Vlastná podobizeň, 1932, Slovenská národná galéria</a>
+	</figcaption>
+</figure>
+
+[[Ako ste sa spoznali?->LF-010]]
+[[Našli ste v ňom spriaznenú dušu?->LF-012]]
+
+:: LF-010 [speaker-fulla]
+S Mikulášom sme sa spoznali v taký radostný deň.
+
+<%
+story.showDelayed("LF-IMG-003");
+%>
+
+:: LF-IMG-003 [speaker-fulla]
+<figure>
+	<img src="https://www.webumenia.sk/images/diela/SNG/82/SVK_SNG.K_2844/SVK_SNG.K_2844.jpeg" alt="Mikuláš Galanda - Ulica s cukrárňou, 1926 - 1928" />
+	<figcaption>
+		<a href="https://www.webumenia.sk/dielo/SVK:SNG.K_2844" target="_blank">Mikuláš Galanda - Ulica s cukrárňou, 1926 - 1928, Slovenská národná galéria</a>
+	</figcaption>
+</figure>
+
+<%
+story.showDelayed("LF-011");
+%>
+
+:: LF-011 [speaker-fulla]
+Sedávali sme v kaviarni Belvedere, popíjali aromatickú čiernu alebo kapucína... Našou najväčšou radosťou bolo, keď sme navštevovali knižnicu Umeleckopriemyselného múzea, krčievali sme sa za kopou zahraničných umeleckých časopisov...
+
+<%
+story.showDelayed("LF-012");
+%>
+
+:: LF-012 [speaker-fulla]
+Nikdy sme zbytočne nehovorili a azda preto sme si tak dobre rozumeli. Už vtedy vyrovnávali sme sa so všetkými smermi, ktoré predierali sa k životu.
+
+[[Mali ste nejaké umelecké vzory?->LF-013]]
+
+:: LF-013 [speaker-fulla]
+Moje vzory? Na túto otázku ťažko odpovedať. Bol to celý rad moderného francúzskeho umenia, mená ako Braque, Matisse, Picasso, Rouault... všetky mená, ktoré hlásali absolútnu tvorivú slobodu. Inšpirovali ma v istú dobu aj Kandinskij, Klee či Chagall, avšak pri mnohom z toho, čo malo na môj umelecký vývoj vplyv, nebol konkrétny autor prvoradý. Mám na mysli aj stredoveké umenie, či výtvarný prejav detí.
+
+<%
+story.showDelayed("LF-IMG-004");
+%>
+
+:: LF-013B [speaker-fulla]
+Ťažko povedať. Vždy som sa snažil voľne kombinovať rozmanité vplyvy. V skorších rokoch mi imponovali najmä predstavitelia moderného francúzskeho umenia, ktorí hlásali absolútnu tvorivú slobodu - mená ako Braque, Matisse, Picasso, Rouault... Taktiež ma inšpiroval Kandinskij, Klee, Chagall a postupne som svoju paletu obohacoval o poznanie ikonopisnej maľby, stredovekého umenia a v neposlednom rade aj nášho slovenského folklóru a jeho výtvarných prejavov.
+
+<%
+story.showDelayed("LF-IMG-004");
+
+:: LF-IMG-004 [speaker-fulla]
+<figure>
+	<img src="https://www.webumenia.sk/images/diela/SNG/97/SVK_SNG.O_6544/SVK_SNG.O_6544.jpeg" alt="Ľudovít Fulla - Ryby na stole, 1928" />
+	<figcaption>
+		<a href="https://www.webumenia.sk/dielo/SVK:SNG.O_6544" target="_blank">Ľudovít Fulla - Ryby na stole, 1928, Slovenská národná galéria</a>
+	</figcaption>
+</figure>
+
+<%
+story.showDelayed("EF-012");
+%>
+
+:: EF-012 [speaker-filla]
+Vidím tam silný odkaz kubismu. Taky jsem maloval hodně zátiší.
+
+<%
+story.showDelayed("EF-IMG-005");
+%>
+
+:: EF-IMG-005 [speaker-filla]
+<figure>
+	<img src="https://www.webumenia.sk/images/diela/MG./68/CZE_MG.A_619/CZE_MG.A_619.jpeg" alt="Emil Filla - Zátiší se slanečkem, 1915" />
+	<figcaption>
+		<a href="https://www.webumenia.sk/dielo/CZE:MG.A_619" target="_blank">Emil Filla - Zátiší se slanečkem, 1915, Moravská galerie v Brně</a>
+	</figcaption>
+</figure>
+
+<%
+story.showDelayed("EF-013");
+%>
+
+:: EF-013 [speaker-filla]
+Když jsem byl v roce 1910 v Paříži a zhlédl obrazy Picasse a Braqua... setkal jsem se s kubismem. Po druhé, když jsem se tam chtěl přestěhovat, abych mohl odkaz francouzského kubismu podrobně studovat.... 
+
+<%
+story.showDelayed("EF-IMG-006");
+%>
+
+:: EF-IMG-006 [speaker-filla]
+<figure>
+	<img src="https://media.mutualart.com/Images/2015_02/16/05/054857365/c7f91697-c474-4a73-9825-2414962dcd60_570.Jpeg" alt="Lee Miller - Pablo Picasso a Georges Braque, 1954" />
+	<figcaption>
+		<a href="https://www.mutualart.com/Artwork/Pablo-Picasso-and-Georges-Braque/E3EF9462E647237E" target="_blank">Lee Miller - Pablo Picasso a Georges Braque, 1954</a>
+	</figcaption>
+</figure>
+
+[[Nepresťahovali ste sa?->EF-014]]
+[[Aký je váš vzťah ku kubizmu?->EF-022]]
+
+:: EF-014 [speaker-filla]
+Moje plány změnil atentát na následníka rakousko-uherského trónu a vyhlášení první světové války a spolu s manželkou museli jsme utéct do Nizozemska.
+
+[[Ako ste utiekli do Holandska?->EF-015]]
+[[Ovplyvnil pobyt v Holandsku vašu tvorbu?->EF-IMG-007B]]
+
+:: EF-015 [speaker-filla]
+Rozhodl jsem se odejít do Paříže i s manželkou... přijel jsem hledat a nalézat odpovědi na tvůrčí otázky, a najednou jsme byli považováni za příslušníky znepřátelené mocnosti. Francouzské ůřady neznali pojem „Čech“, pro ně jsme byli „sujet autricien“ - rakouští poddaní.
+
+<%
+story.showDelayed("EF-016");
+%>
+
+:: EF-016 [speaker-filla]
+Prchali jsme přes Belgii, cestou vlakem, byli jsme zadrženi a odvlečeni do vojenské pevnosti v Antverpách, kde nám hrozili zastřelením... jen o vlásek jsme unikli smrti. 
+
+[[Ako to dopadlo?->EF-017]]
+
+:: EF-017 [speaker-filla]
+Nakonec se nám podařilo zachránit se. Velícího generála jsem přesvědčil, že nejsme Němci, ale příslušníci národa, který se chce spod rakousko-uherského jarma po staletích konečně vyslobodit. Generál se slitoval, našel skulinku v předpisech a dal nás místo zastřelení jenom vyhostit. 
+
+<%
+story.showDelayed("EF-017B");
+%>
+
+:: EF-017B [speaker-filla]
+Usadili jsme se v Rotterdamu. Žili jsme chudě, ale šťastně...
+
+<%
+story.showDelayed("EF-IMG-007");
+%>
+
+:: EF-IMG-007 [speaker-filla]
+<figure>
+	<img src="https://raw.githubusercontent.com/SlovakNationalGallery/fillafulla.sng.sk/master/img/twine/Galerie_Louny_DD22.jpg" alt="Emil Filla s manželkou Hanou a priateľmi v Holandsku, 1918" />
+	<figcaption>
+		Emil Filla s manželkou Hanou a priateľmi v Holandsku, 1918, Galerie Benedikta Rejta, Louny
+	</figcaption>
+</figure>
+
+<%
+story.showDelayed("EF-017C");
+%>
+
+:: EF-017C [speaker-filla]
+Já pilně pracoval a studoval nizozemské umění.
+
+[[Ako to ovplyvnilo vašu tvorbu?->EF-IMG-007B]]
+[[Udržovali ste kontakty s domovinou?->EF-018B]]
+
+:: EF-IMG-007B [speaker-filla]
+<figure>
+	<img src="https://www.webumenia.sk/images/diela/MG./86/CZE_MG.A_1081/CZE_MG.A_1081.jpeg" alt="Emil Filla - Zátiší s podnosem, 1914" />
+	<figcaption>
+		<a href="https://www.webumenia.sk/dielo/CZE:MG.A_1081" target="_blank">Emil Filla - Zátiší s podnosem, 1914, Moravská galerie v Brně</a>
+	</figcaption>
+</figure>
+
+<%
+story.showDelayed("EF-018");
+%>
+
+:: EF-018 [speaker-filla]
+Vytvořeno pod vlivem studia nizozemského umění... Studoval jsem staré mistry - Rembrandta, Bruegela aj. Svými poznatky a teoriemi jsem zaplnil několik zápisníků. 
+
+<%
+story.showDelayed("EF-IMG-008");
+%>
+
+:: EF-IMG-008 [speaker-filla]
+<figure>
+	<img src="https://raw.githubusercontent.com/SlovakNationalGallery/fillafulla.sng.sk/master/img/twine/Filla_Holandsky_Zapisnik.jpg" alt="Strana z holandského zápisníka Emila Fillu, 1917" />
+	<figcaption>
+		Strana z holandského zápisníka Emila Fillu, 1917
+	</figcaption>
+</figure>
+
+<%
+story.showDelayed("EF-018B");
+%>
+
+:: EF-018B [speaker-filla]
+Jednou jsem si v některých novinách přečetl článek o odbojové organizaci Tomáše Garrigua Masaryka - Maffii.
+
+[[Čo je to Maffia?->EF-THREAD-001]]
+[[Aké ďalšie diela ste vytvorili pod vplyvom kubizmu?->EF-IMG-010]]
+
+:: EF-THREAD-001 [speaker-filla]
+Byla to tajná organizace československého odboje, během první světové války. Její hlavní náplní byla zpravodajská a konspirační činnost.
+
+<%
+story.showDelayed("EF-IMG-009");
+%>
+
+:: EF-IMG-009 [speaker-filla]
+<figure>
+	<img src="https://raw.githubusercontent.com/SlovakNationalGallery/fillafulla.sng.sk/master/img/twine/Maffie_hrad_wiki.jpg" alt="Členovia Maffie v roku 1918" />
+	<figcaption>
+		<a href="https://cs.wikipedia.org/wiki/Maffie" target="_blank">Členovia Maffie v roku 1918 pri odovzdávaní revolučných medailí na Pražskom hrade, zdroj: wikipedia</a>
+	</figcaption>
+</figure>
+
+<%
+story.showDelayed("EF-019");
+%>
+
+:: EF-019 [speaker-filla]
+Měla přes dve stě členů, mezi nimi politiky i umělce.
+
+[[Čo ste pre ňu robili vy?->EF-020A]]
+[[Aký bol váš postoj k vzniku Československa?->EF-020B]]
+
+:: EF-020A [speaker-filla]
+S manželkou jsme předávali tajné informace...
+
+[[Ako to dopadlo v Holandsku?->EF-021]]
+[[Vrátili ste sa do Prahy?->EF-020D]]
+
+:: EF-020B [speaker-filla]
+Ještě před vypuknutím války, když ji už bylo možné cítit ve vzduchu, jsme s přáteli diskutovali o tom, že válka může být jedinečnou příležitostí osvobodit se z područí monarchie. Já jsem ji ale narozdíl od některích jiných nevítal, byl jsem toho názoru, že na ni jako národ nejsme připraveni. Jakékoliv snahy pomoct snahám osamostatnit se jsem se ovšem snažil podpořit jak to jenom šlo.
+
+<%
+story.showDelayed("EF-020C");
+%>
+
+:: EF-020C [speaker-filla]
+Slovensko jsem vnímal jako součást naší společné země a Slováky jako důležitou součást československého národa. Již v studentských letech jsem prošel pěšky téměř celé moravské Slovácko a velikou část Slovenska uherského. Slovenskou krajinu a tradice jsem obdivoval a věnoval ji mnoho úvah. Samostatné Československo mělo také býti protiváhou Německa a Maďarska, které si tehdy nárokovali mnohá území, kde žili naši spoluobčané. 
+
+<%
+story.showDelayed("LF-02XC");
+%>
+
+:: LF-02XC [speaker-fulla]
+Slovenská krajina a jej tradície sú veru nevyčerpateľné studnice výtvarných inšpirácií. Stačí pochodiť iba jeden región z mnohých a človek má celé týždne čo maľovať.
+
+[[Ako dopadol váš pobyt v Holandsku?->EF-021]]
+[[Vrátili ste sa do Prahy?->EF-020D]]
+
+:: EF-021 [speaker-filla]
+Přestěhovali jsme se do Amsterdamu a já hodně maloval, právě kubistické zátiší. Po vyhlášení samostatného Československa jsem taky pomáhal při organizování českého velvyslanectví v Haagu.
+
+[[Aké ďalšie diela ste vytvorili pod vplyvom kubizmu?->EF-IMG-010]]
+[[Aký je váš vzťah ku kubizmu?->EF-022]]
+
+:: EF-020D [speaker-filla]
+Krátce po válce jsme se vrátili do Československa a já působil jistý čas na ministerstvu zahraničí. Úřednická práce ale brzy ustoupila malování a já jsem se opět ponořil do bludiště svých kubistických zátiší.
+
+[[Aké ďalšie diela ste vytvorili pod vplyvom kubizmu?->EF-IMG-010]]
+[[Aký je váš vzťah ku kubizmu?->EF-022]]
+
+:: EF-IMG-010 [speaker-filla]
+<figure>
+	<img src="https://www.webumenia.sk/images/diela/MG./33/CZE_MG.C_1370/CZE_MG.C_1370.jpeg" alt="Emil Filla - Hlava, 1913" />
+	<figcaption>
+		<a href="https://www.webumenia.sk/dielo/CZE:MG.C_1370" target="_blank">Emil Filla - Hlava, 1913, Moravská galerie v Brne</a>
+	</figcaption>
+</figure>
+
+<%
+story.showDelayed("EF-022");
+%>
+
+:: EF-022 [speaker-filla]
+Považuji kubismus za univerzální sloh, paradigma nové doby a nejvýstižnější prostor pro zkoumání hranic ploch a barev, něco jako laboratoř moderního výtvarného umění.
+
+<%
+story.showDelayed("EF-IMG-011");
+%>
+
+:: EF-IMG-011 [speaker-filla]
+<figure>
+	<img src="https://raw.githubusercontent.com/SlovakNationalGallery/fillafulla.sng.sk/master/img/twine/Filla_Namornik_K-2769.jpg" alt="Emil Filla - Zátiší (Námořník, Rotterdam), 1916" />
+	<figcaption>
+		Emil Filla - Zátiší (Námořník, Rotterdam), 1916, Galerie hlavního města Prahy
+	</figcaption>
+</figure>
+
+<%
+story.showDelayed("LF-014");
+%>
+
+:: LF-014 [speaker-fulla]
+Na porovnanie posielam:
+
+<%
+story.showDelayed("LF-IMG-005");
+%>
+
+
+:: LF-IMG-005 [speaker-fulla]
+<figure>
+	<img src="https://www.webumenia.sk/images/diela/SNG/92/SVK_SNG.OP_6/SVK_SNG.OP_6.jpeg" alt="Ľudovít Fulla - Letné ráno (Kvetiny), 1930" />
+	<figcaption>
+		<a href="https://www.webumenia.sk/dielo/SVK:SNG.OP_6" target="_blank">Ľudovít Fulla - Letné ráno (Kvetiny), 1930, SNG - Galéria Ľudovíta Fullu, Ružomberok</a>
+	</figcaption>
+</figure>
+
+<%
+story.showDelayed("LF-015");
+%>
+
+:: LF-015 [speaker-fulla]
+Ja som sa s kubizmom konfrontoval až v roku 1930, keď som ukončil štúdium v Prahe na UMPRUM-ke. Namaľoval som niekoľko obrazov, kde som skúmal nové možnosti skladby. 
+
+<%
+story.showDelayed("LF-IMG-006");
+%>
+
+:: LF-IMG-006 [speaker-fulla]
+<figure>
+	<img src="https://www.webumenia.sk/images/diela/SNG/97/SVK_SNG.O_1305/SVK_SNG.O_1305.jpeg" alt="Ľudovít Fulla - Balóny, 1930" />
+	<figcaption>
+		<a href="https://www.webumenia.sk/dielo/SVK:SNG.O_1305" target="_blank">Ľudovít Fulla - Balóny, 1930, Slovenská národná galéria</a>
+	</figcaption>
+</figure>
+
+<%
+story.showDelayed("LF-015B");
+%>
+
+:: LF-015B [speaker-fulla]
+Tieto diela môžu pre nezvyknuté oko pôsobiť komplikovane, ale snažil som sa do nich vniesť pocit tepla, radosti a optimizmu. Človek nemusí nutne rozumieť kubizmu, aby ho potešila krása farieb a tvarov.
+
+<%
+story.showDelayed("LF-016");
+%>
+
+:: LF-016 [speaker-fulla]
+Spolu s Mikulášom sme neskôr vydali aj niečo ako manifest avantgardného umenia na Slovensku. 
+
+[[Povedzte mi viac o manifeste.->LF-031]]
+[[Zostaňme ešte pri kubizme.->LF-017]]
+
+:: LF-017 [speaker-fulla]
+Pravda, vo svete bol kubizmus v tom čase „za zenitom“.  Ale ja som nikdy nedbal na poučky a teórie. 
+
+<%
+story.showDelayed("EF-023");
+%>
+
+:: EF-023 [speaker-filla]
+Já bych ty obrazy ani nenazval kubismem, spíš kubizující. 
+
+[[Máte ešte nejaké diela z tohto obdobia?->LF-IMG-007]]
+[[Ako sa kubizmus prejavil u vás, pán Filla?->EF-024]]
+
+:: LF-IMG-007 [speaker-fulla]
+<figure>
+	<img src="https://www.webumenia.sk/images/diela/SNG/95/SVK_SNG.OP_3/SVK_SNG.OP_3.jpeg" alt="Ľudovít Fulla - Deti pri mori (Dve deti), 1929" />
+	<figcaption>
+		<a href="https://www.webumenia.sk/dielo/SVK:SNG.OP_3" target="_blank">Ľudovít Fulla - Deti pri mori (Dve deti), 1929, SNG – Galéria Ľudovíta Fullu, Ružomberok</a> 
+	</figcaption>
+</figure>
+
+<%
+story.showDelayed("LF-IMG-008");
+%>
+
+:: LF-IMG-008 [speaker-fulla]
+<figure>
+	<img src="https://www.webumenia.sk/images/diela/SNG/35/SVK_SNG.O_137/SVK_SNG.O_137.jpeg" alt="Ľudovít Fulla - Rybári, 1930" />
+	<figcaption>
+		<a href="https://www.webumenia.sk/dielo/SVK:SNG.O_137" target="_blank">Ľudovít Fulla - Rybári, 1930, Slovenská národná galéria</a>
+	</figcaption>
+</figure>
+
+[[A vy, pán Filla?->EF-024]]
+[[Ocenil niekto vaše umelecké snahy?->EF-026]]
+
+:: EF-024 [speaker-filla]
+Ja maloval zátiší, stalo se pro mne jakousi výtvarnou laboratoří... také jsem si u tehdejší kritiky vysloužil přezdívku „zajatec kubismu“.
+
+<%
+story.showDelayed("EF-IMG-012");
+%>
+
+:: EF-IMG-012 [speaker-filla]
+<figure>
+	<img src="https://www.webumenia.sk/images/diela/MG./39/CZE_MG.B_7649/CZE_MG.B_7649.jpeg" alt="Emil Filla - Zátiší s dýmkou a ovocem, 1925" />
+	<figcaption>
+		<a href="https://www.webumenia.sk/dielo/CZE:MG.B_7649" target="_blank">Emil Filla - Zátiší s dýmkou a ovocem, 1925, Moravská galerie v Brně</a>
+	</figcaption>
+</figure>
+
+<%
+story.showDelayed("LF-018");
+%>
+
+:: LF-018 [speaker-fulla]
+Zlaté dvadsiate roky... koniec tých liet je zaujímavý.
+
+<%
+story.showDelayed("EF-025");
+%>
+
+:: EF-025 [speaker-filla]
+Konkrétně rok 1927.
+
+[[Čo sa odohralo v roku 1927?->EF-026]]
+
+:: EF-026 [speaker-filla]
+Já jsem v roce 1927 dosahoval první veliké úspěchy. V Německu na prohlídce Wege und Richtungen der Abstrakten Malerei in Europa jsem vystavoval spolu s mými vzory, Braquem, Picassem, Grisem, Kleem, Kandinskym... velikány, jenž byli mými vzory.
+
+Dostal jsem legionářský status za účást v zahraničním odboji a měl jsem za sebou první samostatnou výstavu v Brně = zhodnocení tvorby 1907 - 1924. Zvolili mně také zástupcem předsedy Spolku výtvarných umělců Mánes.
+
+<%
+story.showDelayed("LF-019");
+%>
+
+:: LF-019 [speaker-fulla]
+Ja som na pozvanie profesora Vydru prišiel do Bratislavy, aby som učil na novovzniknutej Škole umeleckých remesiel.
+
+<%
+story.showDelayed("EF-027");
+%>
+
+:: EF-027 [speaker-filla]
+Na jedné z výstav ve Francii dokonce stát zakoupil naše obrazy do své galerie, do kolekce československého výtvarného umění.
+
+[[Ktoré obrazy?->EF-027A]]
+[[To znie ako úspešné obdobie.->LF-020B]]
+
+:: EF-027A [speaker-filla]
+Ten můj se jmenoval Kytara na zdi, ale bohužel ho nemám poruce. Tady je ovšem jiná kytara jenom pro vás.
+
+<%
+story.showDelayed("EF-IMG-013");
+%>
+
+:: EF-IMG-013 [speaker-filla]
+<figure>
+	<img src="https://raw.githubusercontent.com/SlovakNationalGallery/fillafulla.sng.sk/master/img/twine/Filla_Kytara_Podnos.jpg" alt="Emil Filla - Zátiší na stole s kytarou a podnosem, 1932" />
+	<figcaption>
+		Emil Filla - Zátiší na stole s kytarou a podnosem, 1932, Galerie Zdeněk Sklenář v Praze
+	</figcaption>
+</figure>
+
+<%
+story.showDelayed("LF-008A");
+%>
+
+:: LF-008A [speaker-fulla]
+Moje dielo sa volalo Madona, predstavte si niečo v tomto štýle:
+
+<%
+story.showDelayed("LF-IMG-008B");
+%>
+
+:: LF-IMG-008B [speaker-fulla]
+<figure>
+	<img src="https://raw.githubusercontent.com/SlovakNationalGallery/fillafulla.sng.sk/master/img/twine/Fulla_Madona_Linea.jpg" alt="Ľudovít Fulla - Madona, 1931" />
+	<figcaption>
+		Ľudovít Fulla - Madona, 1931, Zbierka Linea, Bratislava
+	</figcaption>
+</figure>
+
+<%
+story.showDelayed("LF-020");
+%>
+
+:: LF-020 [speaker-fulla]
+Predstav si, že visíme v Paríži... ešte aj dnes. 
+
+[[Radi spomínate na tie časy?->LF-020B]]
+[[Mali ste podobné úspechy aj na domácej pôde?->LF-020C]]
+
+:: LF-020B [speaker-fulla]
+Vychádzali o nás monografie, tá moja vyšla, keď som mal len 33 rokov. Dostávalo sa nám uznania.
+
+<%
+story.showDelayed("EF-028");
+%>
+
+:: LF-020C [speaker-fulla]
+Na Slovensku to bolo s tou slávou trochu vlažnejšie. Publikum bolo konzervatívne a uznanie mojej práce prichádzalo opatrne. Ale aj tak to boli dobré časy.
+
+<%
+story.showDelayed("EF-028");
+%>
+
+:: EF-028 [speaker-filla]
+Jenže dobré časy netrvají dlouho.
+
+<%
+story.showDelayed("LF-021");
+%>
+
+:: LF-021 [speaker-fulla]
+Nekaz mi to... veziem sa na vlne spomienkovej efórie... Potom prišla Svetová výstava v Paríži 1937, na ktorej som získal najvyššie ocenenie Grand Prix za mýtický hymnus o slovenskom národe s názvom Pieseň a práca. Ale o ňom neskôr...
+
+<%
+story.showDelayed("LF-022");
+%>
+
+:: LF-022 [speaker-fulla]
+...a ty, Emil, si tiež neodišiel z Paríža naprázdno, ale so zlatou medailou!
+
+[[Čo vy na to, pán Filla?->EF-029]]
+[[Povedzte mi viac o obraze Pieseň a práca.->LF-IMG-016]]
+
+:: EF-029 [speaker-filla]
+Já už viděl nebezpečí na obzoru.
+
+<%
+story.showDelayed("EF-IMG-014");
+%>
+
+:: EF-IMG-014 [speaker-filla]
+<figure>
+	<img src="https://raw.githubusercontent.com/SlovakNationalGallery/fillafulla.sng.sk/master/img/twine/Filla_Nacismus_2.jpg" alt="Emil Filla - Ruce s dýkou (Nacismus II.), 1937" />
+	<figcaption>
+		Emil Filla - Ruce s dýkou (Nacismus II.), 1937, Moravská galerie v Brně
+	</figcaption>
+</figure>
+
+[[Aké nebezpečenstvo?->EF-030]]
+[[Aké boli tridsiate roky v Bratislave, pán Fulla?->LF-023]]
+
+:: EF-030 [speaker-filla]
+Jako člen odboje počas první světové války proti Nemcům jsem vědel své... demokracie a svoboda se dostaly do ohrožení s nástupem Adolfa Hitlera k moci v roce 1933...
+
+<%
+story.showDelayed("EF-IMG-014B");
+%>
+
+:: EF-030B [speaker-filla]
+V tomhle období jsem již vycítil ohrožení demokracie a svobody s nástupem Adolfa Hitlera k moci. Věděl jsem, že musíme něco udělat, že musíme bojovat za svobodu, a tak vznikla série Boje a zápasy!
+
+[[O čo šlo v sérii Boje a zápasy?->EF-IMG-015]]
+[[Aká bola reakcia na tieto diela?->EF-035]]
+
+:: EF-IMG-014B [speaker-filla]
+<figure>
+	<img src="https://museums.nuernberg.de/uploads/tx_templavoila/hitler-reichskanzler_01.jpg" alt="Obyvatelia Berlína oslavujú nového ríšskeho kancelára Adolfa Hitlera, 1933" />
+	<figcaption>
+		<a href="https://museums.nuernberg.de/documentation-center/national-socialism/the-beginnings-of-the-nazi-dictatorship/the-nazis-seize-power/" target="_blank">Obyvatelia Berlína oslavujú nového ríšskeho kancelára Adolfa Hitlera, 1933, zdroj: Múzeum v Norimbergu</a>
+	</figcaption>
+</figure>
+
+<%
+story.showDelayed("EF-031");
+%>
+
+:: EF-031 [speaker-filla]
+Nebyl jsem už žádný mladík a věděl jsem, že musíme něco udělat, že musíme bojovat za svobodu, a tak vznikla série Boje a zápasy!
+
+[[O čo šlo v sérii Boje a zápasy?->EF-IMG-015]]
+[[Aké boli tridsiate roky pre vás, pán Fulla?->LF-023]]
+
+:: EF-IMG-015 [speaker-filla]
+<figure>
+	<img src="https://raw.githubusercontent.com/SlovakNationalGallery/fillafulla.sng.sk/master/img/twine/Filla_Theseus_byk.jpg" alt="Emil Filla - Theseus nesoucí býka, 1938" />
+	<figcaption>
+		Emil Filla - Theseus nesoucí býka, 1938, Západočeská galerie v Plzni
+	</figcaption>
+</figure>
+
+<%
+story.showDelayed("EF-032");
+%>
+
+:: EF-032 [speaker-filla]
+Vzorem byli mi antičtí hrdinové. Rovněž v té době jsem sbíral a studoval skýtskou kulturu, námět pro tvorbu vzdálený situaci v naši zemi, no zároveň prostor pro univerzální sdělení: bezbranné zvíře napadené krvelačným dravcem.
+
+<%
+story.showDelayed("EF-IMG-016");
+%>
+
+:: EF-IMG-016 [speaker-filla]
+Obr. Zápas leva s býkom
+<figure>
+	<img src="https://www.webumenia.sk/images/diela/MG./28/CZE_MG.A_970/CZE_MG.A_970.jpeg" alt="Emil Filla - Zápas lva s býkem, 1939" />
+	<figcaption>
+		<a href="https://www.webumenia.sk/dielo/CZE:MG.A_970" target="_blank">Emil Filla - Zápas lva s býkem, 1939, Moravská galerie v Brně</a>
+	</figcaption>
+</figure>
+
+[[Čo hovoria tieto diela?->EF-033]]
+[[Aká bola reakcia na tieto diela?->EF-035]]
+
+:: EF-033 [speaker-filla]
+Nikoliv ustrašené ústupky, nýbrž jedině boj představuje východisko z hrozivé situace... byl to apel na společnost... bojujte třeba i štětcem.
+
+<%
+story.showDelayed("EF-034");
+%>
+
+:: EF-034 [speaker-filla]
+Co tvoří identitu člověka? Jeho svobodu? Z přetlaku imaginace, obracel jsem se do nitra, lidové tvořivosti, hluboko k vlastním kořenům, a tak vznikla i série Balad, národních písní a říkadel.
+
+<%
+story.showDelayed("EF-IMG-017");
+%>
+
+:: EF-IMG-017 [speaker-filla]
+
+<figure>
+	<img src="https://raw.githubusercontent.com/SlovakNationalGallery/fillafulla.sng.sk/master/img/twine/Filla_Svatebni_kosile.jpg" alt="Emil Filla - Svatební košile, 1939" />
+	<figcaption>
+		Emil Filla - Svatební košile, 1939, Galerie hlavního města Prahy
+	</figcaption>
+</figure>
+
+[[Nemali ste strach?->EF-035]]
+
+:: EF-035 [speaker-filla]
+Byl jsem si vědom, že svým „štětcem“ bodám rovnou do neuralgického bodu... Hned v první den války, 1. září 1939 si pro mne gestapáci přišli.
+
+[[Čo s vami urobili nacisti?->EF-IMG-018]]
+[[Aký osud postihol Fullu v tomto období?->LF-041]]
+
+:: EF-035B [speaker-filla]
+Proti útokům Hilera na demokracii v Evropě jsem protestoval svou tvorbou. Boje a zápasy a daľší mé díla z třicátých let byly kritikou nacistického násilí. Hned v první den války, 1. září 1939, mě (a mnohé jiné) zatklo Gestapo.
+
+[[Čo s vami urobili nacisti?->EF-IMG-018]]
+[[O čo šlo v sérii Boje a zápasy?->EF-IMG-015]]
+
+:: EF-035C [speaker-filla]
+Má tvorba v 30. letech zhodnocovala skušenosti se surrealismem a také kritizovala nacistické násilí a útoky na demokracii. Hned v první den války, 1. září 1939, mě zatklo Gestapo. Odvedli mě do Dachau a pak do Buchenwaldu, kde jsem zůstal do konce války.
+
+[[Povedzte mi viac o živote v Buchenwalde.->EF-IMG-018C]]
+[[Aký bol koniec vojny?->EF-IMG-015]]
+
+:: LF-023 [speaker-fulla]
+Do Bratislavy som prišiel na pozvanie Josefa Vydru. 
+
+<%
+story.showDelayed("LF-IMG-009");
+%>
+
+:: LF-IMG-009 [speaker-fulla]
+<figure>
+	<img src="https://monoskop.org/images/1/1d/Josef_Vydra.jpg" alt="Josef Vydra" />
+	<figcaption>
+		<a href="https://monoskop.org/Josef_Vydra" target="_blank">Josef Vydra, zdroj: Monoskop.org</a>
+	</figcaption>
+</figure>
+
+[[Kto to bol?->LF-024]]
+[[Prečo vás pozval?->LF-026]]
+
+:: LF-024 [speaker-fulla]
+Český historik, teoretik a profesor, poznali sme sa už z čias štúdia v Prahe.
+
+<%
+story.showDelayed("LF-025");
+%>
+
+:: LF-025 [speaker-fulla]
+Jeho dôvera, nadšenie z vytýčeného cieľa, ako aj veľká dobrosrdečnosť ku mne podporili snahy osožne sa zapojiť do budovania prvej umeleckej školy na Slovensku. 
+
+[[Akej školy?->LF-026]]
+[[Ako sa vám vtedy žilo v Bratislave?->LF-027]]
+
+:: LF-026 [speaker-fulla]
+V roku 1928 zrodila sa v Bratislave Škola umeleckých remesiel a mne sa dostalo tej cti, že som stál ako učiteľ a umelec pri jej kolíske.
+
+<%
+story.showDelayed("LF-IMG-010");
+%>
+
+:: LF-IMG-010 [speaker-fulla]
+<figure>
+	<img src="http://www.register.ustarch.sav.sk/images/reg_oa/stavby/ba-sur-pu-sr.jpg" alt="Škola umeleckých remesiel, Bratislava, po 1928" />
+	<figcaption>
+		<a href="http://www.register.ustarch.sav.sk/index.php/sk/objekty/77-%C5%A1kola-umeleck%C3%BDch-remesiel.html" target="_blank">Škola umeleckých remesiel, Bratislava, po 1928, zdroj: Register modernej architektúry Slovenska</a>
+	</figcaption>
+</figure>
+
+[[Ako sa žilo začínajúcemu učiteľovi?->LF-027]]
+
+:: LF-027 [speaker-fulla]
+Začal som bývať chudobný ako kostolná myš. Na Trnavskej ulici prenajal som si ateliér, mal som len gauč, bielu skriňu z mäkkého dreva, stoličku a lavór... no a maliarsky stojan. 
+
+[[A bývali ste tam sám?->LF-PASSAGE-001]]
+[[Kde ste mali ateliér vy, pán Filla?->EF-ATL-001]]
+
+:: LF-PASSAGE-001 [speaker-fulla]
+Krátko. Potom prišiel do Bratislavy na pozvanie profesora Vydru aj Mikuláš – môj priateľ ešte zo študentských čias. V tom čase bola núdza o ateliéry, preto som Mikulášovi ponúkol spolubývanie. 
+
+<%
+story.showDelayed("LF-IMG-011");
+%>
+
+:: EF-IMG-ATL-001 [speaker-filla]
+Koncem dvacátých let jsem tvořil v ateliéru na pražské Ořechovce, měl jsem to tam docela rád.
+
+<%
+story.showDelayed("EF-IMG-ATL-002");
+%>
+
+:: EF-IMG-ATL-002 [speaker-filla]
+<figure>
+	<img src="https://raw.githubusercontent.com/SlovakNationalGallery/fillafulla.sng.sk/master/img/twine/Galerie_Louny_DD15.jpg" alt="Emil Filla s manželkou v ateliéri na Ořechovce, 1927" />
+		<figcaption>
+			Emil Filla s manželkou Hanou v ateliéri na Ořechovce, 1927, Galerie Benedikta Rejta, Louny
+		</figcaption>	
+</figure>
+
+<%
+story.showDelayed("LF-PASSAGE-001B");
+%>
+
+:: LF-PASSAGE-001B [speaker-fulla]
+Ja som ateliér čoskoro zdieľal s Mikulášom Galandom, ktorého Josef Vydra tiež prizval do Bratislavy. V tom čase bola núdza o ateliéry, preto som Mikulášovi ponúkol spolubývanie.
+
+<%
+story.showDelayed("LF-IMG-011");
+%>
+
+:: LF-IMG-011 [speaker-fulla]
+
+<figure>
+	<img src="https://raw.githubusercontent.com/SlovakNationalGallery/fillafulla.sng.sk/master/img/twine/SNGAVU--26D13--0_1--2018_03_13--LP_WEB.jpg" alt="Ľudovít Fulla a Mikuláš Galanda v spoločnom ateliéri na Trnavskej ulici v Bratislave" />
+		<figcaption>
+			Ľudovít Fulla a Mikuláš Galanda v spoločnom ateliéri na Trnavskej ulici v Bratislave, začiatok 30. rokov 20. storočia, Archív výtvarného umenia SNG
+		</figcaption>	
+</figure>
+
+[[Ako sa vám spolu bývalo a tvorilo?->LF-028]]
+[[V tomto čase vznikol aj váš manifest?->LF-031]]
+
+:: LF-028 [speaker-fulla]
+Mikuláš bol tichý, melancholický, nenáročný, skromný, ale vždy elegantne oblečený. Keď pofajčieval cigaretu, snivo sa zahľadel do kotúčov dymu, akoby z nich čerpal inšpiráciu na prekrásne kresby.
+
+[[Aké boli reakcie na vašu tvorbu?->LF-029]]
+[[Venovali ste sa aj iným žánrom než maľbe?->LF-082]]
+
+:: LF-029 [speaker-fulla]
+Keď zablúdil do nášho ateliéru slovenský človek a videl naše diela, s hrôzou sa chytil za hlavu, bez slova vybehol na schodisko a nezastal hádam ani na ulici. Slovenská dušička si vtedy ešte sladko odpočívala na prežitom folklóre.
+
+<%
+story.showDelayed("LF-IMG-012");
+%>
+
+:: LF-IMG-012 [speaker-fulla]
+<figure>
+	<img src="https://www.webumenia.sk/images/diela/SNG/90/SVK_SNG.OP_8/SVK_SNG.OP_8.jpeg" alt="Ľudovít Fulla - Požehnanie statku, 1932" />
+	<figcaption>
+		<a href="https://www.webumenia.sk/dielo/SVK:SNG.OP_8" target="_blank">Ľudovít Fulla - Požehnanie statku, 1932, Slovenská národná galéria</a>
+	</figcaption>
+</figure>
+
+
+<%
+story.showDelayed("LF-IMG-013");
+%>
+
+:: LF-IMG-013 [speaker-fulla]
+
+<figure>
+	<img src="https://www.webumenia.sk/images/diela/SNG/10/SVK_SNG.G_3119/SVK_SNG.G_3119.jpeg" alt="Mikuláš Galanda - Milenci, 1937" />
+	<figcaption>
+		<a href="https://www.webumenia.sk/dielo/SVK:SNG.G_3119" target="_blank">Mikuláš Galanda - Milenci, 1937, Slovenská národná galéria</a>
+	</figcaption>
+</figure>
+
+
+<%
+story.showDelayed("LF-030");
+%>
+
+:: LF-030 [speaker-fulla]
+Hlásali sme nové moderné umenie. A robili sme to obrazom a slovom: „Umenie je hra a rozkoš!“
+
+[[Máte na mysli váš manifest?->LF-031]]
+[[Venovali ste sa aj iným žánrom než maľbe?->LF-082]]
+
+:: LF-082 [speaker-fulla]
+Tak napríklad scénografii. Divadlo bolo mojou vášňou už z čias obchodnej školy, kreslil som kulisy a rôzne javiskové scény.
+
+[[Chcem vedieť viac o vašej scénografickej tvorbe.->LF-083]]
+[[Vráťme sa k spoločnej tvorbe s Mikulášom Galandom.->LF-031]]
+
+:: LF-083 [speaker-fulla]
+V čase, keď som pobýval u staršej sestry v Bratislave, zoznámil som sa s Jankom Borodáčom. Bolo to však až priamo na ŠUR-ke, keď ma vyzval, aby som pre neho navrhol scénu k inscenácii Fabrika mladosti.
+
+[[Ako to dopadlo?->LF-084]]
+[[Využili ste princípy z vášho manifestu aj tu?->LF-085]]
+
+:: LF-084 [speaker-fulla]
+Ujal som sa veci a uvažoval nad tým, ako by som preniesol súčasný umelecký názor na divadelnú scénu prostredníctvom výpravy. 
+
+[[A podarilo sa?->LF-IMG-040]]
+
+:: LF-IMG-040 [speaker-fulla]
+<figure>
+	<img src="https://www.webumenia.sk/images/diela/SNG/92/SVK_SNG.K_17318/SVK_SNG.K_17318.jpeg" alt="Ľudovít Fulla - Scénický návrh k inscenácii A. N. Ostrovského: Búrka, 1932" />
+	<figcaption>
+		<a href="https://www.webumenia.sk/dielo/SVK:SNG.K_17318" target="_blank">Ľudovít Fulla - Scénický návrh k inscenácii A. N. Ostrovského: Búrka, 1932, Slovenská národná galéria</a>
+	</figcaption>
+</figure>
+
+<%
+story.showDelayed("LF-085");
+%>
+
+:: LF-085 [speaker-fulla]
+Ako prvý som sa odvážil priniesť na javisko abstrakciu. Na scénu som sa díval ako na obraz.
+
+<%
+story.showDelayed("LF-IMG-041");
+%>
+
+:: LF-IMG-041 [speaker-fulla]
+<figure>
+	<img src="https://www.webumenia.sk/images/diela/SNG/16/SVK_SNG.K_17321/SVK_SNG.K_17321.jpeg" alt="Ľudovít Fulla - Scénický návrh k inscenácii A. N. Afinogeneva: Strach II., 1933" />
+	<figcaption>
+		<a href="https://www.webumenia.sk/dielo/SVK:SNG.K_17321" target="_blank">Ľudovít Fulla - Scénický návrh k inscenácii A. N. Afinogeneva: Strach II., 1933, Slovenská národná galéria</a>
+	</figcaption>
+</figure>
+
+[[Spolupracovali ste ešte s niekým?->LF-086]]
+[[A vy, pán Filla?->EF-076]]
+
+:: LF-086 [speaker-fulla]
+Spolupracoval som aj s ďalším režisérom Viktorom Šulcom, pre ktorého som vytvoril tento návrh:
+
+<%
+story.showDelayed("LF-IMG-042");
+%>
+
+:: LF-IMG-042 [speaker-fulla]
+<figure>
+	<img src="https://www.webumenia.sk/images/diela/SNG/91/SVK_SNG.K_17317/SVK_SNG.K_17317.jpeg" alt="Ľudovít Fulla - Scénický návrh k inscenácii C. Goldoniho a A. Hoffmeistera: Spievajúce Benátky, 1933" />
+	<figcaption>
+		<a href="https://www.webumenia.sk/dielo/SVK:SNG.K_17317" target="_blank">Ľudovít Fulla - Scénický návrh k inscenácii C. Goldoniho a A. Hoffmeistera: Spievajúce Benátky, 1933, Slovenská národná galéria</a>
+	</figcaption>
+</figure>
+
+[[A vy, pán Filla?->EF-076]]
+[[Vráťme sa ešte k spolupráci s Galandom.->LF-031]]
+
+:: EF-076 [speaker-filla]
+V roce 1952 jsem navrhl oponu pro Vlastu Buriana v jeho nově otevřeném divadle D46. Pro inscenaci Nazima Hikmeta Píseň o turecké zemi.
+
+<%
+story.showDelayed("EF-IMG-035");
+%>
+
+:: EF-IMG-035 [speaker-filla]
+<figure>
+	<img src="http://www.amaterskedivadlo.cz/files/foto/2ff01ba9d18104e0bc8ca709260db510ad2a6559.jpg" alt="Emil Filla - Píseň o turecké zemi, 1952" />
+	<figcaption>
+		<a href="http://www.amaterskedivadlo.cz/main.php?data=opona&id=438" target="_blank"> Emil Filla - návrh opony k inscenácii Píseň o turecké zemi, 1952, Archív scénografie Divadelního ústavu</a>
+	</figcaption>
+</figure>
+
+[[Vráťme sa ešte k vášmu manifestu, pán Fulla.->LF-031]]
+[[Vráťme sa k tvorbe pána Fillu v 30. rokoch.->EF-035B]]
+
+
+:: LF-031 [speaker-fulla]
+Áno, vydali sme prvý manifest slovenského avantgardného umenia. Volal sa Súkromné listy Fullu a Galandu. V tom čase sme ho za manifest ani nepokladali, bol to v podstate časopis. Dbali sme na typografiu a dizajn, snažili sme sa o jazyk bežného človeka. 
+
+[[Chcem vidieť ukážku.->LF-SLFG-IMG-01]]
+[[Čo bolo zámerom listov?->LF-031B]]
+
+:: LF-SLFG-IMG-01 [speaker-fulla]
+<figure>
+	<img src="https://raw.githubusercontent.com/SlovakNationalGallery/fillafulla.sng.sk/master/img/twine/SNGAVU--22B530-1--1_2--2018_03_14--LP_WEB.jpg" alt="Súkromné listy Fullu a Galandu, č. 1." />
+	<figcaption>
+		<a href="https://www.webumenia.sk/clanok/sukromne-listy-fullu-a-galandu" target="_blank">Súkromné listy Fullu a Galandu, č. 1., Archív výtvarného umenia SNG</a>
+	</figcaption>
+</figure>
+
+<%
+story.showDelayed("LF-SLFG-IMG-02");
+%>
+
+:: LF-SLFG-IMG-02 [speaker-fulla]
+<figure>
+	<img src="https://raw.githubusercontent.com/SlovakNationalGallery/fillafulla.sng.sk/master/img/twine/SNGAVU--22B530-1--2_2--2018_03_14--LP_WEB.jpg" alt="Súkromné listy Fullu a Galandu, č. 1." />
+	<figcaption>
+		<a href="https://www.webumenia.sk/clanok/sukromne-listy-fullu-a-galandu" target="_blank">Súkromné listy Fullu a Galandu, č. 1., Archív výtvarného umenia SNG</a>
+	</figcaption>
+</figure>
+
+
+[[Snažili ste sa presadiť väčšiu autorskú slobodu?->LF-031A]]
+[[Aký mali listy ohlas?->LF-031C]]
+
+
+:: LF-031A [speaker-fulla]
+Bojovali sme proti stereotypom, ktorými sa v tých časoch maliarstvo a umenie posudzovalo. Umelecký obraz žije svoj samostatný život, nemá žiadny dekoračný účel. To, že si ním ľudia ozdobujú byty, je iba zvyk, proti ktorému sme však nič nenamietali.
+
+<%
+story.showDelayed("LF-031A2");
+%>
+
+:: LF-031A2 [speaker-fulla]
+Obraz je obraz, nie výsek z krajiny. Maľba je hrou línií a farboforiem a z týchto prvkov, dľa noriem citu, tvoríme umelecké dielo.
+
+<%
+story.showDelayed("EF-031B");
+%>
+
+:: EF-031B [speaker-filla]
+Tuhle osvětnou činnost kvituji, i když někdy přináší ovoce až s odstupem času.
+
+[[Presvedčili ste svoju cieľovú skupinu?->LF-031C]]
+[[Aké diela vznikli týmto spôsobom?->LF-IMG-014]]
+
+:: LF-031B [speaker-fulla]
+Bojovali sme proti predstave umenia, ktoré otrocky imituje skutočnosť. Funkciou maliarstva je vytvoriť novú emotívnu realitu: farbou, svetlom, plochou... Obraz je obraz, nie výsek z krajiny. Maľba je hrou línií a farboforiem a z týchto prvkov, dľa noriem citu, tvoríme umelecké dielo.
+
+<%
+story.showDelayed("EF-031C");
+%>
+
+:: EF-031C [speaker-filla]
+Tuhle vaši záslužnou činnost kvituji, osvěty není nikdy dost.
+
+[[Zabralo to?->LF-031C]]
+[[V ktorých dielach sa uplatnili tieto princípy?->LF-IMG-014]]
+
+:: LF-031C [speaker-fulla]
+Naše snahy bohužiaľ narazili na bariéry dobového vkusu. Tlač sa o listy nezaujímala, nanajvýš sme boli obvinení z povýšenectva. Zastal sa nás aspoň Josef Vydra, dokonca mal v treťom čísle aj príspevok, v ktorom apeloval na mladú generáciu umelcov, aby neuviazli v priemernosti. Dá sa povedať, že v týchto rokoch bola naša tvorba docenená viac v zahraničí než doma.
+
+[[Odradilo vás to?->LF-031D]]
+
+:: LF-031D [speaker-fulla]
+Vo svojom výtvarnom presvedčení som vytrval, ale Súkromných listov sme vydali iba štyri čísla. S Mikulášom sme sa časom stretávali pomenej. Väčší úspech som zažil neskôr s obrazom Pieseň a práca.
+
+[[Povedzte mi viac o obraze Pieseň a práca.->LF-IMG-016]]
+[[Vráťme sa k vám, pán Filla.->EF-035B]]
+
+:: LF-IMG-014 [speaker-fulla]
+<figure>
+	<img src="https://www.webumenia.sk/images/diela/SNG/28/SVK_SNG.G_4147/SVK_SNG.G_4147.jpeg" alt="Ľudovít Fulla - Drak, 1930" />
+	<figcaption>
+		<a href="https://www.webumenia.sk/dielo/SVK:SNG.G_4147" target="_blank">Ľudovít Fulla - Drak, 1930, Slovenská národná galéria</a>
+	</figcaption>
+</figure>
+
+<%
+story.showDelayed("LF-IMG-015");
+%>
+
+:: LF-IMG-015 [speaker-fulla]
+<figure>
+	<img src="https://www.webumenia.sk/images/diela/SNG/95/SVK_SNG.O_2612/SVK_SNG.O_2612.jpeg" alt="Mikuláš Galanda - Dve ženy, 1931" />
+	<figcaption>
+		<a href="https://www.webumenia.sk/dielo/SVK:SNG.O_2612" target="_blank">Mikuláš Galanda - Dve ženy, 1931, Slovenská národná galéria</a>
+	</figcaption>
+</figure>
+
+<%
+story.showDelayed("LF-032");
+%>
+
+:: LF-032 [speaker-fulla]
+A neskôr som namaľoval obraz Pieseň a práca.
+
+[[Povedzte mi viac o obraze Pieseň a práca.->LF-IMG-016]]
+[[Vráťme sa k vám, pán Filla.->EF-035B]]
+
+:: LF-IMG-016 [speaker-fulla]
+<figure>
+	<img src="https://www.webumenia.sk/images/diela/SNG/63/SVK_SNG.OP_10/SVK_SNG.OP_10.jpeg" alt="Ľudovít Fulla - Pieseň a práca, 1934" />
+	<figcaption>
+		<a href="https://www.webumenia.sk/dielo/SVK:SNG.OP_10" target="_blank">Ľudovít Fulla - Pieseň a práca, 1934, Slovenská národná galéria</a>
+	</figcaption>
+</figure>
+
+<%
+story.showDelayed("LF-033");
+%>
+
+:: LF-033 [speaker-fulla]
+Je to akési podobenstvo o našom národe, spája v sebe rozmanité inšpirácie, ktoré som dovtedy nazbieral. Všimnite si, že kompozícia je rozvrhnutá do troch pozdĺžnych pásov, podobne ako na stredovekých nástenných maľbách. Jednotlivé postavy a scény majú rozmery, aké si vyžaduje vnútorný poriadok obrazu, neodvolávajú sa na skutočnú predlohu.
+
+[[Malo dielo úspech?->LF-033A]]
+[[Ako vznikla táto kompozícia?->LF-033B]]
+
+:: LF-033A [speaker-fulla]
+Je to zrejme moje najslávnejšie dielo. Získal som zaň aj ocenenie Grand Prix na Svetovej výstave v Paríži roku 1937.
+
+<%
+story.showDelayed("LF-IMG-017");
+%>
+
+:: LF-IMG-017 [speaker-fulla]
+<figure>
+	<img src="https://raw.githubusercontent.com/SlovakNationalGallery/fillafulla.sng.sk/master/img/twine/SNGAVU--diplom--04_1--2018_03_16--LP_WEB.jpg" alt="Diplom zo Svetovej výstavy v Paríži, 1937" />
+	<figcaption>
+		Diplom zo Svetovej výstavy v Paríži, 1937, Archív výtvarného umenia SNG
+	</figcaption>
+</figure>
+
+[[Čo vás viedlo práve k tomuto námetu?->LF-033B]]
+[[Vráťme sa k vám, pán Filla.->EF-035B]]
+
+:: LF-033B [speaker-fulla]
+
+K tejto maľbe som mal podklad v návrhoch výzdoby obnoveného kostolíka v Klížskom Hradišti. 
+
+[[Dajú sa vidieť?->LF-034]]
+
+:: LF-034 [speaker-fulla]
+Žiaľ nie, nikdy sa nerealizovali... a ani nehonorovali!
+
+[[Čo ste urobili s tými návrhmi?->LF-035]]
+
+:: LF-035 [speaker-fulla]
+Mal som veľa práce s vyučovaním na škole, keď pribudli ešte i detské kurzy, prešli celé mesiace, čo som nevzal štetec do ruky..., ale predsa prišiel čas a ja som ho namaľoval... 
+
+<%
+story.showDelayed("LF-035B");
+%>
+
+:: LF-035B [speaker-fulla]
+Obrazom Pieseň a práca som oslavoval slovenské národné tradície a folklór, avšak bez nacionalistického pátosu, ktorý bol v tých rokoch tak trochu v móde. Napísali vtedy o nás aj to, že sme rovnako málo národní, ako sú málo francúzski Manet a Cézanne. Niečo podobné sme tvrdili aj v našich Súkromných listoch - obraz môže byť slovenský aj bez toho, aby moralizoval, ba priam vajatal nad nenaplnenými túžbami národa.
+
+<%
+story.showDelayed("LF-036");
+%>
+
+:: LF-036 [speaker-fulla]
+K tomuto obrazu mám aj napínavú historku.
+
+[[Akú?->LF-037]]
+[[Vráťme sa ešte k vám, pán Filla.->EF-030B]]
+
+:: LF-037 [speaker-fulla]
+Počas ústupu nemeckých vojsk sme sa museli s Klárikou (to bola moja žena, ale o tom si povieme neskôr) evakuovať. 
+
+<%
+story.showDelayed("LF-038");
+%>
+
+:: LF-038 [speaker-fulla]
+S priateľom lekárom a jeho matkou ukryli sme sa v horárni za Necpalmi. Keď ruská armáda a partizáni zatlačili Nemcov a mohli sme sa vrátiť, našli sme spodný vchod na dome vylomený a byt čiastočne vykradnutý. 
+
+[[A obrazy? Ukradli ich?->LF-039]]
+
+:: LF-039 [speaker-fulla]
+Našťastie dielam sa nič nestalo. Obraz Pieseň a práca visel nepoškodený na svojom mieste. Aké šťastie, že Göringove „záchranné autá“ umeleckých diel neustupovali cez Martin!
+
+[[A čo urobili nacisti s pánom Fillom?->EF-035C]]
+
+:: EF-IMG-018 [speaker-filla]
+<figure>
+	<img src="https://raw.githubusercontent.com/SlovakNationalGallery/fillafulla.sng.sk/master/img/twine/Filla_Buchenwald.jpg" alt="Emil Filla - Buchenwald, 1947" />
+		<figcaption>
+			Emil Filla - Buchenwald, 1947, Západočeská galerie v Plzni
+		</figcaption>
+</figure>
+
+<%
+story.showDelayed("EF-036");
+%>
+
+:: EF-IMG-018C [speaker-filla]
+<figure>
+	<img src="https://raw.githubusercontent.com/SlovakNationalGallery/fillafulla.sng.sk/master/img/twine/Filla_Buchenwald.jpg" alt="Emil Filla - Buchenwald, 1947" />
+		<figcaption>
+			Emil Filla - Buchenwald, 1947, Západočeská galerie v Plzni
+		</figcaption>
+</figure>
+
+<%
+story.showDelayed("EF-040");
+%>
+
+:: EF-036 [speaker-filla]
+Nacisti mně odvedli do Dachau a pak do Buchenwaldu, kde jsem zůstal do konce války. Nemaloval jsem. Jenom psal... abych nezahynul. 
+
+[[O čom ste písali?->EF-037]]
+[[Ako s vami zaobchádzali?->EF-040]]
+
+:: EF-037 [speaker-filla]
+Psal jsem o umění, svobodě a kráse české řeči, pokradmu při stole, kde jsme seděli jeden druhému na zádech, ale to nebylo to nejstrašnější... venku pojednou se ozval strašný řev. 
+
+<%
+story.showDelayed("EF-038");
+%>
+
+:: EF-038 [speaker-filla]
+U okna venku se zabíjí člověk. Všimněte si toho hrozného „se“! Člověk řve, zmítá se a potom už je tichý. A já teprve dopisuji druhou půlku myšlenky...
+
+<%
+story.showDelayed("LF-040");
+%>
+
+:: LF-040 [speaker-fulla]
+To sú hrozné, mučivé spomienky. Moje obrazy sú radostné, sú veselé, tvorím ich pre život, pre radosť súčasníkov i budúcich pokolení a preto akúkoľvek vojnu nenávidím.
+
+<%
+story.showDelayed("EF-039");
+%>
+
+:: EF-039 [speaker-filla]
+Čím více máš pocit svobody z díla, tím je hodnotnější, čím svobodněji bylo vytvořeno, tím více je v něm i umění. 
+
+[[Povedzte mi viac o živote v Buchenwalde.->EF-040]]
+[[Aký osud postihol Fullu v tomto období?->LF-041]]
+
+:: EF-040 [speaker-filla]
+Říkali nám „Ehrenhäftlinge“ = čestní vězňové.  Na podzim 1941 jsme byli spolu s jinými vězni, například s Josefem Čapkem zařazeni do kategorie běžných häftlinků a nasazeni na těžké fyzické práce.
+
+<%
+story.showDelayed("EF-IMG-018B");
+%>
+
+:: EF-IMG-018B [speaker-filla]
+<figure>
+	<img src="https://www.ushmm.org/lcmedia/photo/lc/image/10/10105.jpg" alt="Nástup väzňov v koncentračnom tábore Buchenwald, 1938 - 1941" />
+		<figcaption>
+			<a href="https://www.ushmm.org/wlc/en/media_ph.php?ModuleId=0&MediaId=599">Nástup väzňov v koncentračnom tábore Buchenwald, 1938 - 1941, zdroj: Holocaust Encyclopedia</a>
+		</figcaption>
+</figure>
+
+<%
+story.showDelayed("EF-041");
+%>
+
+:: EF-041 [speaker-filla]
+Vykopávaly jsme krompáčem šachty k velkým betónovým rourám, které měly brzy přivádět vodu do zbrojní fabriky. Bylo mi tehdy 58 let... a například Josefovi Čapkovi 57. Bylo nám jasné, že tohle nemůžeme v nadcházející zimě přežít... ale pak přišel Hugo Rokyta, jeden z českých vězňů se spásonosnou myšlenkou.
+
+[[Akou?->EF-042]]
+
+:: EF-042 [speaker-filla]
+Pracoval v koncentráku jako tlumočník mezi esesáky a českými vězni. Navrhl generálu SS Kochovi zhotovovat rodové dokumenty esesáckým důstojníkům... bylo to s nadšením přijato. 
+
+<%
+story.showDelayed("EF-043");
+%>
+
+:: EF-043 [speaker-filla]
+Žili jsme stejně jako ostatní vězni, stejné apely, stejné drastické podmínky s tím rozdílem, že při pátraní o předcích esesáckých tyranů, pod jich vražedným dohledem jsme byly vyňati z otrocké dřiny... a to nám zachránilo život. Tehdy jsem tajně začal psát. 
+
+[[O čom? ->EF-044]]
+[[Pomohlo vám to prežiť? ->EF-044B]]
+
+:: EF-044 [speaker-filla]
+Statě o umění a také filozofické texty o svobodě.... jsou výplodem  probdělých 2000 krutých nocí, kdy místo spánku a snů v polobdělém a polosnovém přemítání vybavovaly se mi nejspletitější otázky... psal jsem to abych nezahynul. A snad i čtení těchto kapitol může dnes i zítra míti stejný důvod a účinek.
+
+[[Ako to celé dopadlo?->EF-IMG-019]]
+[[Aký osud postihol Fullu v tomto období?->LF-041]]
+
+:: EF-044B [speaker-filla]
+Přežil jsem jen tak tak, i to s jizvami na těle i duši. Byla v tom jistě i velká dávka štěstí. Josef Čapek takové štěstí neměl, zemřel na tyfus jenom krátce před osvobozením.
+
+<%
+story.showDelayed("EF-044C");
+%>
+
+:: EF-044C [speaker-filla]
+<figure>
+	<img src="https://www.webumenia.sk/images/autori//41/1765/1765.jpeg" alt="Josef Čapek" />
+	<figcaption>
+		<a href="https://www.webumenia.sk/autor/1765" target="_blank">Josef Čapek</a>
+	</figcaption>
+</figure>
+
+[[Ako si pamätáte návrat domov?->EF-IMG-019]]
+[[Aký osud postihol Fullu v tomto období?->LF-041]]
+
+:: LF-041 [speaker-fulla]
+Boli to roky trpkosti, náhle a predčasne zomrel môj dlhoročný priateľ Mikuláš. Po nútenom odchode profesora Vydru a iných českých kolegov som nakrátko prevzal riaditeľskú stoličku ŠUR-ky, črtala sa aj myšlienka založenia prvej Vysokej školy výtvarných umení... 
+
+<%
+story.showDelayed("LF-IMG-018");
+%>
+
+:: LF-IMG-018 [speaker-fulla]
+
+<figure>
+	<img src="https://www.webumenia.sk/images/diela/SNG/61/SVK_SNG.OP_12/SVK_SNG.OP_12.jpeg" alt="Ľudovít Fulla - Zimná Bratislava, 1941" />
+	<figcaption>
+		<a href="https://www.webumenia.sk/dielo/SVK:SNG.OP_12" target="_blank">Ľudovít Fulla - Zimná Bratislava, 1941, Slovenská národná galéria</a>
+	</figcaption>
+</figure>
+
+<%
+story.showDelayed("LF-042");
+%>
+
+:: LF-042 [speaker-fulla]
+V tomto období vytvoril som aj niekoľko malieb a grafík s náboženskou tematikou.
+
+<%
+story.showDelayed("LF-IMG-019");
+%>
+
+:: LF-IMG-019 [speaker-fulla]
+<figure>
+	<img src="https://www.webumenia.sk/images/diela/SNG/57/SVK_SNG.G_7596/SVK_SNG.G_7596.jpeg" alt="Ľudovít Fulla - Zvestovanie, okolo 1945" />
+	<figcaption>
+		<a href="https://www.webumenia.sk/dielo/SVK:SNG.G_7596" target="_blank">Ľudovít Fulla - Zvestovanie, okolo 1945, Slovenská národná galéria</a>
+	</figcaption>
+</figure>
+
+<%
+story.showDelayed("EF-045");
+%>
+
+:: EF-045 [speaker-filla]
+Tak v tom je mezi námi rozdíl. Dokonce na popud svého tchána Františka Krejčího, požádal jsem z církve o vyloučení.
+
+<%
+story.showDelayed("LF-043");
+%>
+
+:: LF-043 [speaker-fulla]
+No vidíš, ja som zase nikdy nebol politicky aktívny. Vždy som chcel byť len maliarom... napriek tomu našli sa takí po vojne, ktorí v mojom diele politiku videli.
+
+<%
+story.showDelayed("LF-IMG-020");
+%>
+
+:: LF-IMG-020 [speaker-fulla]
+<figure>
+	<img src="https://www.webumenia.sk/images/diela/SNG/77/SVK_SNG.G_3545/SVK_SNG.G_3545.jpeg" alt="Ľudovít Fulla - Narodenie, 1940" />
+	<figcaption>
+		<a href="https://www.webumenia.sk/dielo/SVK:SNG.G_3545" target="_blank">Ľudovít Fulla - Narodenie, 1940, Slovenská národná galéria</a>
+	</figcaption>
+</figure>
+
+[[Tieto diela sú úplne iné. Prečo?->LF-044]]
+[[Vráťme sa ešte k pánovi Fillovi počas rokov vojny.->EF-035C]]
+
+:: LF-044 [speaker-fulla]
+Pre moje obrazy nebolo v novom režime miesto. Preč boli roky s Mikulášom a opustil som aj farboplochy a líniotvary... prišla tvorivá kríza... asi aj preto zrodili sa tieto obrazy, ovplyvnené stredovekým umením...
+
+<%
+story.showDelayed("EF-046");
+%>
+
+:: EF-046 [speaker-filla]
+Promiň, že ti do toho mluvím. Ale vidím zde, že si se nechal inspirovat uměním staré Byzance. Taky jsem v koncentračním táboře psal o Byzanci a jejím vlyvu na evropské umění, který byl dlouho hodně podceňován.
+
+<%
+story.showDelayed("LF-045");
+%>
+
+:: LF-045 [speaker-fulla]
+Myslím, že práve tieto diela mi nakoniec pomohli prekonať toto temné obdobie.
+
+[[Tešilo vás niečo v tomto ťažkom období?->EF-048]]
+[[Čo sa dialo s vami, pán Filla, počas vojny?->EF-035C]]
+
+
+:: EF-IMG-019 [speaker-filla]
+<figure>
+	<img src="https://raw.githubusercontent.com/SlovakNationalGallery/fillafulla.sng.sk/master/img/twine/Galerie_Louny_DD17.jpg" alt="Emil Filla na repatriačnej ceste z Buchenwaldu, 1945" />
+		<figcaption>
+			Emil Filla na repatriačnej ceste z Buchenwaldu, 1945, Galerie Benedikta Rejta, Louny
+		</figcaption>
+</figure>
+
+<%
+story.showDelayed("EF-047");
+%>
+
+:: EF-047 [speaker-filla]
+Měl jsem šest infarktů, aniž bych o tom věděl... ale nakonec jsem to přežil a vrátil se domů. Celý rok jsem ležel a zotavoval se, jen na kolenou vleže kreslil jsem suchou jehlou... pak jsem ilustroval sbírku básní svého přítele Františka Halase.
+
+<%
+story.showDelayed("EF-IMG-020");
+%>
+
+:: EF-IMG-020 [speaker-filla]
+<figure>
+	<img src="https://raw.githubusercontent.com/SlovakNationalGallery/fillafulla.sng.sk/master/img/twine/Filla_Torzo_nadeje.jpg" alt="Emil Filla - Torzo naděje, k zbierke Františka Halase, 1945" />
+	<figcaption>
+		Emil Filla - Torzo naděje, k zbierke Františka Halasa, 1945, Galerie hlavního města Prahy
+	</figcaption>
+</figure>
+
+[[Čo vás držalo pri živote v tomto ťažkom období?->EF-048]]
+[[Ako ste žili a tvorili po vojne?->LF-060]]
+
+:: EF-048 [speaker-filla]
+Promluvme si o tom hezkém v našich životech. O lásce.
+
+<%
+story.showDelayed("LF-046");
+%>
+
+:: LF-046 [speaker-fulla]
+Súhlasím. O ženách... v živote a v umení. 
+
+[[O ženách v živote?->EF-049]]
+[[O ženách v umení?->EF-053]]
+
+:: EF-049 [speaker-filla]
+Kdo čeká nějaké rozmarné povídání, bude zklamán.
+
+<%
+story.showDelayed("EF-IMG-021");
+%>
+
+:: EF-IMG-021 [speaker-filla]
+<figure>
+	<img src="https://raw.githubusercontent.com/SlovakNationalGallery/fillafulla.sng.sk/master/img/twine/Galerie_Louny_DD12.jpg" alt="Emil Filla s manželkou Hanou, 1951" />
+	<figcaption>
+		Emil Filla s manželkou Hanou, 1951, Galerie Benedikta Rejta, Louny
+	</figcaption>
+</figure>
+
+<%
+story.showDelayed("LF-047");
+%>
+
+:: LF-047 [speaker-fulla]
+Tak-tak... Keď som maľoval obrazy Vyhnanie z raja, Požehnanie statku a Pieseň a práca, žil som už ako ženatý občan, vyrovnane, spokojne a šťastne.
+
+<%
+story.showDelayed("LF-IMG-021");
+%>
+
+:: LF-IMG-021 [speaker-fulla]
+<figure>
+	<img src="https://www.webumenia.sk/images/diela/SNG/45/SVK_SNG.UP-DK_4171/SVK_SNG.UP-DK_4171.jpeg" alt="Karol Kállay - Ľudovít Fulla s manželkou, 1952" />
+	<figcaption>
+		<a href="https://www.webumenia.sk/dielo/SVK:SNG.UP-DK_4171" target="_blank">Karol Kállay - Ľudovít Fulla s manželkou, 1952, Slovenská národná galéria</a>
+	</figcaption>
+</figure>
+
+[[Ako ste sa zoznámili so svojimi manželkami?->EF-050]]
+[[Mali ste aj deti?->EF-052]]
+
+:: EF-050 [speaker-filla]
+S Hanou jsem se seznámil v Praze na Akademii výtvarných umění. Vzali jsme se v březnu 1913. 
+
+<%
+story.showDelayed("LF-IMG-022");
+%>
+
+:: LF-IMG-022 [speaker-fulla]
+<figure>
+	<img src="https://www.webumenia.sk/images/diela/SNG/89/SVK_SNG.OP_9/SVK_SNG.OP_9.jpeg" alt="Ľudovít Fulla - Podobizeň umelcovej manželky, 1934" />
+	<figcaption>
+		<a href="https://www.webumenia.sk/dielo/SVK:SNG.OP_9" target="_blank">Ľudovít Fulla - Podobizeň umelcovej manželky, 1934, Slovenská národná galéria</a>
+	</figcaption>
+</figure>
+
+<%
+story.showDelayed("LF-048");
+%>
+
+:: LF-048 [speaker-fulla]
+K svojej milovanej Klárike som zahorel vášnivou láskou na prvý pohľad. Bola so mnou aj v Paríži, keď som dostal Grand Prix. 
+
+<%
+story.showDelayed("LF-IMG-023");
+%>
+
+:: LF-IMG-023 [speaker-fulla]
+<figure>
+	<img src="https://raw.githubusercontent.com/SlovakNationalGallery/fillafulla.sng.sk/master/img/twine/SNGAVU--22D52-2--0_1--2018_03_15--LP_WEB.jpg" alt="Klára Juliana na Svetovej výstave v Paríži, 1937" />
+	<figcaption>
+		Klára Juliana na Svetovej výstave v Paríži, 1937, Archív výtvarného umenia SNG
+	</figcaption>
+</figure>
+
+<%
+story.showDelayed("LF-049");
+%>
+
+:: LF-049 [speaker-fulla]
+Vzali sme sa po dlhšej známosti v roku 1938. S naším malým psíkom Punťom sme veľmi radi sedávali na terase nášho domu v Martine. 
+
+<%
+story.showDelayed("EF-051");
+%>
+
+:: EF-051 [speaker-filla]
+Když mně odvlekli do Buchenwaldu... šest let jsem nemaloval. Jedině Haně, o prvních Vánocích v Buchenwaldě, namaloval jsem perem na poštovní koncentrákový lístek letící holubičku s lipovou ratolestí v zobáčku.
+
+[[Mali ste aj deti?->EF-052]]
+[[A čo ženy v umení?->EF-053]]
+
+:: EF-052 [speaker-filla]
+Ne. Nebylo nám souzeno. Ale měli jsme naši boxerku Evičku.
+
+[[A vy, pán Fulla?->LF-050]]
+
+:: LF-050 [speaker-fulla]
+Mal som veľa detí, aj keď všetky boli cudzie.
+
+[[Ako to myslíte?->LF-051]]
+[[A čo ženy v umení?->EF-053]]
+
+:: LF-051 [speaker-fulla]
+Venoval som sa deťom a mládeži intenzívne a s úprimnou radosťou celý život. Kreslil, maľoval i písal, ilustroval detské knihy, spolupracoval som aj pri tvorbe detského časopisu Slniečko a Úsmev...
+
+<%
+story.showDelayed("LF-IMG-024");
+%>
+
+:: LF-IMG-024 [speaker-fulla]
+<figure>
+	<img src="https://www.webumenia.sk/images/diela/SNG/47/SVK_SNG.KD_120/SVK_SNG.KD_120.jpeg" alt="Ľudovít Fulla - Koráb, 1942 - 1943" />
+	<figcaption>
+		<a href="https://www.webumenia.sk/dielo/SVK:SNG.KD_120" target="_blank">Ľudovít Fulla - Koráb (ilustrácia pre časopis Slniečko), 1942 - 1943, Slovenská národná galéria</a>
+	</figcaption>
+</figure>
+
+<%
+story.showDelayed("LF-052");
+%>
+
+:: LF-052 [speaker-fulla]
+A koncom 50. rokov vyšli aj „Vystrihovačky od uja Fullu“, pre najmenších drobcov. 
+
+<%
+story.showDelayed("LF-IMG-025");
+%>
+
+:: LF-IMG-025 [speaker-fulla]
+<figure>
+	<img src="https://www.webumenia.sk/images/diela/SNG/16/SVK_SNG.UP-P_3274-4/SVK_SNG.UP-P_3274-4.jpeg" alt="Ľudovít Fulla - Vystrihovačka Cirkus, 1956 - 1959" />
+	<figcaption>
+		<a href="https://www.webumenia.sk/dielo/SVK:SNG.UP-P_3274-4" target="_blank">Ľudovít Fulla - Vystrihovačka Cirkus (zo série Vystrihovačky od uja Fullu), 1956 - 1959, Slovenská národná galéria</a>
+	</figcaption>
+</figure>
+
+<%
+story.showDelayed("LF-053");
+%>
+
+:: LF-053 [speaker-fulla]
+Učil som maľovať deti na výtvarných krúžkoch s cieľom podchytiť nové talenty... aj na novovzniknutej ŠUR-ke.
+
+[[Čo ste ich učili?->LF-054]]
+[[Aké knihy ste ilustrovali?->LF-056]]
+
+:: LF-054 [speaker-fulla]
+Farebné, plošné kreslenie, nalepovanie aj montáž... navzájom sme si boli užitoční. Niečo z detského naivného rukopisu stalo sa súčasťou i mojej vlastnej tvorby.
+
+<%
+story.showDelayed("LF-IMG-026");
+%>
+
+
+:: LF-IMG-026 [speaker-fulla]
+<figure>
+	<img src="https://www.webumenia.sk/images/diela/SNG/21/SVK_SNG.GR_54/SVK_SNG.GR_54.jpeg" alt="Ľudovít Fulla - Letiaci čarodejník, 1930" />
+	<figcaption>
+		<a href="https://www.webumenia.sk/dielo/SVK:SNG.GR_54" target="_blank">Ľudovít Fulla - Letiaci čarodejník, 1930, Slovenská národná galéria</a>
+	</figcaption>
+</figure>
+
+<%
+story.showDelayed("LF-055");
+%>
+
+:: LF-055 [speaker-fulla]
+Rozprávkové knihy ma sprevádzali celý život... keď som chodieval vzdychať nad obrázkami do výkladu kníhkupectva u nás v Ružomberku... aj keď som potom sám ilustroval detské knižky. 
+
+[[Ktoré knihy ste ilustrovali?->LF-056]]
+[[Vráťme sa ešte k inšpirácii ženami v umení.->EF-053]]
+
+:: LF-056 [speaker-fulla]
+Obrázkové slovenské povesti, vydané v roku 1925, neskôr napríklad Veršíky pre maličkých od Ľudmily Podjavorinskej, Soľ nad zlato,  O dvanástich mesiačikoch... zoznam je naozaj dlhý. Najdôležitejšia však bola kniha Slovenských rozprávok.
+
+[[Prečo je taká dôležitá?->LF-057]]
+[[Vráťme sa ešte k ženám v umení.->EF-053]]
+
+:: LF-057 [speaker-fulla]
+Až pri ilustrovaní Slovenských rozprávok vo mne dozrelo poznanie, že ilustrácia je plnohodnotná a rovnocenná inej maliarskej práci a môže sa vyrovnať obrazu... a práve tieto ilustrácie neskôr ovplyvnili aj iných tvorcov.
+
+<%
+story.showDelayed("LF-VID-053");
+%>
+
+:: LF-VID-053 [speaker-fulla]
+<iframe width="560" height="315" src="https://www.youtube.com/embed/om72YAXU-TM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+[[Vráťme sa k inšpirácii ženami v umení.->EF-053]]
+[[Ako ste žili a tvorili po druhej svetovej vojne?->LF-060]]
+
+:: EF-053 [speaker-filla]
+Bylo to v čase, když do mého života vstoupila inspirace surrealismem. Do té doby maloval jsem ženské tělo jako součást zátiší.
+
+<%
+story.showDelayed("EF-IMG-022");
+%>
+
+:: EF-IMG-022 [speaker-filla]
+<figure>
+	<img src="https://www.webumenia.sk/images/diela/MG./43/CZE_MG.A_2290/CZE_MG.A_2290.jpeg" alt="Emil Filla - Toaleta, 1929" />
+	<figcaption>
+		<a href="https://www.webumenia.sk/dielo/CZE:MG.A_2290" target="_blank">Emil Filla - Toaleta, 1929, Moravská galerie v Brně</a>
+	</figcaption>
+</figure>
+
+<%
+story.showDelayed("EF-IMG-023");
+%>
+
+:: EF-IMG-023 [speaker-filla]
+<figure>
+	<img src="https://raw.githubusercontent.com/SlovakNationalGallery/fillafulla.sng.sk/master/img/twine/Filla_Divka_s_kytici.jpg" alt="Emil Filla - Dívka s kyticí, 1934" />
+	<figcaption>
+		Emil Filla - Dívka s kyticí, 1934, Súkromná zbierka
+	</figcaption>
+</figure>
+
+[[Ako sa u vás prejavil surrealizmus pri motíve ženy?->EF-054]]
+[[A vy, pán Fulla? Kreslili ste akty?->LF-058]]
+
+:: EF-054 [speaker-filla]
+Gigantické osoby s mocnými pudy. Ne jenom mladé, ale i staré a ošklivé... „novodobé venuše“ inspirovali mne i k vytvoření několika plastik.
+
+<%
+story.showDelayed("EF-IMG-024");
+%>
+
+:: EF-IMG-024 [speaker-filla]
+<figure>
+	<img src="https://www.webumenia.sk/images/diela/MG./74/CZE_MG.E_206/CZE_MG.E_206.jpeg" alt="Emil Filla - Stojící žena, 1937" />
+	<figcaption>
+		<a href="https://www.webumenia.sk/dielo/CZE:MG.E_206" target="_blank">Emil Filla - Stojící žena, 1937, Moravská galerie v Brně</a>
+	</figcaption>
+</figure>
+
+[[A vy, pán Fulla? Kreslili ste akty?->LF-058]]
+[[Povedzte mi ešte o ženách vo vašom živote.->EF-049]]
+
+:: LF-058 [speaker-fulla]
+Iste, počas celého života som sa zaoberal týmto žánrom.
+
+<%
+story.showDelayed("LF-IMG-027");
+%>
+
+:: LF-IMG-027 [speaker-fulla]
+<figure>
+	<img src="https://www.webumenia.sk/images/diela/SNG/31/SVK_SNG.OP_58/SVK_SNG.OP_58.jpeg" alt="Ľudovít Fulla - Stojaci akt, 1971" />
+	<figcaption>
+		<a href="https://www.webumenia.sk/dielo/SVK:SNG.OP_58" target="_blank">Ľudovít Fulla - Stojaci akt, 1971, Slovenská národná galéria</a>
+	</figcaption>
+</figure>
+
+<%
+story.showDelayed("LF-IMG-028");
+%>
+
+:: LF-IMG-028 [speaker-fulla]
+<figure>
+	<img src="https://www.webumenia.sk/images/diela/OGD/43/SVK_OGD.G_1330/SVK_OGD.G_1330.jpeg" alt="Ľudovít Fulla - Akt na praktikábli, 1974" />
+	<figcaption>
+		<a href="https://www.webumenia.sk/dielo/SVK:OGD.G_1330" target="_blank">Ľudovít Fulla - Akt na praktikábli, 1974, Oravská galéria v Dolnom Kubíne</a>
+	</figcaption>
+</figure>
+
+<%
+story.showDelayed("LF-059");
+%>
+
+:: LF-059 [speaker-fulla]
+...ale nielen aktom je tvorca živý. Obľúbeným námetom boli mi aj slovenské dievčatá a nevesty v ľudových krojoch a v neposlednom rade i madona. 
+
+<%
+story.showDelayed("LF-IMG-029A");
+%>
+
+:: LF-IMG-029A [speaker-fulla]
+<figure>
+	<img src="https://www.webumenia.sk/images/diela/SNG/68/SVK_SNG.O_1926/SVK_SNG.O_1926.jpeg" alt="Ľudovít Fulla - Slovenské dievča, 1949" />
+	<figcaption>
+		<a href="https://www.webumenia.sk/dielo/SVK:SNG.O_1926" target="_blank">Ľudovít Fulla - Slovenské dievča, 1949, Slovenská národná galéria</a>
+	</figcaption>
+</figure>
+
+<%
+story.showDelayed("LF-IMG-029B");
+%>
+
+:: LF-IMG-029B [speaker-fulla]
+<figure>
+	<img src="https://www.webumenia.sk/images/diela/SNG/59/SVK_SNG.OP_14/SVK_SNG.OP_14.jpeg" alt="Ľudovít Fulla - Madona s anjelmi, 1946" />
+	<figcaption>
+		<a href="https://www.webumenia.sk/dielo/SVK:SNG.OP_14" target="_blank">Ľudovít Fulla - Madona s anjelmi, 1946, Slovenská národná galéria</a>
+	</figcaption>
+</figure>
+
+[[Aké bolo povojnové obdobie?->LF-060]]
+[[Akým témam ste sa venovali po vojne?->EF-056]]
+
+:: LF-060 [speaker-fulla]
+Roky po vojne boli plné nových nádejí. Prišla aj ponuka učiť na UMPRUM-ke (umeleckej priemyslovke) a odsťahovať sa do Prahy.
+
+<%
+story.showDelayed("EF-055");
+%>
+
+:: EF-055 [speaker-filla]
+Poslyš, to jsme se mohli potkat. Já byl jmenován profesorem monumentální malby a učil jsem tam již od roku 1946. 
+
+<%
+story.showDelayed("LF-061");
+%>
+
+:: LF-061 [speaker-fulla]
+Vidíš... ja som ale prijal miesto na novozaloženej Vysokej škole výtvarných umení v Bratislave, takisto mi priradili katedru monumentálnej maľby.
+
+[[Aké to bolo?->EF-055B]]
+[[Čo ste maľovali v tomto období?->EF-056]]
+
+:: EF-055B [speaker-filla]
+V porovnání so strašlivým běsněním války bylo všechno lepší, už jen tím, že svět ještě vůbec existoval. Ale ani tohle období klidu netrvalo dlouho.  
+
+<%
+story.showDelayed("LF-061B");
+%>
+
+:: LF-061B [speaker-fulla]
+Z prvej slovenskej vysokej školy venujúcej sa umeniu som sa, samozrejme, tešil. Zakladanie niečoho nového je vždy plné nádejí. Ale ako vraví Emil, peripetie na seba nenechali dlho čakať. 
+
+[[Máte na mysli nástup socializmu?->LF-068A]]
+[[Čo ste maľovali v tomto období?->EF-056]]
+
+:: EF-056 [speaker-filla]
+V té době jsem se vrátil k cyklu Písně, ovlivněné i slovenským folklórem... a taky legendou o Jánošíkovi.
+
+<%
+story.showDelayed("EF-IMG-025");
+%>
+
+:: EF-IMG-025 [speaker-filla]
+
+<figure>
+	<img src="https://raw.githubusercontent.com/SlovakNationalGallery/fillafulla.sng.sk/master/img/twine/Filla_Hej_Chlap.jpg" alt="Emil Filla - Hej musel by to chlap byť…, 1948" />
+	<figcaption>
+		Emil Filla - Hej musel by to chlap byť…, 1948, Zoya Gallery, Bratislava
+	</figcaption>
+</figure>
+
+<%
+story.showDelayed("LF-062");
+%>
+
+:: LF-062 [speaker-fulla]
+V tom istom roku i ja som namaľoval Jánošíka. 
+
+<%
+story.showDelayed("LF-IMG-030");
+%>
+
+:: LF-IMG-030 [speaker-fulla]
+<figure>
+	<img src="https://www.webumenia.sk/images/diela/SNG/30/SVK_SNG.OP_22/SVK_SNG.OP_22.jpeg" alt="Ľudovít Fulla - Jánošík na bielom koni, 1948" />
+	<figcaption>
+		<a href="https://www.webumenia.sk/dielo/SVK:SNG.OP_22" target="_blank">Ľudovít Fulla - Jánošík na bielom koni, 1948, Slovenská národná galéria</a>
+	</figcaption>
+</figure>
+
+[[Zaujímavá zhoda.->LF-063]]
+
+:: LF-063 [speaker-fulla]
+Vrátil som sa k téme ľudového umenia a k slovenskej krajine.
+
+<%
+story.showDelayed("EF-057");
+%>
+
+:: EF-057 [speaker-filla]
+Mně uchvacovaly vaše Slovenské zbojnické a milostné písně.
+
+<%
+story.showDelayed("EF-IMG-026");
+%>
+
+:: EF-IMG-026 [speaker-filla]
+<figure>
+	<img src="https://raw.githubusercontent.com/SlovakNationalGallery/fillafulla.sng.sk/master/img/twine/Filla_Baca_Stary.jpg" alt="Emil Filla - Ja som Bača veľmi starý, 1947" />
+	<figcaption>
+		Emil Filla - Ja som bača veľmi starý, 1947, Súkromná zbierka
+	</figcaption>
+</figure>
+
+<%
+story.showDelayed("LF-064");
+%>
+
+:: LF-064 [speaker-fulla]
+Tiež som v živote nakreslil nejedného zbojníka.
+
+<%
+story.showDelayed("LF-IMG-031");
+%>
+
+:: LF-IMG-031 [speaker-fulla]
+<figure>
+	<img src="https://www.webumenia.sk/images/diela/SNG/49/SVK_SNG.KD_155/SVK_SNG.KD_155.jpeg" alt="Ľudovít Fulla - Tancujúci zbojníci, 1964" />
+	<figcaption>
+		<a href="https://www.webumenia.sk/dielo/SVK:SNG.KD_155" target="_blank">Ľudovít Fulla - Tancujúci zbojníci, 1964, Slovenská národná galéria</a>
+	</figcaption>
+</figure>
+
+[[Prečo práve slovenské zbojnícke piesne?->EF-058]]
+[[Maľovali ste aj slovenskú krajinu?->EF-059B]]
+
+:: EF-058 [speaker-filla]
+Obdiv k slovenskému folklóru jsem měl celý život. Vyrostl jsem na „hané“. Ještě jako student došel jsem pěšky až na Detvu... Viděl jsem hrdost lidu z Oravy.
+
+<%
+story.showDelayed("LF-065");
+%>
+
+:: LF-065 [speaker-fulla]
+Opäť máme niečo spoločné. Moja mama bola Oravka, otec z Liptova, dedičstvo týchto regiónov niesol som si v srdci celý život. Kamkoľvek som šiel, krajina domova bola vždy so mnou.
+
+[[Krajina domova? Čo tým myslíte?->LF-IMG-032]]
+
+:: LF-IMG-032 [speaker-fulla]
+<figure>
+	<img src="https://www.webumenia.sk/images/diela/SNG/74/SVK_SNG.O_24/SVK_SNG.O_24.jpeg" alt="Ľudovít Fulla - Dedinka, okolo 1948" />
+	<figcaption>
+		<a href="https://www.webumenia.sk/dielo/SVK:SNG.O_24" target="_blank">Ľudovít Fulla - Dedinka, okolo 1948, Slovenská národná galéria</a>
+	</figcaption>
+</figure>
+
+<%
+story.showDelayed("EF-059");
+%>
+
+:: EF-059 [speaker-filla]
+Krajina domova pro mne byla České středohoří. V Buchenwaldě  a pak až do konce života jsem se k němu vracel. V zápiscích i malbě.
+
+<%
+story.showDelayed("EF-IMG-027");
+%>
+
+:: EF-IMG-027 [speaker-filla]
+<figure>
+	<img src="https://raw.githubusercontent.com/SlovakNationalGallery/fillafulla.sng.sk/master/img/twine/Filla_M-2246_001_p1.jpg" alt="Emil Filla - Krajina u Libčevsi, 1952" />
+	<figcaption>
+		Emil Filla - Krajina u Libčevsi, 1952, Galerie hlavního města Prahy
+	</figcaption>
+</figure>
+
+<%
+story.showDelayed("LF-066");
+%>
+
+:: EF-059B [speaker-filla]
+Pro krajinomalbu mi bylo modelem spíše České středohoří. V Buchenwaldě a pak až do konce života jsem se k nemu vracel. V zápiscích i malbě.
+
+<%
+story.showDelayed("EF-IMG-027");
+%>
+
+:: LF-066 [speaker-fulla]
+Ja som zas prechodil celý Turiec so skicárom. 
+
+<%
+story.showDelayed("LF-IMG-033");
+%>
+
+:: LF-IMG-033 [speaker-fulla]
+<figure>
+	<img src="https://raw.githubusercontent.com/SlovakNationalGallery/fillafulla.sng.sk/master/img/twine/SNG--KD_412--0_1--_2018_04_18_--LP_WEB.jpg" alt="Ľudovít Fulla - Turiec v máji, 1949" />
+	<figcaption>
+		Ľudovít Fulla - Turiec v máji, 1949, SNG - Galéria Ľudovíta Fullu v Ružomberku
+	</figcaption>
+</figure>
+
+<%
+story.showDelayed("LF-067");
+%>
+
+:: LF-067 [speaker-fulla]
+Vysunutý skoro v samote mal som veľa príležitostí spoznávať prírodu a vnikať do jej tajov.
+
+<%
+story.showDelayed("LF-IMG-034");
+%>
+
+:: LF-IMG-034 [speaker-fulla]
+<figure>
+	<img src="https://www.webumenia.sk/images/diela/SNG/12/SVK_SNG.KD_53/SVK_SNG.KD_53.jpeg" alt="Ľudovít Fulla - Západ slnka v Turci II., 1952" />
+	<figcaption>
+		<a href="https://www.webumenia.sk/dielo/SVK:SNG.KD_53" target="_blank">Ľudovít Fulla - Západ slnka v Turci II., 1952, Slovenská národná galéria</a>
+	</figcaption>
+</figure>
+
+[[A vy, pán Filla, kde ste maľovali svoje krajiny?->EF-IMG-028]]
+[[Bol to aj tak trochu únik pred doktrínou režimu?->LF-068A]]
+
+:: EF-IMG-028 [speaker-filla]
+<figure>
+	<img src="https://raw.githubusercontent.com/SlovakNationalGallery/fillafulla.sng.sk/master/img/twine/Filla_Slavetin.jpg" alt="Emil Filla - Od Slavětína, 1951" />
+	<figcaption>
+		Emil Filla - Od Slavětína, 1951, Galerie Benedikta Rejta, Louny
+	</figcaption>
+</figure>
+
+<%
+story.showDelayed("EF-060");
+%>
+
+:: EF-060 [speaker-filla]
+V 1947, pronajalo mi ministerstvo zemědělství levé křídlo Zámku v Peruci. (<a href="https://bit.ly/2KXGrVu" target="_blank">na Mapě</a>)
+
+<%
+story.showDelayed("EF-IMG-029");
+%>
+
+:: EF-IMG-029 [speaker-filla]
+<figure>
+	<img src="https://raw.githubusercontent.com/SlovakNationalGallery/fillafulla.sng.sk/master/img/twine/Galerie_Louny_DD25.jpg" alt="Emil Filla maľuje Ranskú horu v Českom stredohorí, s manželkou Hanou a boxerkou Evičkou, 1951" />
+	<figcaption>
+		Emil Filla maluje Ranskú horu v Českém středohoří, s manželkou Hanou a boxerkou Evičkou, 1951, Galerie Benedikta Rejta, Louny
+	</figcaption>
+</figure>
+
+<%
+story.showDelayed("EF-061");
+%>
+
+:: EF-061 [speaker-filla]
+Z něho jsem podnikal cesty do přírody... inspirován činskou tuší a znovuobjevením holandské krajiny.
+
+[[Povojnová doktrína socialistického realizmu sa vás nedotkla?->EF-062]]
+
+:: LF-068A [speaker-fulla]
+Ach to prišla zase doba... Ako robiť umenie, keď mu ho diktujú zhora? Ešte k tomu súdruhovia, ktorí majú k dobrému vkusu, či poňatiu významu umenia na míle ďaleko?
+
+<%
+story.showDelayed("EF-062");
+%>
+
+:: EF-062 [speaker-filla]
+Socialistický realizmus byl ideologický konstrukt. Kto se mu nepřízpůsobil, nemohl tvořit... a já jsem nebyl zrovna přizpůsobivý... Tak jsem dostal pozvánku na „soudružský pohovor“.
+
+<%
+story.showDelayed("LF-068B");
+%>
+
+:: LF-068B [speaker-fulla]
+Nikto sa tej „šikane“ nevyhol. V zmysle straníckych direktív mne bolo „odporučené“ venovať sa tvorbe diel dekoratívneho charakteru. Ale potom prišla ponuka, ktorá ma rozniesla do sveta aj cez zavreté hranice a železnú oponu.
+
+[[Čo sa dialo na „súdružskom pohovore"?->EF-063]]
+[[Akú ponuku ste dostali, pán Fulla?->LF-IMG-035]]
+
+:: EF-063 [speaker-filla]
+K mým sedmdesátinám připravoval jsem v Mánesu výstavu z cyklu Písně a 21. 6. 1951 byl jsem přizván k diskusi, ale spíš šlo o proces. Byla sestavena komise z členů III. krajského střediska SČV, která se vyjádřovala k výstavě.
+
+[[Čo im prekážalo?->EF-063B]]
+[[Ako to dopadlo?->EF-THREAD-004]]
+
+:: EF-063B [speaker-filla]
+Ze začátku se tvářili velice uctivě, ale brzy bylo jasné, že Písně nebyly podle jejich představ. Byly prý šeredné, ponuré, technika nevycházela z „naší tradice“, byly také málo realistické, heroické a tak podobně. Byla to klasická soudružská mluva - dogmatizmus maskovaný za zdvořilostní fráze a argumenty, které při bližším pohledu zcela nedávaly smysl. Nakonec mi zakázali vystavovat veškerou tvorbu, kromě Českého stredohoří.    
+
+[[Unikali ste nejako pred doktrínami režimu?->EF-065]]
+[[Vy, pán Fulla, ste sa presadili napriek železnej opone?->LF-IMG-035]]
+
+:: EF-THREAD-004 [speaker-filla]
+Výsledek? Zákaz vystavování veškeré tvorby, kromě Českého stredohoří. 
+
+[[Unikali ste nejako pred doktrínami režimu?->EF-IMG-031]]
+[[Vy, pán Fulla, ste sa presadili napriek železnej opone?->LF-IMG-035]]
+
+:: LF-IMG-035 [speaker-fulla]
+<figure>
+	<img src="https://www.webumenia.sk/images/diela/SNG/52/SVK_SNG.K_2934/SVK_SNG.K_2934.jpeg" alt="Ľudovít Fulla - Slovenské ľudové rozprávky (titulný list), 1952" />
+	<figcaption>
+		<a href="https://www.webumenia.sk/dielo/SVK:SNG.K_2934" target="_blank">Ľudovít Fulla - Slovenské rozprávky (titulný list), 1952, Slovenská národná galéria</a>
+	</figcaption>
+</figure>
+
+<%
+story.showDelayed("LF-069");
+%>
+
+:: LF-069 [speaker-fulla]
+Dostal som zadanie ilustrovať Prostonárodné slovenské povesti zozbierané Pavlom Dobšinským. Stal sa z nich veľký hit, dostali sa až za hranice Československa.
+
+<%
+story.showDelayed("LF-IMG-036");
+%>
+
+:: LF-IMG-036 [speaker-fulla]
+<figure>
+	<img src="https://www.webumenia.sk/images/diela/SNG/55/SVK_SNG.K_2931/SVK_SNG.K_2931.jpeg" alt="Ľudovít Fulla - Marienka a Janko, 1952" />
+	<figcaption>
+		<a href="https://www.webumenia.sk/dielo/SVK:SNG.K_2931" target="_blank">Ľudovít Fulla - Marienka a Janko, 1952, Slovenská národná galéria</a>
+	</figcaption>
+</figure>
+
+<%
+story.showDelayed("LF-070");
+%>
+
+:: LF-070 [speaker-fulla]
+Unikal som do ríše rozprávok, ľudového umenia, dôvtipu... Do sveta v ktorom síce straší, dejú sa neprávosti, ale napokon predsa dobro zvíťazí nad zlom.
+
+<%
+story.showDelayed("LF-071");
+%>
+
+:: LF-071 [speaker-fulla]
+A Janko Hraško, ten má v mojom živote špeciálne miesto.
+
+[[Aké miesto patrí Jankovi Hraškovi?->LF-072]]
+[[Kam ste unikali vy, pán Filla, pred doktrínou režimu?->EF-IMG-031]]
+
+:: LF-072 [speaker-fulla]
+Prvýkrát stretol som sa s ním ako malé chlapča, vtedy som naozaj veril na strigy a ježibaby. Druhýkrát, keď som ho pre vydavateľstvo Mladé letá mal zobraziť v ilustráciách.
+
+<%
+story.showDelayed("LF-IMG-037");
+%>
+
+:: LF-IMG-037 [speaker-fulla]
+<figure>
+	<img src="https://www.webumenia.sk/images/diela/SNG/95/SVK_SNG.KD_285/SVK_SNG.KD_285.jpeg" alt="Ľudovít Fulla - Janko Hraško, 1957" />
+	<figcaption>
+		<a href="https://www.webumenia.sk/dielo/SVK:SNG.KD_285" target="_blank">Ľudovít Fulla - Janko Hraško, 1957, Slovenská národná galéria</a>
+	</figcaption>
+</figure>
+
+[[Ako to prebiehalo?->LF-073]]
+
+:: LF-073 [speaker-fulla]
+Tu máš text, povedali mi... a teraz sa čuduj, ako môže človiečik malý ako hrášok zjesť bryndzovú halušku... Som lipták, vynorila sa mi predstava, ako mi raz otec rozprával: „Chlapče! Ale to boli také halušky, že sa zmestili tri do hrnca!“
+
+<%
+story.showDelayed("LF-IMG-038");
+%>
+
+:: LF-IMG-038 [speaker-fulla]
+<figure>
+	<img src="https://raw.githubusercontent.com/SlovakNationalGallery/fillafulla.sng.sk/master/img/twine/SNGAVU--22D12-1--0_1--2018_03_13--L22018_03_16--LP_WEB.jpg" alt="Ľudovít Fulla pri ilustrovaní Slovenských rozprávok, šesťdesiate roky," />
+	<figcaption>
+		Ľudovít Fulla pri ilustrovaní Slovenských rozprávok, šesťdesiate.60. roky, Archív výtvarného umenia SNG
+	</figcaption>
+</figure>
+
+<%
+story.showDelayed("LF-074");
+%>
+
+:: LF-074 [speaker-fulla]
+Keď ilustrujem, textu sa nepridržiavam prísne. Dotváram si ho podľa vlastných citových predstáv. Nuž, namaľoval som ho ako usmievajúceho sa hrdinu.
+
+[[Venovali ste sa ilustráciám aj vy, pán Filla?->EF-064]]
+
+:: EF-064 [speaker-filla]
+Ilustroval jsem příteli Františkovi Halasovi jeho sbírku básní Torso naděje. Ve vztahu s předlohou jsou grafiky naprosto samostatné. Jsou jenom doprovod, výtvarně autonomní díla. 
+
+<%
+story.showDelayed("EF-IMG-030");
+%>
+
+:: EF-IMG-030 [speaker-filla]
+<figure>
+	<img src="https://raw.githubusercontent.com/SlovakNationalGallery/fillafulla.sng.sk/master/img/twine/Filla_G-767_001_p1_30404.jpg" alt="Emil Filla - Hadí pouta (Ruce spoutané hady), 1945" />
+	<figcaption>
+		Emil Filla - Hadí pouta (Ruce spoutané hady), 1945, Galerie hlavního města Prahy
+	</figcaption>
+</figure>
+
+[[A ako ste unikali pred socialistickou doktrínou?->EF-IMG-031]]
+
+:: EF-IMG-031 [speaker-filla]
+<figure>
+	<img src="https://raw.githubusercontent.com/SlovakNationalGallery/fillafulla.sng.sk/master/img/twine/Filla_hajaj.jpg" alt="Emil Filla - Lidová píseň (Hajaj, belaj…), 1948" />
+	<figcaption>
+		Emil Filla - Lidová píseň (Hajaj, belaj…), 1948, Západočeská galerie v Plzni
+	</figcaption>
+</figure>
+
+<%
+story.showDelayed("EF-065");
+%>
+
+:: EF-065 [speaker-filla]
+„Hajaj, belaj, synáčik môj, nebuď taký jak otec tvoj"... Zní ti to povědomě?
+
+[[Trochu. Čo to je?->EF-066]]
+
+:: EF-066 [speaker-filla]
+Po válce, maloval jsem cyklus Zbojnických písní.
+
+<%
+story.showDelayed("EF-067");
+%>
+
+:: EF-067 [speaker-filla]
+Slovenský zbojník byl mi vzorem svobodného člověka, který raději dá život, než by žil v porobě.
+
+<%
+story.showDelayed("EF-IMG-032");
+%>
+
+:: EF-IMG-032 [speaker-filla]
+<figure>
+	<img src="https://www.webumenia.sk/images/diela/SNG/91/SVK_SNG.K_7165/SVK_SNG.K_7165.jpeg" alt="Emil Filla - Keď som išiel cez ten les..., 1951" />
+	<figcaption>
+		<a href="https://www.webumenia.sk/dielo/SVK:SNG.K_7165" target="_blank">Emil Filla - Keď som išiel cez ten les..., 1951, Slovenská národná galéria</a>
+	</figcaption>
+</figure>
+
+[[Nebola to, v tých časoch, čistá provokácia?->EF-068]]
+[[Mali ste aj iné tvorivé aktivity?->EF-068B]]
+
+:: EF-068 [speaker-filla]
+Taky že byla... protože nadešla doba, kdy se ty příšery buchenwaldské dostávali znova ke slovu...znova jsem volal po boji o svobodu. 
+
+<%
+story.showDelayed("EF-068B");
+%>
+
+:: EF-068B [speaker-filla]
+Taky jsem ovšem hodně psal. Sledoval jsem průnik umění a života v různých kulturách a etapách historie. Vzpomínal jsem také na válku. Stihl jsem vydat několik knih a sbírek esejí. (Otázky a úlohy, Problém renesance a Drobná plastika, Rembrandt, O svobodě, Psí písně v Buchenwaldě, O výtvarném umění, Práce oka aj.)
+<%
+story.showDelayed("EF-069");
+%>
+
+
+:: EF-069 [speaker-filla]
+Člověk nikdy neví, kolik času na světě má... blížíme se do finále!
+<%
+story.showDelayed("EF-IMG-033");
+%>
+
+:: EF-IMG-033 [speaker-filla]
+<figure>
+	<img src="https://raw.githubusercontent.com/SlovakNationalGallery/fillafulla.sng.sk/master/img/twine/Galerie_Louny_DD24.jpg" alt="Emil Filla s Manželkou Hanou, Peruc, Josef Sudek, 1952" />
+	<figcaption>
+		Emil Filla s manželkou Hanou, Peruc, Josef Sudek, 1952, Galerie Benedikta Rejta, Louny
+	</figcaption>
+</figure>
+
+[[Ako to myslíte?->EF-IMG-034]]
+
+:: EF-IMG-034 [speaker-filla]
+<figure>
+	<img src="https://raw.githubusercontent.com/SlovakNationalGallery/fillafulla.sng.sk/master/img/twine/Filla_193b.jpg" alt="Oznam o Spolku výtvarných umelcov Mánes o úmrtí Emila Fillu, 1953" />
+	<figcaption>
+		Oznam Spolku výtvarných umelců Mánes o úmrtí Emila Fillu, 1953
+	</figcaption>
+</figure>
+
+<%
+story.showDelayed("EF-070");
+%>
+
+:: EF-070 [speaker-filla]
+Sedmý infarkt myokardu jsem již nepřežil. Do posledního dechu jsem bojoval za to, čemu jsem zasvětil celý život. Svobodě!
+
+<%
+story.showDelayed("LF-075");
+%>
+
+:: LF-075 [speaker-fulla]
+Emilovou smrťou sa končí aj obdobie paralel v našom živote. Preto prišiel čas rozlúčiť sa.
+
+[[Čo sa stalo s vašimi obrazmi, pán Filla?->EF-071]]
+[[Ako ste ďalej žili, pán Fulla?->LF-076]]
+
+:: EF-071 [speaker-filla]
+Hana věnovala čásť mého díla státu... pozdější tvorba je ve vlastnictví Galerie Benedikta Rejta v Lounech. Na Peruci se nachází má památná izba.
+
+[[Ako ste ďalej žili pán Fulla?->LF-076]]
+[[Ešte na záver, aký je váš odkaz?->EF-073]]
+
+:: LF-076 [speaker-fulla]
+Po smrti Kláriky som svoje celoživotné dielo venoval štátu a vrátil som sa do Ružomberka. V roku 1963 som bol titulovaný za národného umelca a na pozemku môjho starého otca mi postavili galériu aj s bytom.
+
+<%
+story.showDelayed("LF-IMG-039");
+%>
+
+:: LF-IMG-039 [speaker-fulla]
+<figure>
+	<img src="https://raw.githubusercontent.com/SlovakNationalGallery/fillafulla.sng.sk/master/img/twine/SNGAVU--22F3-3--0_1--2018_03_13--L22018_03_16--LP_WEB.jpg" alt="Galéria Ľudovíta Fullu v Ružomberku, 70. roky 20. storočia" />
+	<figcaption>
+		Galéria Ľudovíta Fullu v Ružomberku, 70. roky 20. storočia, Archív výtvarného umenia SNG
+	</figcaption>
+</figure>
+
+<%
+story.showDelayed("LF-IMG-039B");
+%>
+
+:: LF-IMG-039B [speaker-fulla]
+
+<figure>
+	<img src="https://raw.githubusercontent.com/SlovakNationalGallery/fillafulla.sng.sk/master/img/twine/SNGAVU--22F3-10--0_1--2018_03_13--L22018_03_16--LP_WEB.jpg" alt="Obytná časť Galérie Ľudovíta Fullu v Ružomberku, 70. roky 20. storočia" />
+	<figcaption>
+		Obytná časť Galérie Ľudovíta Fullu v Ružomberku, 70. roky 20. storočia, Archív výtvarného umenia SNG
+	</figcaption>
+</figure>
+
+<%
+story.showDelayed("LF-077");
+%>
+
+:: LF-077 [speaker-fulla]
+Pozri si aj video.
+
+<%
+story.showDelayed("LF-VID-002");
+%>
+
+:: LF-VID-002 [speaker-fulla]
+<iframe width="560" height="315" src="https://player.vimeo.com/video/279224954?portrait=0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" frameborder="0"></iframe>
+
+<%
+story.showDelayed("LF-078");
+%>
+
+:: LF-078 [speaker-fulla]
+Kde sa to začalo, tam sa to i končí. Posledné roky som tvoril vo vlastnom „múzeu“. 
+
+<%
+story.showDelayed("EF-072");
+%>
+
+:: EF-072 [speaker-filla]
+Řekl bych, že jsi byl vystaven ještě za života - i když ve vlastní galerii.
+
+[[Páči sa vám výsledná stavba?->LF-078B]]
+[[Ešte na záver. Aký je teda váš odkaz?->EF-073]]
+
+:: LF-078B [speaker-fulla]
+Stavba galérie trvala sedem dlhých, vyčerpávajúcich rokov. Napriek menším chybám krásy ju však považujem za viac-menej - no, s prižmúrením oka, pomerne vydarené dielo.
+
+[[Máte nejaký odkaz na záver?->EF-073]]
+
+:: EF-073 [speaker-filla]
+Je možno zabít umění, ale není možno žít bez umění. Uměním se uskutečňuje svoboda a není svobody mimo svobodného člověka. 
+
+<%
+story.showDelayed("LF-079");
+%>
+
+:: LF-079 [speaker-fulla]
+Obraz je na to, aby človeka potešil. Optimizmus v umení podporuje budovanie nového radostného života. Radosť z farby je výtvarným prejavom tohto úsilia. A moja tvorba je na tento cieľ zameraná.
+
+[[Ďakujem. Bol to pekný rozhovor.->EF-074]]
+
+:: EF-074 [speaker-filla]
+Já taky, rád jsem si s vámi popovídal. 
+
+<%
+story.showDelayed("LF-080");
+%>
+
+:: LF-080 [speaker-fulla]
+Ak si ešte nevidel/a výstavu o našej tvorbe, ponáhľaj sa do Slovenskej národnej galérie.
+
+<%
+story.showDelayed("EF-075");
+%>
+
+:: EF-075 [speaker-filla]
+Výstava potrvá do 21. října 2018.
+
+<%
+story.showDelayed("LF-081");
+%>
+
+:: LF-081 [speaker-fulla]
+Len pre istotu: říjen je október. Uvidíme sa tam!
+
+:: LF-END [speaker-fulla]
+Viac informácií o výstave nájdeš tu:
+<a href="https://www.sng.sk/sk/vystavy/1502_filla-fulla-osud-umelce-osud-umelca">FILLA – FULLA: Osud umělce / Osud umelca</a>
+<br><br>
+Kolekciu s našimi dielami si môžeš pozrieť na Webe umenia:
+<a href="https://www.webumenia.sk/kolekcia/155" target="_blank">Kolekcia Filla / Fulla</a>
+<br><br>
+Prajem pekný deň.
+
+[[Ďakujem a dovidenia.->EF-END]]
+
+:: EF-END [speaker-filla]
+Na shledanou.
+
+<%
+story.showDelayed("FF-END-IMG");
+%>
+
+:: FF-END-IMG [speaker-filla]
+<figure>
+	<img src="https://www.webumenia.sk/images/diela/MG./0/CZE_MG.B_1833/CZE_MG.B_1833.jpeg" alt="Emil Filla - Okno" />
+	<figcaption>
+		<a href="https://www.webumenia.sk/dielo/CZE:MG.B_1833" target="_blank">Emil Filla - Okno</a>
+	</figcaption>
+</figure>
