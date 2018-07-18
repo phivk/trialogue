@@ -17,6 +17,15 @@ body {
   font-family: HopeSans;
 }
 
+.btn-danger {
+  background-color: #417505;
+  border-color: #417505;
+}
+.btn-danger:hover {
+  background-color: #396804;
+  border-color: #325C03;
+}
+
 /* Passage Avatars */
 
 .chat-passage-wrapper[data-speaker='ty']:after {
@@ -89,4 +98,24 @@ div.left-sidebar .fillafullachat {
 div.right-sidebar .share-container .social-links i {
   margin-right: 10px;
   display: inline-block;
+}
+
+/*
+ * Modal (http://getbootstrap.com/docs/4.1/components/modal/)
+ */
+
+.modal .btn-link,
+.modal .btn-link:focus,
+.modal .btn-link:hover {
+  color: #000;
+  text-decoration: none;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+.modal .btn-link {
+  border-bottom: 2px solid rgba(65,117,5, 0.3);
+}
+.modal .btn-link:hover {
+  border-bottom: 2px solid rgba(65,117,5, 1.0);
 }

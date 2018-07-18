@@ -21,7 +21,7 @@
 <body class="bg-white">
 
     <nav class="navbar navbar-expand-lg fixed-top">
-        <a href="/"><img class="nav-icon nav-icon-back" src="https://fillafulla.sng.sk/img/icon-back.svg"></a>
+        <a href="/" data-toggle="modal" data-target="#exampleModal"><img class="nav-icon nav-icon-back" src="https://fillafulla.sng.sk/img/icon-back.svg"></a>
         <h1 id="ptitle" class="nav-title"><%= name %></h1>
         <div id="psub">
             <span id="psubtitle"></span>
@@ -90,6 +90,29 @@
     </main>
 
     <%= passages %>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content rounded-0">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Opustiť chat?</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>
+            Ak opustíte chat, história konverzácie sa stratí a budete musieť začať odznova.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn rounded-0 btn-link" data-dismiss="modal">Zostať</button>
+            <a href="/" type="button" class="btn rounded-0 btn-danger">Odísť</a>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
