@@ -154,7 +154,7 @@ nav .nav-icon {
 /* User Response Panel */
 
 .user-response-panel {
-  padding-right: 15px !important; /* !important to counter BS4 modal bug */
+  padding-right: 15px;
   padding-left: 15px;
 }
 @media (min-width: 992px) {
@@ -238,6 +238,7 @@ nav .nav-icon {
 }
 
 /* Typing Animation */
+
 div.wave {
   position:relative;
   text-align:center;
@@ -282,6 +283,12 @@ div.wave .dot:nth-child(3) {
  * counter extra padding-right added by BS4 modal
  * https://stackoverflow.com/questions/32862394/bootstrap-modals-keep-adding-padding-right-to-body-after-closed
  */
-.modal-open {
-    padding-right: 0 !important;
+body.modal-open {
+  padding-right: 0 !important;
+}
+body.modal-open .user-response-panel {
+  padding-right: 15px !important;
+}
+body.modal-open nav.navbar {
+  padding-right: 15px !important;
 }
