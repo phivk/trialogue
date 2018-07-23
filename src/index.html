@@ -51,9 +51,9 @@
                         </div>
                     </div>
                 </div>
-                <div id="user-response-panel" class="user-response-panel fixed-bottom bg-light-grayish-orange">
+                <div class="user-response-panel fixed-bottom bg-light-grayish-orange">
                     <hr>
-                    <div class="user-response-hint"></div>
+                    <div id="user-response-hint" class="user-response-hint"></div>
                     <div id="user-response-panel" class="user-reponse-wrapper"></div>
                 </div>
 
@@ -106,7 +106,7 @@
           $('#right-sidebar-container').css('display', 'none').html(htmlContent).fadeIn('slow');
         }
         function inject_hint(hintContent) {
-          $('#user-response-panel .user-response-hint').html(hintContent);
+          $('#user-response-hint').html(hintContent);
         }
         function inject_modal(titleContent, bodyContent, footerContent) {
           $('#exitModal .modal-title').html(titleContent);
