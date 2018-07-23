@@ -173,10 +173,12 @@ nav .nav-icon {
   font-style: italic;
   font-size: .75rem;
   text-align: center;
+  height: 18px;
 }
 @media (max-width: 379.98px) {
   .user-response-hint {
     font-size: .6rem;
+    height: 14px;
   }
   body {
     margin-bottom: calc(var(--user-response-panel-height) + 14px + 5px); /* + height of hint + hr */
@@ -188,6 +190,7 @@ nav .nav-icon {
 @media (max-width: 319.98px) {
   .user-response-hint {
     font-size: .5rem;
+    height: 12px;
   }
   body {
     margin-bottom: calc(var(--user-response-panel-height) + 12px + 5px); /* + height of hint + hr */
