@@ -21,21 +21,23 @@
 <body class="bg-white">
 
     <nav class="navbar navbar-expand-lg fixed-top">
-        <a href="/" data-toggle="modal" data-target="#exitModal"><img class="nav-icon nav-icon-back" src="https://fillafulla.sng.sk/img/icon-back.svg"></a>
+        <a id="nav-link-back" class="content-container" href="/" data-toggle="modal" data-target="#exitModal">
+            Back
+        </a>
         <h1 id="ptitle" class="nav-title"><%= name %></h1>
         <div id="psub">
             <span id="psubtitle"></span>
             <span id="pauthor"></span>
         </div>
-        <button class="navbar-toggler p-0 border-0 d-lg-none" type="button" data-toggle="offcanvas">
-            <img class="nav-icon nav-icon-menu" src="https://fillafulla.sng.sk/img/icon-hamburger.svg">
+        <button id="nav-link-menu" class="content-container navbar-toggler p-0 border-0 d-lg-none" type="button" data-toggle="offcanvas">
+            Menu
         </button>
     </nav>
 
     <main role="main" class="container-fluid">
         <div class="row">
             <div class="left-sidebar col-lg d-none d-lg-block">
-                <div id="left-sidebar-container" class="position-fixed mt-3 mt-lg-5 m-lg-4"></div>
+                <div id="left-sidebar-container" class="content-container position-fixed mt-3 mt-lg-5 m-lg-4"></div>
             </div>
             <div class="chat-panel col-lg-6 minh-full bg-light-grayish-orange">
                 <div id="phistory" class="chat-history"></div>
@@ -53,14 +55,14 @@
                 </div>
                 <div class="user-response-panel fixed-bottom bg-light-grayish-orange">
                     <hr>
-                    <div id="user-response-hint" class="user-response-hint"></div>
+                    <div id="user-response-hint" class="user-response-hint content-container"></div>
                     <div id="user-response-panel" class="user-reponse-wrapper"></div>
                 </div>
 
             </div>
             <div class="right-sidebar col-lg offcanvas-collapse">
                 <div class="position-fixed ml--3 w-100 w-lg-auto h-100">
-                    <div id="right-sidebar-container" class="m-3 m-sm-5 m-lg-3 mt-lg-5 m-xl-5 mt-xl-5"></div>
+                    <div id="right-sidebar-container" class="content-container m-3 m-sm-5 m-lg-3 mt-lg-5 m-xl-5 mt-xl-5"></div>
                 </div>
             </div>
         </div>
@@ -74,13 +76,13 @@
       <div class="modal-dialog" role="document">
         <div class="modal-content rounded-0">
           <div class="modal-header">
-            <h5 class="modal-title" id="exitModalLabel"></h5>
+            <h5 class="modal-title content-container" id="exitModalLabel"></h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
-          <div class="modal-body"></div>
-          <div class="modal-footer"></div>
+          <div class="modal-body content-container"></div>
+          <div class="modal-footer content-container"></div>
         </div>
       </div>
     </div>
@@ -99,19 +101,30 @@
             })
         })
 
+        /*
+         * Helper functions for injecting content into markup
+         * can be called from Story JavaScript to insert story specific content
+         */
+        function inject_nav_back(htmlContent) {
+            $('#nav-link-back').css('display', 'none').html(htmlContent).fadeIn();
+        }
+        function inject_nav_menu(htmlContent) {
+            $('#nav-link-menu').css('display', 'none').html(htmlContent).fadeIn();
+        }
         function inject_left_sidebar(htmlContent) {
-          $('#left-sidebar-container').css('display', 'none').html(htmlContent).fadeIn('slow');
-        }
+            $('#left-sidebar-container').css('display', 'none').html(htmlContent).fadeIn();
+        }        
         function inject_right_sidebar(htmlContent) {
-          $('#right-sidebar-container').css('display', 'none').html(htmlContent).fadeIn('slow');
+            $('#right-sidebar-container').css('display', 'none').html(htmlContent).fadeIn();
         }
-        function inject_hint(hintContent) {
-          $('#user-response-hint').html(hintContent);
+        function inject_hint(htmlContent) {
+            $('#user-response-hint').css('display', 'none').html(htmlContent).fadeIn();
         }
         function inject_modal(titleContent, bodyContent, footerContent) {
-          $('#exitModal .modal-title').html(titleContent);
-          $('#exitModal .modal-body').html(bodyContent);
-          $('#exitModal .modal-footer').html(footerContent);
+            // skip fadeIn because modal is off screen
+            $('#exitModal .modal-title').html(titleContent);
+            $('#exitModal .modal-body').html(bodyContent);
+            $('#exitModal .modal-footer').html(footerContent);
         }
     </script>
     <%= script %>
