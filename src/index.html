@@ -21,7 +21,7 @@
 <body class="bg-white">
 
     <nav class="navbar navbar-expand-lg fixed-top">
-        <a href="/" data-toggle="modal" data-target="#exampleModal"><img class="nav-icon nav-icon-back" src="https://fillafulla.sng.sk/img/icon-back.svg"></a>
+        <a href="/" data-toggle="modal" data-target="#exitModal"><img class="nav-icon nav-icon-back" src="https://fillafulla.sng.sk/img/icon-back.svg"></a>
         <h1 id="ptitle" class="nav-title"><%= name %></h1>
         <div id="psub">
             <span id="psubtitle"></span>
@@ -51,9 +51,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="user-response-panel fixed-bottom bg-light-grayish-orange">
+                <div id="user-response-panel" class="user-response-panel fixed-bottom bg-light-grayish-orange">
                     <hr>
-                    <div class="user-response-hint">Vyberte si jednu z možností a pokračujte v konverzácii</div>
+                    <div class="user-response-hint"></div>
                     <div id="user-response-panel" class="user-reponse-wrapper"></div>
                 </div>
 
@@ -70,24 +70,17 @@
     <%= passages %>
 
     <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="exitModal" tabindex="-1" role="dialog" aria-labelledby="exitModalLabel" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content rounded-0">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Opustiť chat?</h5>
+            <h5 class="modal-title" id="exitModalLabel"></h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
-          <div class="modal-body">
-            <p>
-            Ak opustíte chat, história konverzácie sa stratí a budete musieť začať odznova.
-            </p>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn rounded-0 btn-link" data-dismiss="modal">Zostať</button>
-            <a href="/" type="button" class="btn rounded-0 btn-danger">Odísť</a>
-          </div>
+          <div class="modal-body"></div>
+          <div class="modal-footer"></div>
         </div>
       </div>
     </div>
@@ -105,6 +98,21 @@
                 $('.offcanvas-collapse').toggleClass('open')
             })
         })
+
+        function inject_left_sidebar(htmlContent) {
+          $('#left-sidebar-container').css('display', 'none').html(htmlContent).fadeIn('slow');
+        }
+        function inject_right_sidebar(htmlContent) {
+          $('#right-sidebar-container').css('display', 'none').html(htmlContent).fadeIn('slow');
+        }
+        function inject_hint(hintContent) {
+          $('#user-response-panel .user-response-hint').html(hintContent);
+        }
+        function inject_modal(titleContent, bodyContent, footerContent) {
+          $('#exitModal .modal-title').html(titleContent);
+          $('#exitModal .modal-body').html(bodyContent);
+          $('#exitModal .modal-footer').html(footerContent);
+        }
     </script>
     <%= script %>
 </body>
