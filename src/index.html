@@ -103,25 +103,27 @@
          * can be called from Story JavaScript to insert story specific content
          */
         function inject_nav_back(htmlContent) {
-            $('#nav-link-back').css('display', 'none').html(htmlContent).fadeIn();
+            $('.content-container#nav-link-back').html(htmlContent);
         }
         function inject_nav_menu(htmlContent) {
-            $('#nav-link-menu').css('display', 'none').html(htmlContent).fadeIn();
+            $('.content-container#nav-link-menu').html(htmlContent);
         }
         function inject_left_sidebar(htmlContent) {
-            $('#left-sidebar-container').css('display', 'none').html(htmlContent).fadeIn();
+            $('.content-container#left-sidebar-container').html(htmlContent);
         }        
         function inject_right_sidebar(htmlContent) {
-            $('#right-sidebar-container').css('display', 'none').html(htmlContent).fadeIn();
+            $('.content-container#right-sidebar-container').html(htmlContent);
         }
         function inject_hint(htmlContent) {
-            $('#user-response-hint').css('display', 'none').html(htmlContent).fadeIn();
+            $('.content-container#user-response-hint').html(htmlContent);
         }
         function inject_modal(titleContent, bodyContent, footerContent) {
-            // skip fadeIn because modal is off screen
-            $('#exitModal .modal-title').html(titleContent);
-            $('#exitModal .modal-body').html(bodyContent);
-            $('#exitModal .modal-footer').html(footerContent);
+            $('#exitModal .content-container.modal-title').html(titleContent);
+            $('#exitModal .content-container.modal-body').html(bodyContent);
+            $('#exitModal .content-container.modal-footer').html(footerContent);
+        }
+        function fade_in_content_containers() {
+            $('.content-container').fadeTo(400, 1);
         }
     </script>
     <%= script %>
