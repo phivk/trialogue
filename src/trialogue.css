@@ -3,12 +3,13 @@
 :root {
   --navbar-height: 56px;
   --user-response-panel-height: 110px;
+  --bg-color: #C7BDB5; /* light-grayish-orange */
 }
 
 /* Atomic Utilities */
 
-.bg-light-grayish-orange {
-  background-color: #C7BDB5;
+.bg-color {
+  background-color: var(--bg-color);
 }
 
 .minh-full {
