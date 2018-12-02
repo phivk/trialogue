@@ -1,6 +1,6 @@
 {
   "name": "Trialogue",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "A chat style story format based on Paloma",
   "author": "Philo van Kemenade <philo.van.kemenade@sng.sk>",
   "license": "MIT",
@@ -11,7 +11,7 @@
   "dependencies": {
     "jquery": "^2.2.0",
     "lz-string": "^1.4.4",
-    "marked": "^0.3.5",
+    "marked": "^0.5.2",
     "underscore": "^1.8.3"
   },
   "devDependencies": {
