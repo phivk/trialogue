@@ -95,10 +95,18 @@ nav .nav-icon {
   margin: .5rem 0;
 }
 
-.chat-passage-wrapper[data-speaker='you'], .chat-passage-wrapper[data-speaker='ty'] {
+.chat-passage-wrapper[data-speaker='you'], 
+.chat-passage-wrapper[data-speaker='jij'], 
+.chat-passage-wrapper[data-speaker='du'], 
+.chat-passage-wrapper[data-speaker='tu'], 
+.chat-passage-wrapper[data-speaker='ty'] {
   text-align: right;
 }
-.chat-passage-wrapper[data-speaker='you'] .chat-passage:before, .chat-passage-wrapper[data-speaker='ty'] .chat-passage:before {
+.chat-passage-wrapper[data-speaker='you'] .chat-passage:before, 
+.chat-passage-wrapper[data-speaker='jij'] .chat-passage:before, 
+.chat-passage-wrapper[data-speaker='du'] .chat-passage:before, 
+.chat-passage-wrapper[data-speaker='tu'] .chat-passage:before, 
+.chat-passage-wrapper[data-speaker='ty'] .chat-passage:before {
   text-align: right;
 }
 
@@ -224,19 +232,43 @@ nav .nav-icon {
 /* Passage Avatars */
 
 .chat-passage-wrapper:before {
-  position: absolute;
-  vertical-align: top;
   margin-right: 5px;
-}
-.chat-passage-wrapper[data-speaker='you']:before, .chat-passage-wrapper[data-speaker='ty']:before {
-  margin-left: 0;
-}
-.chat-passage-wrapper[data-speaker='you']:after, .chat-passage-wrapper[data-speaker='ty']:after {
   position: absolute;
   vertical-align: top;
-  margin-left: -30px;
+  content: "";
+  width: 30px;
+  height: 30px;
+  background-size: 30px 30px;
+  border-radius: 15px;
+  background-color: #999;
 }
-.chat-passage[data-speaker='you'], .chat-passage[data-speaker='ty'] {
+.chat-passage-wrapper[data-speaker='you']:before, 
+.chat-passage-wrapper[data-speaker='jij']:before, 
+.chat-passage-wrapper[data-speaker='du']:before, 
+.chat-passage-wrapper[data-speaker='tu']:before, 
+.chat-passage-wrapper[data-speaker='ty']:before {
+  display: none;
+}
+.chat-passage-wrapper[data-speaker='you']:after, 
+.chat-passage-wrapper[data-speaker='jij']:after, 
+.chat-passage-wrapper[data-speaker='du']:after, 
+.chat-passage-wrapper[data-speaker='tu']:after, 
+.chat-passage-wrapper[data-speaker='ty']:after {
+  margin-left: -30px;
+  position: absolute;
+  vertical-align: top;
+  content: "";
+  width: 30px;
+  height: 30px;
+  background-size: 30px 30px;
+  border-radius: 15px;
+  background-color: #417505;
+}
+.chat-passage[data-speaker='you'], 
+.chat-passage[data-speaker='jij'], 
+.chat-passage[data-speaker='du'], 
+.chat-passage[data-speaker='tu'], 
+.chat-passage[data-speaker='ty'] {
   margin-left: 0;
   margin-right: 35px;
 }
