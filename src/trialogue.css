@@ -3,7 +3,13 @@
 :root {
   --navbar-height: 56px;
   --user-response-panel-height: 110px;
-  --bg-color: #C7BDB5; /* light-grayish-orange */
+  --bg-color: #C7BDB5; /*global chat bg color*/
+  --user-color: #417505; /*user name & placeholder avatar bg*/
+  --speaker-color: #888; /*default color for speaker name & placeholder avatar bg*/
+  --sidebar-bg-color: #FFF;
+  --navbar-bg-color: #FFF;
+  --passage-bg-color: #FFF;
+  --passage-text-color: #000;
 }
 
 /* Atomic Utilities */
@@ -54,7 +60,7 @@ body {
     padding-left: 1rem;
     overflow-y: auto;
     visibility: hidden;
-    background-color: #FFF;
+    background-color: var(--sidebar-bg-color);
     transition-timing-function: ease-in-out;
     transition-duration: .3s;
     transition-property: left, visibility;
@@ -69,7 +75,7 @@ body {
 
 nav.navbar {
   height: var(--navbar-height);
-  background-color: #FFF;
+  background-color: var(--navbar-bg-color);
   padding: .5rem 15px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
@@ -100,13 +106,14 @@ nav .nav-icon {
 }
 .chat-passage-wrapper[data-speaker='you'] .chat-passage:before {
   text-align: right;
+  color: var(--user-color);
 }
 
 .chat-passage {
   display: inline-block;
   padding: 0.25rem .5rem;
   margin-left: 35px;
-  background-color: #FFF;
+  background-color: var(--passage-bg-color);
   max-width: calc(100% - 80px);
   text-align: left;
 }
@@ -131,6 +138,7 @@ nav .nav-icon {
   display: block;
   font-size: .75rem;
   text-transform: capitalize;
+  color: var(--speaker-color);
 }
 
 .chat-passage p {
@@ -212,13 +220,14 @@ nav .nav-icon {
   display: inline-block;
   padding: .5rem;
   margin: .25rem;
-  background-color: #FFF;
-  color: #000;
+  background-color: var(--passage-bg-color);
+  color: var(--passage-text-color);
+  border-top: 2px solid transparent;
+  transition: border-color 0.15s ease-in;
 }
 .user-response-panel .user-response:hover {
   text-decoration: none;
-  border: 2px solid black;
-  margin: calc(.25rem - 2px);
+  border-color: var(--user-color);
 }
 
 /* Passage Avatars */
@@ -232,7 +241,7 @@ nav .nav-icon {
   height: 30px;
   background-size: 30px 30px;
   border-radius: 15px;
-  background-color: #888;
+  background-color: var(--speaker-color);
 }
 .chat-passage-wrapper[data-speaker='you']:before {
   display: none;
@@ -246,7 +255,7 @@ nav .nav-icon {
   height: 30px;
   background-size: 30px 30px;
   border-radius: 15px;
-  background-color: #417505;
+  background-color: var(--user-color);
 }
 .chat-passage[data-speaker='you'] {
   margin-left: 0;
@@ -267,7 +276,7 @@ div.wave .dot {
   height: 6px;
   border-radius: 50%;
   margin-right: 2px;
-  background: #000;
+  background: var(--passage-text-color);
   animation: wave 1.2s ease-in-out infinite;
 
 }
