@@ -33,7 +33,7 @@ Compilation can be done using one of:
 **Decompile** `.html` story to `.twee`/`.tw2` using trialogue story format:
 
 ```
-tweego --decompile --output=[path/to/target.twee] [path/to/source.html]
+tweego --decompile --output=[path/to/target.twee] [path/to/source.html] --format=Trialogue
 ```
 
 ```
@@ -43,7 +43,7 @@ twee2 decompile [path/to/source.html] [path/to/target.tw2]
 **Compile** `.twee`/`.tw2` story to `.html` story using trialogue story format:
 
 ```
-tweego --format=Trialogue --output=[path/to/target.html] [path/to/source.twee]
+tweego --output=[path/to/target.html] [path/to/source.twee] --format=Trialogue
 ```
 
 ```
