@@ -95,18 +95,10 @@ nav .nav-icon {
   margin: .5rem 0;
 }
 
-.chat-passage-wrapper[data-speaker='you'], 
-.chat-passage-wrapper[data-speaker='jij'], 
-.chat-passage-wrapper[data-speaker='du'], 
-.chat-passage-wrapper[data-speaker='tu'], 
-.chat-passage-wrapper[data-speaker='ty'] {
+.chat-passage-wrapper[data-speaker='you'] {
   text-align: right;
 }
-.chat-passage-wrapper[data-speaker='you'] .chat-passage:before, 
-.chat-passage-wrapper[data-speaker='jij'] .chat-passage:before, 
-.chat-passage-wrapper[data-speaker='du'] .chat-passage:before, 
-.chat-passage-wrapper[data-speaker='tu'] .chat-passage:before, 
-.chat-passage-wrapper[data-speaker='ty'] .chat-passage:before {
+.chat-passage-wrapper[data-speaker='you'] .chat-passage:before {
   text-align: right;
 }
 
@@ -240,20 +232,12 @@ nav .nav-icon {
   height: 30px;
   background-size: 30px 30px;
   border-radius: 15px;
-  background-color: #999;
+  background-color: #888;
 }
-.chat-passage-wrapper[data-speaker='you']:before, 
-.chat-passage-wrapper[data-speaker='jij']:before, 
-.chat-passage-wrapper[data-speaker='du']:before, 
-.chat-passage-wrapper[data-speaker='tu']:before, 
-.chat-passage-wrapper[data-speaker='ty']:before {
+.chat-passage-wrapper[data-speaker='you']:before {
   display: none;
 }
-.chat-passage-wrapper[data-speaker='you']:after, 
-.chat-passage-wrapper[data-speaker='jij']:after, 
-.chat-passage-wrapper[data-speaker='du']:after, 
-.chat-passage-wrapper[data-speaker='tu']:after, 
-.chat-passage-wrapper[data-speaker='ty']:after {
+.chat-passage-wrapper[data-speaker='you']:after {
   margin-left: -30px;
   position: absolute;
   vertical-align: top;
@@ -264,11 +248,7 @@ nav .nav-icon {
   border-radius: 15px;
   background-color: #417505;
 }
-.chat-passage[data-speaker='you'], 
-.chat-passage[data-speaker='jij'], 
-.chat-passage[data-speaker='du'], 
-.chat-passage[data-speaker='tu'], 
-.chat-passage[data-speaker='ty'] {
+.chat-passage[data-speaker='you'] {
   margin-left: 0;
   margin-right: 35px;
 }
