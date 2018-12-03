@@ -1,0 +1,49 @@
+:: StorySettings
+ifid:b4a595db-0d82-4652-99ad-6c801b0f1510
+zoom:1
+
+
+:: StoryTitle
+trialogue-test
+
+
+:: Start [speaker-1]
+hi!
+👋
+
+[[hello]]
+[[whatsup?!]]
+
+
+:: hello [speaker-1]
+how are you doing?
+
+[[pretty good]]
+[[not so well]]
+
+
+:: whatsup?! [speaker-2]
+all good in the hood...
+
+[[where are you from?]]
+[[what is your name?]]
+
+
+:: pretty good [speaker-1]
+nice to hear!
+
+
+:: not so well [speaker-1]
+maybe this will brighten up your day!
+
+<img src="https://placekitten.com/800/500">
+
+
+:: where are you from? [speaker-2]
+I'm born on the web
+
+
+:: what is your name? [speaker-2]
+My name is Speaker 2
+
+
