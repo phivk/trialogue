@@ -2,6 +2,10 @@
 
 Trialogue is a Twine Story Format based on [Paloma](http://mcdemarco.net/tools/scree/paloma/).
 
+Import the Trialogie Story format into Twine:
+
+https://phivk.github.io/trialogue/dist/Twine2/Trialogue/format.js
+
 ## Changes From Paloma
 
 - chat layout, including rendering links in passages in separate UserResponsePanel
