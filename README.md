@@ -6,11 +6,11 @@ Import the Trialogie Story format into Twine:
 
 https://phivk.github.io/trialogue/dist/Twine2/Trialogue/format.js
 
-## Changes From Paloma
+## ⚠️ Changes From Paloma
 
-- chat layout, including rendering links in passages in separate UserResponsePanel
-- speaker tags
-- helper function to show a passage delayed based on it's text length `story.showDelayed(idOrName);`. Add this code to the passage text:
+- Chat layout, including rendering links in separate UserResponsePanel
+- Speaker tags; every passage must have one tag starting with "speaker-" (e.g. "speaker-bot" or "speaker-president").
+- Helper function to show a passage delayed based on it's text length `story.showDelayed(idOrName);`. This is helpful to display a next passage without requiring user input, e.g. have two bot speakers reply to each other. Add this code to the passage text:
 
 ```
 <%
