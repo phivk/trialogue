@@ -2,7 +2,7 @@
 
 Trialogue is a Twine Story Format based on [Paloma](http://mcdemarco.net/tools/scree/paloma/).
 
-Import the Trialogie Story format into Twine:
+Import the Trialogue Story format into Twine:
 
 https://phivk.github.io/trialogue/dist/Twine2/Trialogue/format.js
 
