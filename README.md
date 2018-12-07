@@ -10,7 +10,13 @@ https://phivk.github.io/trialogue/dist/Twine2/Trialogue/format.js
 
 - chat layout, including rendering links in passages in separate UserResponsePanel
 - speaker tags
-- helper function to show a passage delayed based on it's text length `story.showDelayed(idOrName);`
+- helper function to show a passage delayed based on it's text length `story.showDelayed(idOrName);`. Add this code to the passage text:
+
+```
+<%
+story.showDelayed("idOrName");
+%>
+```
 
 ## Development Setup
 
