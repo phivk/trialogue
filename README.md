@@ -2,9 +2,27 @@
 
 Trialogue is a Twine Story Format based on [Paloma](http://mcdemarco.net/tools/scree/paloma/).
 
-Import the Trialogue Story format into Twine:
+## How to make a scripted chat experience in Twine using Trialogue
 
-https://phivk.github.io/trialogue/dist/Twine2/Trialogue/format.js
+### Import Trialogue into Twine
+
+1. Open the online [Twine editor](http://twinery.org/2/#!/stories).
+2. Choose `Formats` -> `Add a New Format`, paste the following URL into the input field, click `Add`.
+3. Under `Story Formats` select Trialogue.
+
+### Create your first chat story
+
+1. Create a story in the Twine editor.
+2. Edit the start passage to include:
+   - Title (e.g. start)
+   - Passage text (e.g. "Hi 👋")
+   - One or more links (e.g. `[[What's your name?]]`)
+   - Speaker tag (e.g. `speaker-bot`). This will display the speaker's name (in this case `bot`) in above their passages. It also sets a `data-speaker="bot"` attribute on the passage's HTML element, which can be used for styling.
+3. Edit the newly created passage(s) to include:
+   - Passage text (e.g. "My name is Bot")
+   - One or more links (e.g. `[[Back to start->start]]`)
+   - Speaker tag (e.g. `speaker-bot`)
+4. Hit `Play` to test the result.
 
 ## ⚠️ Changes From Paloma
 
