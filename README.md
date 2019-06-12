@@ -9,7 +9,7 @@ Trialogue is a Twine Story Format based on [Paloma](http://mcdemarco.net/tools/s
 ![trialogue import](/docs/trialogue-import.gif)
 
 1. Open the online [Twine editor](http://twinery.org/2/#!/stories).
-2. Choose `Formats` -> `Add a New Format`, paste the following URL into the input field, click `Add`.
+2. Choose `Formats` -> `Add a New Format`, paste the Story Format URL (https://phivk.github.io/trialogue/dist/Twine2/Trialogue/format.js) into the input field, click `Add`.
 3. Under `Story Formats` select Trialogue.
 
 ### Create your first chat story
