@@ -1,6 +1,12 @@
 # Trialogue
 
-Trialogue is a Twine Story Format based on [Paloma](http://mcdemarco.net/tools/scree/paloma/).
+![Trialogue logo](dist/Twine2/Trialogue/icon.svg)
+
+Trialogue is a chat-style Twine Story Format based on [Paloma](http://mcdemarco.net/tools/scree/paloma/), which is in turn based on [Snowman](https://bitbucket.org/klembot/snowman-2/).
+
+👉 Demo story: https://phivk.github.io/trialogue/docs/trialogue-demo.html <br>
+✊ Full story powered by Trialogue: https://fillafulla.sng.sk/chat/en/ <br>
+🤖 Full story repo: https://github.com/slovakNationalGallery/fillafulla.sng.sk <br>
 
 ## How to make a scripted chat experience in Twine using Trialogue
 
@@ -26,7 +32,7 @@ Trialogue is a Twine Story Format based on [Paloma](http://mcdemarco.net/tools/s
    - Passage text (e.g. "My name is Bot")
    - One or more links (e.g. `[[Back to start->start]]`)
    - Speaker tag (e.g. `speaker-bot`)
-4. Hit `Play` to test the result.
+4. Hit `Play` to test the result (should look something [like this](https://phivk.github.io/trialogue/docs/trialogue-demo.html))
 
 ## ⚠️ Changes From Paloma
 
