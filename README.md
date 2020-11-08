@@ -36,15 +36,22 @@ Trialogue is a chat-style Twine Story Format based on [Paloma](http://mcdemarco.
 
 ## ⚠️ Changes From Paloma
 
-- Chat layout, including rendering links in separate UserResponsePanel
-- Speaker tags; every passage must have one tag starting with "speaker-" (e.g. "speaker-bot" or "speaker-president").
-- Helper function to show a passage delayed based on it's text length `story.showDelayed(idOrName);`. This is helpful to display a next passage without requiring user input, e.g. have two bot speakers reply to each other. Add this code to the passage text:
+- Changed chat layout, including rendering links in separate UserResponsePanel
+- Added speaker tags; every passage must have one tag starting with "speaker-" (e.g. "speaker-bot" or "speaker-president").
+- Added helper function to show a passage delayed based on it's text length `story.showDelayed(idOrName);`. This is helpful to display a next passage without requiring user input, e.g. have two bot speakers reply to each other. Add this code to the passage text:
 
 ```
 <%
 story.showDelayed("idOrName");
 %>
 ```
+
+## Gallery
+
+Example stories using Trialogue (add yours by submitting a Pull Request, or open an issue with a link):
+
+- [Filla Fulla Chat](https://fillafulla.sng.sk/?lang=en#): Take part in an interactive conversation and explore life stories and key artworks of the iconic Czech and Slovak artists Emil Filla and Ľudovít Fulla. Throughout the chat, both artists will answer questions and share artworks as well as archival material.
+- [Mother Tongue](https://2370.play.ifcomp.org/content/mother-tongue.html): How to learn Tagalog in just one awkward conversation with your mom a day.
 
 ## Development Setup
 
