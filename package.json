@@ -9,7 +9,7 @@
     "distDir": "dist/"
   },
   "dependencies": {
-    "jquery": "^2.2.0",
+    "jquery": "^3.5.0",
     "lz-string": "^1.4.4",
     "marked": "^0.5.2",
     "underscore": "^1.8.3"
