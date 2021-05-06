@@ -12,7 +12,7 @@
     "jquery": "^3.5.0",
     "lz-string": "^1.4.4",
     "marked": "^0.7.0",
-    "underscore": "^1.8.3"
+    "underscore": "^1.12.1"
   },
   "devDependencies": {
     "grunt": "^0.4.5",
