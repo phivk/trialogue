@@ -436,15 +436,19 @@ _.extend(Story.prototype, {
 
   		var speaker = this.getPassageSpeaker(passage);
 
+		if (speaker == 'undefined') {
+			$('#passage').html('<div class="chat-message">' + passage.render() + '</div>').fadeIn('slow');
+		} else {
 		$('#passage')
-			.html(
-				'<div data-speaker="' + speaker + '" class="chat-passage-wrapper ' + window.passage.tags.join(' ') + '">' + 
-		  			'<div data-speaker="' + speaker + '" class="chat-passage">' + 
-						passage.render() + 
-					'</div>' +
-				'</div>'
-			)
-			.fadeIn('slow');
+				.html(
+					'<div data-speaker="' + speaker + '" class="chat-passage-wrapper ' + window.passage.tags.join(' ') + '">' + 
+			  			'<div data-speaker="' + speaker + '" class="chat-passage">' + 
+							passage.render() + 
+						'</div>' +
+					'</div>'
+				)
+				.fadeIn('slow');
+		}
 		
 		this.showUserResponses();
 		
@@ -575,6 +579,9 @@ _.extend(Story.prototype, {
 			};
 		}
 		var speakerTag = _.find(passage.tags, function(tag){ return tag.startsWith('speaker-'); });
+		if (typeof speakerTag === 'undefined') {
+			return 'undefined';
+		}
 		return speakerTag.substring(8);
 	},
 	
