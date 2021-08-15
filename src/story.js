@@ -617,13 +617,19 @@ _.extend(Story.prototype, {
 		var typingDelayRatio = 0.3;
 		var delayMS = this.getPassageDelay(idOrName);
 
+		var speaker = this.getPassageSpeaker(this.passage(idOrName));
+
 		// show animation
-		_.delay(
-			function(){
-				story.showTyping(idOrName);
-			},
-			delayMS * typingDelayRatio
-		);
+		if (speaker != 'undefined') {
+			_.delay(
+				function(){
+					story.showTyping(idOrName);
+				},
+				delayMS * typingDelayRatio
+			);
+		} else {
+			delayMS = 0;
+		}
 
 		_.delay(
 			function(){
@@ -632,6 +638,7 @@ _.extend(Story.prototype, {
 			},
 			delayMS
 		);
+
 	},
 
 	/**
