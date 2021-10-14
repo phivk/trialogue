@@ -2,7 +2,7 @@
 
 ![Trialogue logo](dist/Twine2/Trialogue/icon.svg)
 
-Trialogue is a chat-style Twine Story Format based on [Paloma](http://mcdemarco.net/tools/scree/paloma/), which is in turn based on [Snowman](https://bitbucket.org/klembot/snowman-2/).
+Trialogue is a chat-style Twine Story Format based on [Paloma](http://mcdemarco.net/tools/scree/paloma/), which is in turn based on [Snowman](https://github.com/videlais/snowman).
 
 👉 Demo story: https://phivk.github.io/trialogue/docs/trialogue-demo.html <br>
 ✊ Full story powered by Trialogue: https://fillafulla.sng.sk/chat/en/ <br>
@@ -97,7 +97,7 @@ twee2 build [path/to/source.tw2] [path/to/target.html] --format=./dist/Twine2/Tr
 
 # Paloma
 
-Paloma is a Jonah-style story format for Twine 1 and 2 based on [Snowman](https://bitbucket.org/klembot/snowman-2/) by Chris Klimas.
+Paloma is a Jonah-style story format for Twine 1 and 2 based on [Snowman](https://github.com/videlais/snowman) by Chris Klimas.
 
 Paloma uses Markdown rather than TiddlyWiki-style text formatting, and Javascript rather than Twine 1.x-style macros for scripting, so it is not a drop-in replacement for Jonah.  It is a drop-in replacement for Snowman, except that Paloma will ignore any checkpoints in your story.
 
