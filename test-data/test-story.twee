@@ -1,7 +1,7 @@
-:: StorySettings
-ifid:b4a595db-0d82-4652-99ad-6c801b0f1510
-zoom:1
-
+:: StoryData
+{
+  "ifid": "B4A595DB-0D82-4652-99AD-6C801B0F1510"
+}
 
 :: StoryTitle
 trialogue-test
