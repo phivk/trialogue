@@ -2,7 +2,7 @@
   "name": "Trialogue",
   "version": "0.0.6",
   "description": "A chat style story format based on Paloma",
-  "author": "Philo van Kemenade <philo.van.kemenade@sng.sk>",
+  "author": "Philo van Kemenade",
   "license": "MIT",
   "repository": "https://github.com/phivk/trialogue",
   "config": {
