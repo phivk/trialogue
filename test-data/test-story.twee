@@ -6,6 +6,24 @@
 :: StoryTitle
 trialogue-test
 
+:: Story JavaScript [script]
+
+var leftSidebarContent       = '<h3>Welcome</h3><p>Thanks for trying out Trialogue</p>';
+var rightSidebarContent      = '<p>You can place any HTML here.</p>';
+var userResponseHintContent  = 'Choose one option to continue the conversation';
+var modalTitleContent        = 'Leave the chat?';
+var modalBodyContent         = '<p>If you leave the chat, your history will be lost and you will have to start from the beginning.</p>';
+var modalFooterContent       = '<button type="button" class="btn rounded-0 btn-link" data-dismiss="modal">Stay</button><a href="/" type="button" class="btn rounded-0 btn-danger">Leave</a>';
+var navLinkBackContent       = '← back';
+var navLinkMenuContent       = 'menu';
+
+inject_nav_back(navLinkBackContent);
+inject_nav_menu(navLinkMenuContent);
+inject_left_sidebar(leftSidebarContent);
+inject_right_sidebar(rightSidebarContent);
+inject_hint(userResponseHintContent);
+inject_modal(modalTitleContent, modalBodyContent, modalFooterContent);
+
 
 :: Start [speaker-1]
 hi!
