@@ -1,6 +1,6 @@
 # Trialogue
 
-![Trialogue logo](dist/Twine2/Trialogue/icon.svg)
+![Trialogue logo](src/icon.svg)
 
 Trialogue is a chat-style Twine Story Format based on [Paloma](http://mcdemarco.net/tools/scree/paloma/), which is in turn based on [Snowman](https://github.com/videlais/snowman).
 
