@@ -55,13 +55,15 @@ Example stories using Trialogue (add yours by submitting a Pull Request, or open
 
 ## Development Setup
 
+A possible workflow for collaboration between a Story Author and Format Developer:
+
 1. Story Author works on story in [Twinery GUI](https://twinery.org/2/#!/stories), with current version of published Story Format selected
-2. Story Author exports updated version of Story to `.html` file and sends it over *(infrequently)*
+2. Story Author exports updated version of Story to `.html` file and shares it with Format Developer *(infrequently)*
 3. Format Developer decompiles the latest Story version from `.html` to `.twee` using [TweeGo](https://www.motoslave.net/tweego/)/[Twee2](https://dan-q.github.io/twee2/) *(see 'Testing during development')*
 4. Format Developer runs [TweeGo](https://www.motoslave.net/tweego/)/[Twee2](https://dan-q.github.io/twee2/) to compile the latest Story from `.twee` to `.html` with WIP/'in development' version of custom Story Format *(see 'Testing during development')*
 5. Format Developer adjusts Story Format *(frequently)*
-6. Format Developer repeats from step **4.** until I'm happy with to release a new version of Story Format
-7. Format Developer publishs Story Format as a new version *(infrequently)*
+6. Format Developer repeats from step **4.** until happy to release a new version of Story Format
+7. Format Developer publishes Story Format as a new version *(infrequently)*
 8. Story Author imports the new version of the Story Format and continues working on the Story
 9. Repeat from **1.** until happy with Story Format functionality
 10. 🎉
