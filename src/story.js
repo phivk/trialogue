@@ -128,6 +128,16 @@ var Story = function() {
 	this.recent_dom = [];
 
 	/**
+         An array of passage IDs, one for each passage viewed since 
+	 the last response.
+
+         @property recent
+         @type Array
+        **/
+
+        this.recent = [];
+
+	/**
 	 An object that stores data that persists across a single user session.
 	 Any other variables will not survive the user pressing back or forward.
 
@@ -447,6 +457,7 @@ _.extend(Story.prototype, {
 			);
 
 		if (!noHistory) {
+			this.recent.push(passage.id);
 			this.recent_dom.push(passageElem[0]);
     }
 
@@ -518,7 +529,9 @@ _.extend(Story.prototype, {
 	 **/
 
 	showUserPassage: function (text) {
+		this.history = this.history.concat(this.recent);
 		this.history_dom = this.history_dom.concat(this.recent_dom);
+		this.recent = [];
 		this.recent_dom = [];
 
 		this.undoHistory.push(
