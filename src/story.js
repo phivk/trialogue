@@ -106,6 +106,28 @@ var Story = function() {
 	this.history = [];
 
 	/**
+	 An array of passages as jq objects, one for each passage viewed 
+	 during the current
+	 session.
+
+	 @property history_dom
+	 @type Array
+	 @readOnly
+	**/
+
+	this.history_dom = [];
+
+	/**
+	 An array of passages (jQ objects), one for each passage viewed 
+	 since the last response.
+
+	 @property recent_dom
+	 @type Array
+	**/
+
+	this.recent_dom = [];
+
+	/**
 	 An object that stores data that persists across a single user session.
 	 Any other variables will not survive the user pressing back or forward.
 
@@ -114,6 +136,16 @@ var Story = function() {
 	**/
 
 	this.state = {};
+
+	/**
+	 An array of {history, history_dom, state} pairs for use in the
+	 undo history.
+
+	 @property undoHistory
+	 @type Array
+	**/
+
+	this.undoHistory = [];
 
 	/**
 	 If set to true, then any JavaScript errors are ignored -- normally, play
@@ -226,39 +258,35 @@ _.extend(Story.prototype, {
 
 		// set up history event handler
 
-		$(window).on('popstate', function(event) {
-			var state = event.originalEvent.state;
+		$('#nav-link-undo').on('click', function(event) {
+			var undoState = this.undoHistory.pop();
 
-			if (state) {
-				this.state = state.state;
-				this.history = state.history;
-				
-				/**
-				 Remove the previous passage from the visual history before reopening it.
-				 Remove the current passage after/because it gets added to the visual history 
-				   (but not the state history) during this.show().
-				 If the user did a browser forward (determined by the history length being off)
-				   back out using a helper class; this effectively disables the forward button.
-				 **/
+			if (undoState) {
+				this.state = undoState.state;
+				this.history_dom = undoState.history_dom;
+				this.history = undoState.history;
 
-				if (this.history.length == $('div.phistory').length && !$('#phistory').hasClass('fakeBack')) {
-					$('div.phistory:last').remove();
-					this.show(this.history[this.history.length - 1], true);
-					$('div.phistory:last').remove();
-				} else {
-					if ($('#phistory').hasClass('fakeBack')) {
-						$('#phistory').removeClass('fakeBack');
-					} else {
-						$('#phistory').addClass('fakeBack');
-						window.history.back();
-					}
+				/* undoHistory is only pushed to after a 
+				 * user response. To undo the visual history,
+				 * we need to remove elements not in
+				 * history_dom, then remove the previous 
+				 * element and show it again, to update the 
+				 * internal state and display user responses.
+				 */
+
+				this.clearUserResponses();
+				$('#phistory').children()
+					.not(this.history_dom)
+					.remove();
+				$('#passage').children()
+					.not(this.history_dom)
+					.remove();
+				$('#phistory').children().last().remove();
+				this.show(this.history[this.history.length-1]);
+
+				if (this.undoHistory.length == 0) {
+					$('#nav-link-undo').css({'visibility': 'hidden'});
 				}
-			}
-			else if (this.history.length > 1) {
-				this.state = {};
-				this.history = [];
-				this.show(this.startPassage, true);
-				$('div#phistory').html('');
 			}
 		}.bind(this));
 
@@ -394,32 +422,6 @@ _.extend(Story.prototype, {
 
 		$.event.trigger('showpassage', { passage: passage });
 
-		if (!noHistory) {
-			this.history.push(passage.id);
-
-			try {
-				window.history.pushState(
-					{
-						state: this.state,
-						history: this.history
-					},
-					'',
-					''
-				);
-			}
-			catch (e) {
-				// this may fail due to security restrictions in the browser
-
-				/**
-				 Triggered whenever a passage fails to be saved to browser history.
-
-				 @event checkpointfailed
-				**/
-
-				$.event.trigger('checkpointfailed', { error: e });
-			}
-		}
-
 		/**
 		 Save the old passage html to the passage history.
 		 **/
@@ -429,21 +431,32 @@ _.extend(Story.prototype, {
 		}
 
 		/**
-		 Set new passage html to the passage container element
+     Create passage element
 		 **/
-		
+
 		window.passage = passage;
 
-  		var speaker = this.getPassageSpeaker(passage);
+  	var speaker = this.getPassageSpeaker(passage);
 
-		$('#passage')
-			.html(
-				'<div data-speaker="' + speaker + '" class="chat-passage-wrapper ' + window.passage.tags.join(' ') + '">' + 
+    var passageElem = $(
+				'<div data-speaker="' + speaker + '" class="chat-passage-wrapper ' + passage.tags.join(' ') + '">' + 
 		  			'<div data-speaker="' + speaker + '" class="chat-passage">' + 
 						passage.render() + 
 					'</div>' +
 				'</div>'
-			)
+			);
+
+		if (!noHistory) {
+			this.recent_dom.push(passageElem[0]);
+    }
+
+    /**
+		 Add passage element to passage container element
+     **/
+		
+
+		$('#passage')
+      .append(passageElem)
 			.fadeIn('slow');
 		
 		this.showUserResponses();
@@ -467,7 +480,7 @@ _.extend(Story.prototype, {
 	 move current passage to history
 	 **/
 	movePassageToHistory: function () {
-		$('#passage').hide();
+		// $('#passage').hide();
 		
 		this.emptyPassageLinks();
 
@@ -505,13 +518,28 @@ _.extend(Story.prototype, {
 	 **/
 
 	showUserPassage: function (text) {
+		this.history_dom = this.history_dom.concat(this.recent_dom);
+		this.recent_dom = [];
+
+		this.undoHistory.push(
+			{
+				state: this.state,
+				history_dom: this.history_dom,
+				history: this.history
+			}
+		);
+		$('#nav-link-undo').css({'visibility': 'visible'});
+
 		// render clicked link as UserPassage
-		$('#phistory').append('<div class="chat-passage-wrapper" data-speaker="you"><div class="chat-passage phistory" data-speaker="you" data-upassage="' + window.passage.id + '">' + text + '</div></div>');
+		var user_passage = $('<div class="chat-passage-wrapper" data-speaker="you"><div class="chat-passage phistory" data-speaker="you" data-upassage="' + window.passage.id + '">' + text + '</div></div>');
+		$('#phistory').append(user_passage);
+		this.recent_dom.push(user_passage[0]);
 		this.scrollChatIntoView();
 	},
 
 	/**
-	 scroll bottom of chat-panel into view to ensure recently added passages can be read
+	 scroll bottom of chat-panel into view to ensure recently 
+	 added passages can be read
 	 **/
 
 	scrollChatIntoView: function () {
@@ -544,7 +572,9 @@ _.extend(Story.prototype, {
 	
 	pcopy: function() {
 		if (parseInt(window.passage.id,10)){
-			$('#phistory').append($('#passage').html());
+      // (I used .remove() here to remove any event handlers, which shouldn't persist.)
+      var removed = $('#passage').children().remove();
+			$('#phistory').append(removed);
 		}
 	},
 	
