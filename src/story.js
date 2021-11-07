@@ -189,6 +189,26 @@ var Story = function() {
 
 	this.passages = [];
 
+	/**
+	 A number representing the ID of the setTimeout() timer for a
+	 typing event.
+
+	 @property delayedTypingEvent
+	 @type Number
+	**/
+
+	this.delayedTypingEvent = null;
+
+	/**
+	 A number representing the ID of the setTimeout() timer for
+	 a passage display event.
+
+	 @property delayedPassageEvent
+	 @type Number
+	**/
+
+	this.delayedPassageEvent = null;
+
 	var p = this.passages;
 
 	if (twVersion == 2) {
@@ -285,6 +305,15 @@ _.extend(Story.prototype, {
 				 */
 
 				this.clearUserResponses();
+				if (this.delayedTypingEvent !== null) {
+					clearTimeout(this.delayedTypingEvent);
+					this.delayedTypingEvent = null;
+				}
+				this.hideTyping();
+				if (this.delayedPassageEvent !== null) {
+					clearTimeout(this.delayedPassageEvent);
+					this.delayedPassageEvent = null;
+				}
 				$('#phistory').children()
 					.not(this.history_dom)
 					.remove();
@@ -654,14 +683,14 @@ _.extend(Story.prototype, {
 		var delayMS = this.getPassageDelay(idOrName);
 
 		// show animation
-		_.delay(
+		this.delayedTypingEvent = _.delay(
 			function(){
 				story.showTyping(idOrName);
 			},
 			delayMS * typingDelayRatio
 		);
 
-		_.delay(
+		this.delayedPassageEvent = _.delay(
 			function(){
 				story.hideTyping();
 				story.show(idOrName, noHistory, noMove);
