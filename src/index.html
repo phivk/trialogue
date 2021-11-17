@@ -21,6 +21,9 @@
         <a id="nav-link-back" class="content-container" href="/" data-toggle="modal" data-target="#exitModal">
             Back
         </a>
+        <a id="nav-link-undo" class="content-container" href="javascript:void(0)" style="visibility: hidden;">
+            Undo
+        </a>
         <h1 id="ptitle" class="nav-title"><%= name %></h1>
         <div id="psub">
             <span id="psubtitle"></span>
@@ -38,6 +41,7 @@
             </div>
             <div class="chat-panel col-lg-6 minh-full bg-color">
                 <div id="phistory" class="chat-history"></div>
+                <div id="precent" class="chat-history"></div>
                 <div id="passage"></div>
                 <div id="animation-container">
                     <div class="chat-passage-wrapper">
