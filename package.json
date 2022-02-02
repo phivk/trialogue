@@ -11,7 +11,7 @@
   "dependencies": {
     "jquery": "^3.5.0",
     "lz-string": "^1.4.4",
-    "marked": "^0.7.0",
+    "marked": "^4.0.10",
     "underscore": "^1.12.1"
   },
   "devDependencies": {
