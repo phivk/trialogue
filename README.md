@@ -34,6 +34,56 @@ Trialogue is a chat-style Twine Story Format based on [Paloma](http://mcdemarco.
    - Speaker tag (e.g. `speaker-bot`)
 4. Hit `Play` to test the result (should look something [like this](https://phivk.github.io/trialogue/docs/trialogue-demo.html))
 
+## Editing styles
+
+The way to edit styling is by choosing 'Edit Story Stylesheet' in the story menu:
+
+<img width="264" alt="C76FE0A3-8EEC-4509-9451-00DBB987E17A-1024-00005D7165D9A486" src="https://user-images.githubusercontent.com/902958/152247576-b9073293-3a8d-42e6-b6fc-89be9c9b54b5.png">
+
+To learn more about editing styles via the Story Stylesheet, see:
+- [Twine 2.2: Learning Twine: Story Stylesheet](https://www.youtube.com/watch?v=GE_06UFb-O0) by [Dan Cox](https://github.com/videlais)
+- [CSS is Your Friend: The Basics of Changing Twine's Default Appearance For Newbs](https://twinery.org/forum/discussion/1528/css-is-your-friend-the-basics-of-changing-twines-default-appearance-for-newbs) by Sharpe
+
+### Changing UI colours
+
+Trialogue uses [CSS variables](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties) to set the main colours of the app. You can add the following to your Story Stylesheet and tweak the colours to fit your needs:
+
+```css
+:root {
+    --bg-color: #C7BDB5;
+    --user-color: purple;
+    --speaker-color: #A00;
+    --sidebar-bg-color: #FFF;
+    --navbar-bg-color: #FFF;
+    --passage-bg-color: #FFF;
+    --passage-text-color: #000;
+}
+```
+
+### Setting avatars and colours
+
+Setting **avatar image** and **text color** of a bot speaker with the name `bot` (passages tagged `speaker-bot`):
+```
+.chat-passage-wrapper[data-speaker='bot']:before {
+  background-image: url('https://placekitten.com/100/100');
+}
+.chat-passage-wrapper[data-speaker='bot'] .chat-passage::before {
+  color: green;
+}
+```
+
+Setting the **avatar image** and **text color** of user passages:
+```
+.chat-passage-wrapper[data-speaker='you']:after {
+  background-image: url('https://placekitten.com/100/100');
+}
+.chat-passage-wrapper[data-speaker='you'] .chat-passage::before {
+  color: red;
+}
+```
+
+Use any [valid CSS color value](https://developer.mozilla.org/en-US/docs/Web/CSS/color) for the color property.
+
 ## ⚠️ Changes From Paloma
 
 - Changed chat layout, including rendering links in separate UserResponsePanel
