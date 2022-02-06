@@ -5,7 +5,7 @@ module.exports = function(grunt) {
 		browserify: {
 			default: {
 				files: {
-					'build/paloma.js': 'src/index.js'
+					'build/trialogue.js': 'src/index.js'
 				},
 				options: {
 					browserifyOptions: {
@@ -17,7 +17,7 @@ module.exports = function(grunt) {
 			},
 			release: {
 				files: {
-					'build/paloma.js': 'src/index.js'
+					'build/trialogue.js': 'src/index.js'
 				},
 				options: {
 					browserifyOptions: {
@@ -31,7 +31,7 @@ module.exports = function(grunt) {
 		cssmin: {
 			default: {
 				files: {
-					'build/paloma.css': 'src/**/*.css'
+					'build/trialogue.css': 'src/**/*.css'
 				},
 				expand: true
 			}
@@ -54,8 +54,8 @@ module.exports = function(grunt) {
 		var data = {
 			name: grunt.file.read('test-data/name.txt'),
 			passages: grunt.file.read('test-data/passages.html'),
-			script: '<script src="paloma.js"></script>',
-			stylesheet: '<link rel="stylesheet" href="paloma.css">'
+			script: '<script src="trialogue.js"></script>',
+			stylesheet: '<link rel="stylesheet" href="trialogue.css">'
 		};
 
 		grunt.file.write('build/format-test.html', template(data));
@@ -67,8 +67,8 @@ module.exports = function(grunt) {
 		var data = {
 			name: '{{STORY_NAME}}',
 			passages: '{{STORY_DATA}}',
-			script: '<script>' + grunt.file.read('build/paloma.js') + '</script>',
-			stylesheet: '<style>' + grunt.file.read('build/paloma.css') + '</style>'
+			script: '<script>' + grunt.file.read('build/trialogue.js') + '</script>',
+			stylesheet: '<style>' + grunt.file.read('build/trialogue.css') + '</style>'
 		};
 
 		grunt.file.write('build/format.html', template(data));
@@ -80,8 +80,8 @@ module.exports = function(grunt) {
 		var data = {
 			name: 'Story',
 			passages: '<div id="storeArea" data-size="STORY_SIZE" hidden>"STORY"</div>',
-			script: '<script>' + grunt.file.read('build/paloma.js') + '</script>',
-			stylesheet: '<style>' + grunt.file.read('build/paloma.css') + '</style>'
+			script: '<script>' + grunt.file.read('build/trialogue.js') + '</script>',
+			stylesheet: '<style>' + grunt.file.read('build/trialogue.css') + '</style>'
 		};
 
 		grunt.file.write('build/header.html', template(data));
