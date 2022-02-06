@@ -209,6 +209,15 @@ var Story = function() {
 
 	this.delayedPassageEvent = null;
 
+	/**
+	 The maximum amount of time in milliseconds that a passage will be delayed
+
+	 @property maxPassageDelay
+	 @type Number
+	**/
+
+	this.maxPassageDelay = 10000;
+
 	var p = this.passages;
 
 	if (twVersion == 2) {
@@ -733,8 +742,8 @@ _.extend(Story.prototype, {
 		var targetTextLength = targetSourceTextLength - targetUserResponseLength;
 		var msPerChar = 20;
 		var delayMS = targetTextLength * msPerChar;
-
-		return delayMS;
+		var delayThresholded = Math.min(delayMS, this.maxPassageDelay);
+		return delayThresholded;
 	},
 
 	/**
