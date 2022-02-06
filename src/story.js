@@ -479,7 +479,7 @@ _.extend(Story.prototype, {
 
     var passageElem;
 		if (speaker == 'undefined') {
-			passageElem = $('<div class="chat-message">' + passage.render() + '</div>');
+			passageElem = $('<div class="meta-passage">' + passage.render() + '</div>');
 		} else {
 		  passageElem = $(
 				'<div data-speaker="' + speaker + '" class="chat-passage-wrapper ' + passage.tags.join(' ') + '">' + 

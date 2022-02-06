@@ -166,17 +166,12 @@ nav a.content-container:not(:first-child) {
   font-size: .75rem;
 }
 
-.chat-message {
-  position: relative;
-  margin: .5rem 0;
+.meta-passage {
+  margin: 1rem 2rem;
+  text-align: center;
+  font-style: italic;
+  opacity: 0.7;
 }
-
-.chat-message p {
-	margin-left: 35px;
-	margin-right: 35px;
-	text-align: center;
-}
-
 
 /* User Response Panel */
 
