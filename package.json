@@ -1,8 +1,8 @@
 {
   "name": "Trialogue",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "A chat style story format based on Paloma",
-  "author": "Philo van Kemenade <philo.van.kemenade@sng.sk>",
+  "author": "Philo van Kemenade",
   "license": "MIT",
   "repository": "https://github.com/phivk/trialogue",
   "config": {
@@ -11,11 +11,11 @@
   "dependencies": {
     "jquery": "^3.5.0",
     "lz-string": "^1.4.4",
-    "marked": "^0.7.0",
-    "underscore": "^1.8.3"
+    "marked": "^4.0.10",
+    "underscore": "^1.12.1"
   },
   "devDependencies": {
-    "grunt": "^0.4.5",
+    "grunt": "^1.3.0",
     "grunt-browserify": "^4.0.1",
     "grunt-contrib-clean": "^0.7.0",
     "grunt-contrib-cssmin": "^0.14.0",

@@ -83,11 +83,17 @@ nav.navbar {
 nav .nav-title {
   font-size: 1.5rem;
   line-height: 40px;
-  margin: 0 auto;
+  position: absolute;
+  left: 50%;
+  margin-bottom: auto;
 }
 
 nav .nav-icon {
   width: 35px;
+}
+
+nav a.content-container:not(:first-child) {
+  padding-left: 0.5em;
 }
 
 /* Chat Panel */

@@ -1,10 +1,28 @@
-:: StorySettings
-ifid:b4a595db-0d82-4652-99ad-6c801b0f1510
-zoom:1
-
+:: StoryData
+{
+  "ifid": "B4A595DB-0D82-4652-99AD-6C801B0F1510"
+}
 
 :: StoryTitle
-trialogue-test
+Trialogue Demo
+
+:: Story JavaScript [script]
+
+var leftSidebarContent       = '<h3>Welcome</h3><p>Thanks for trying out <a href="https://github.com/phivk/trialogue">Trialogue</a>.</p>';
+var rightSidebarContent      = '<p>You can place any HTML here.</p><p>Use the <span style="font-family: monospace;">inject_right_sidebar()</span> function in the your <a href="https://www.youtube.com/watch?v=JjRoHAO6nAQ">Story JavaScript</a>.</p><p>See <a href="https://github.com/phivk/trialogue/blob/master/test-data/test-story.twee">this test story</a> for a full example of the types of content you can inject.</p>';
+var userResponseHintContent  = 'Choose one option to continue the conversation';
+var modalTitleContent        = 'Leave the chat?';
+var modalBodyContent         = '<p>If you leave the chat, your history will be lost and you will have to start from the beginning.</p>';
+var modalFooterContent       = '<button type="button" class="btn rounded-0 btn-link" data-dismiss="modal">Stay</button><a href="/" type="button" class="btn rounded-0 btn-danger">Leave</a>';
+var navLinkBackContent       = '← back';
+var navLinkMenuContent       = 'menu';
+
+inject_nav_back(navLinkBackContent);
+inject_nav_menu(navLinkMenuContent);
+inject_left_sidebar(leftSidebarContent);
+inject_right_sidebar(rightSidebarContent);
+inject_hint(userResponseHintContent);
+inject_modal(modalTitleContent, modalBodyContent, modalFooterContent);
 
 
 :: Start [speaker-1]

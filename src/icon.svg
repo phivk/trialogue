@@ -1,1 +1,10 @@
-<svg height="120" viewBox="0 0 140 120" width="140" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="m40 0h100v30h-100z" fill="#000"/><path d="m0 45h100v30h-100z" fill="#000"/><circle cx="15" cy="15" fill="#d0011b" r="15"/><path d="m40 90h100v30h-100z" fill="#000"/><circle cx="15" cy="105" fill="#4990e2" r="15"/><ellipse cx="124" cy="60" fill="#417505" rx="15" ry="15"/></g></svg>
+<svg width="150" height="150" viewBox="0 0 150 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="150" height="150" fill="white"/>
+<rect width="150" height="150" fill="white"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M45 15H145V45H45V15Z" fill="black"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M5 60H105V90H5V60Z" fill="black"/>
+<path d="M20 45C28.2843 45 35 38.2843 35 30C35 21.7157 28.2843 15 20 15C11.7157 15 5 21.7157 5 30C5 38.2843 11.7157 45 20 45Z" fill="#D0011B"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M45 105H145V135H45V105Z" fill="black"/>
+<path d="M20 135C28.2843 135 35 128.284 35 120C35 111.716 28.2843 105 20 105C11.7157 105 5 111.716 5 120C5 128.284 11.7157 135 20 135Z" fill="#4990E2"/>
+<path d="M129 90C137.284 90 144 83.2843 144 75C144 66.7157 137.284 60 129 60C120.716 60 114 66.7157 114 75C114 83.2843 120.716 90 129 90Z" fill="#417505"/>
+</svg>
