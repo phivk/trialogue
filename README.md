@@ -120,14 +120,20 @@ A possible workflow for collaboration between a Story Author and Format Develope
 
 ### Testing during development
 
+#### Building Story Format from Source
+
+Run `npm install` to install dependencies.  Run `grunt package` to create a release version for Twine under `dist/`.  Run `grunt --help` to list other grunt targets.
+
+#### Compiling a story using Trialogue
+
 A way to test the result of adjustments to the Story Format, is to compile a `.twee` Story to `.html` using the Trialogue format and check the behaviour & styling in a browser.
 
-Compilation can be done using one of:
+(De)compilation can be done using either:
 
 - [TweeGo](https://www.motoslave.net/tweego/)
 - [Twee2](https://dan-q.github.io/twee2/)
 
-**Decompile** `.html` story to `.twee`/`.tw2` using trialogue story format:
+**Decompile** `.html` story to `.twee`/`.tw2` using Trialogue Story Format:
 
 ```
 tweego --decompile --output=[path/to/target.twee] [path/to/source.html] --format=Trialogue
@@ -137,7 +143,7 @@ tweego --decompile --output=[path/to/target.twee] [path/to/source.html] --format
 twee2 decompile [path/to/source.html] [path/to/target.tw2]
 ```
 
-**Compile** `.twee`/`.tw2` story to `.html` story using trialogue story format:
+**Compile** `.twee`/`.tw2` story to `.html` story using Trialogue Story Format:
 
 ```
 tweego --output=[path/to/target.html] [path/to/source.twee] --format=Trialogue
@@ -149,4 +155,4 @@ twee2 build [path/to/source.tw2] [path/to/target.html] --format=./dist/Twine2/Tr
 
 # Paloma
 
-Trialogue is based on [Paloma](http://mcdemarco.net/tools/scree/paloma/) by M. C. DeMarco: a Jonah-style story format for Twine 1 and 2 based on [Snowman](https://github.com/videlais/snowman) by [Chris Klimas](https://github.com/klembot).
+Trialogue is based on [Paloma](http://mcdemarco.net/tools/scree/paloma/) by M. C. DeMarco: a Jonah-style Story Format for Twine 1 and 2 based on [Snowman](https://github.com/videlais/snowman) by [Chris Klimas](https://github.com/klembot).
