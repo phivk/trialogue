@@ -700,7 +700,7 @@ _.extend(Story.prototype, {
         delayMS * typingDelayRatio
       );
 		} else {
-			delayMS = 0;
+			delayMS = 1000;
 		}
     
 		this.delayedPassageEvent = _.delay(
