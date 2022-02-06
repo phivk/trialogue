@@ -128,12 +128,12 @@ var Story = function() {
 	this.recent_dom = [];
 
 	/**
-         An array of passage IDs, one for each passage viewed since 
-	 the last response.
+   An array of passage IDs, one for each passage viewed since 
+the last response.
 
-         @property recent
-         @type Array
-        **/
+   @property recent
+   @type Array
+  **/
 
         this.recent = [];
 
