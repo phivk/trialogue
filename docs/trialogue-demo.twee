@@ -33,7 +33,12 @@ hi!
 [[whatsup?!]]
 
 
-:: hello [speaker-1]
+:: hello
+this passage without speaker tag is rendered as a meta passage.
+
+[[ok]]
+
+:: ok [speaker-2]
 how are you doing?
 
 [[pretty good]]
