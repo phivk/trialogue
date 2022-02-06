@@ -128,14 +128,14 @@ var Story = function() {
 	this.recent_dom = [];
 
 	/**
-         An array of passage IDs, one for each passage viewed since 
+   An array of passage IDs, one for each passage viewed since 
 	 the last response.
 
-         @property recent
-         @type Array
-        **/
+   @property recent
+   @type Array
+  **/
 
-        this.recent = [];
+  this.recent = [];
 
 	/**
 	 An object that stores data that persists across a single user session.
@@ -208,6 +208,15 @@ var Story = function() {
 	**/
 
 	this.delayedPassageEvent = null;
+
+	/**
+	 The maximum amount of time in milliseconds that a passage will be delayed
+
+	 @property maxPassageDelay
+	 @type Number
+	**/
+
+	this.maxPassageDelay = 10000;
 
 	var p = this.passages;
 
@@ -733,8 +742,8 @@ _.extend(Story.prototype, {
 		var targetTextLength = targetSourceTextLength - targetUserResponseLength;
 		var msPerChar = 20;
 		var delayMS = targetTextLength * msPerChar;
-
-		return delayMS;
+		var delayThresholded = Math.min(delayMS, this.maxPassageDelay);
+		return delayThresholded;
 	},
 
 	/**
