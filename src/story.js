@@ -129,13 +129,13 @@ var Story = function() {
 
 	/**
    An array of passage IDs, one for each passage viewed since 
-the last response.
+	 the last response.
 
    @property recent
    @type Array
   **/
 
-        this.recent = [];
+  this.recent = [];
 
 	/**
 	 An object that stores data that persists across a single user session.
