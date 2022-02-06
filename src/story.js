@@ -477,14 +477,19 @@ _.extend(Story.prototype, {
 
   	var speaker = this.getPassageSpeaker(passage);
 
-    var passageElem = $(
+    var passageElem;
+		if (speaker == 'undefined') {
+			passageElem = $('<div class="chat-message">' + passage.render() + '</div>');
+		} else {
+		  passageElem = $(
 				'<div data-speaker="' + speaker + '" class="chat-passage-wrapper ' + passage.tags.join(' ') + '">' + 
 		  			'<div data-speaker="' + speaker + '" class="chat-passage">' + 
 						passage.render() + 
 					'</div>' +
 				'</div>'
-			);
-
+			);  
+		}
+    
 		if (!noHistory) {
 			this.recent.push(passage.id);
 			this.recent_dom.push(passageElem[0]);
@@ -493,7 +498,6 @@ _.extend(Story.prototype, {
     /**
 		 Add passage element to passage container element
      **/
-		
 
 		$('#passage')
       .append(passageElem)
@@ -647,6 +651,9 @@ _.extend(Story.prototype, {
 			};
 		}
 		var speakerTag = _.find(passage.tags, function(tag){ return tag.startsWith('speaker-'); });
+		if (typeof speakerTag === 'undefined') {
+			return 'undefined';
+		}
 		return speakerTag.substring(8);
 	},
 	
@@ -682,14 +689,20 @@ _.extend(Story.prototype, {
 		var typingDelayRatio = 0.3;
 		var delayMS = this.getPassageDelay(idOrName);
 
-		// show animation
-		this.delayedTypingEvent = _.delay(
-			function(){
-				story.showTyping(idOrName);
-			},
-			delayMS * typingDelayRatio
-		);
+		var speaker = this.getPassageSpeaker(this.passage(idOrName));
 
+		// show animation
+		if (speaker != 'undefined') {
+      this.delayedTypingEvent = _.delay(
+        function(){
+          story.showTyping(idOrName);
+        },
+        delayMS * typingDelayRatio
+      );
+		} else {
+			delayMS = 0;
+		}
+    
 		this.delayedPassageEvent = _.delay(
 			function(){
 				story.hideTyping();
@@ -697,6 +710,7 @@ _.extend(Story.prototype, {
 			},
 			delayMS
 		);
+
 	},
 
 	/**

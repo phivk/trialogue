@@ -166,6 +166,18 @@ nav a.content-container:not(:first-child) {
   font-size: .75rem;
 }
 
+.chat-message {
+  position: relative;
+  margin: .5rem 0;
+}
+
+.chat-message p {
+	margin-left: 35px;
+	margin-right: 35px;
+	text-align: center;
+}
+
+
 /* User Response Panel */
 
 .user-response-panel {
