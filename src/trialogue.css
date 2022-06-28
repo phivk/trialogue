@@ -94,6 +94,7 @@ nav .nav-icon {
 
 nav a.content-container:not(:first-child) {
   padding-left: 0.5em;
+  margin-right: auto;
 }
 
 /* Chat Panel */
