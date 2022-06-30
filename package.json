@@ -11,8 +11,8 @@
   "dependencies": {
     "jquery": "^3.6.0",
     "lz-string": "^1.4.4",
-    "marked": "^4.0.12",
-    "underscore": "^1.13.2"
+    "marked": "^4.0.17",
+    "underscore": "^1.13.4"
   },
   "devDependencies": {
     "grunt": "^1.5.3",
