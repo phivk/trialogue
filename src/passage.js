@@ -108,7 +108,7 @@ function render(source) {
 		}
 	});
 
-	return marked(result);
+	return marked.parse(result);
 };
 
 /**
