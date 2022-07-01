@@ -85,6 +85,7 @@ nav .nav-title {
   line-height: 40px;
   position: absolute;
   left: 50%;
+  transform: translateX(-50%);
   margin-bottom: auto;
 }
 
