@@ -85,6 +85,7 @@ nav .nav-title {
   line-height: 40px;
   position: absolute;
   left: 50%;
+  transform: translateX(-50%);
   margin-bottom: auto;
 }
 
@@ -94,6 +95,7 @@ nav .nav-icon {
 
 nav a.content-container:not(:first-child) {
   padding-left: 0.5em;
+  margin-right: auto;
 }
 
 /* Chat Panel */
