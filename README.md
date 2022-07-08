@@ -72,4 +72,4 @@ twee2 build [path/to/source.tw2] [path/to/target.html] --format=./dist/Twine2/Tr
 
 # Paloma
 
-Trialogue is based on [Paloma](http://mcdemarco.net/tools/scree/paloma/) by M. C. DeMarco: a Jonah-style Story Format for Twine 1 and 2 based on [Snowman](https://github.com/videlais/snowman) by [Chris Klimas](https://github.com/klembot).
+Trialogue is based on [Paloma](http://mcdemarco.net/tools/scree/paloma/) by M. C. DeMarco: a Jonah-style Story Format for Twine 1 and 2 based on [Snowman](https://github.com/videlais/snowman) by [Chris Klimas](https://github.com/klembot) and [Dan Cox](https://videlais.com/).
