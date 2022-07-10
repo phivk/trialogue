@@ -1,6 +1,5 @@
-# Trialogue
-
-![Trialogue logo](src/icon.svg)
+<p align="center"><img src="src/icon.svg" alt="Trialogue logo"></p>
+<h1 align="center">Trialogue</h1>
 
 Trialogue is a Story Format for [Twine](https://twinery.org/) that let's you turn a branching narrative into an interactive chat story. Write a non-linear story in the Twine editor, add Trialogue as the Story Format and play back your story in the form of an interactive chat.
 
