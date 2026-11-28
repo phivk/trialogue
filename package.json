@@ -24,5 +24,8 @@
     "grunt-eslint": "^24.0.0",
     "jit-grunt": "^0.10.0",
     "uglifyify": "^5.0.2"
+  },
+  "overrides": {
+    "minimatch": "^3.1.5"
   }
 }
